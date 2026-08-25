@@ -7,6 +7,7 @@
 
 ## Registro
 
+- 2026-08-25 · Fernanda · Decisões da revisão de escopo aprovadas: entidade Cerimonialista; empresa com múltiplos contatos; parceiros com estrutura opcional; caso Casa do Pão de Queijo com múltiplos endereços/CNPJs e vínculo por contato; segmentos definidos; Outros com tipo e descrição; oportunidade vira Pedido Reserva após aprovação do orçamento e envio dos dados de fechamento PF/PJ.
 - 2026-08-25 · ETHOS (Bia) · Revisão de escopo registrada em `06_notas/revisao-escopo-clientes-intermediados.md`: cliente direto e cliente intermediado por cerimonialista; cerimonialista com empresa e múltiplos contatos; telefone principal obrigatório; segmentos definidos; campos condicionais por evento. Implementação preservada até validação das decisões pendentes.
 - 2026-08-25 · Fernanda · Task F1-T001 concluída: superfície de homologação, dicionário baseado na documentação API do GestãoClick, matriz inicial de usuários e declaração de não-escrita em produção registrados; migração Skip aplicada com QA completo e teste humano aprovado.
 - 2026-08-25 · ETHOS (Bia) · Migração 0001 aplicada com sucesso: 6 coleções (clientes, participantes, oportunidades, pendencias, historico_eventos, dados_entrega) + 3 usuários seed (Fernanda, Mara, Anie). Versão 0.0.2, QA completo OK. Preview: https://nexus-emilia-49529--preview.goskip.app
