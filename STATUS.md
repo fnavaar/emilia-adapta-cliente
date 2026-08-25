@@ -7,18 +7,18 @@
 
 - **Fase atual:** 1 — Registro canônico, entrada e briefing estruturado · aberta em 2026-08-25 · reunião de fechamento ainda não agendada
 - **Objetivo desta fase:** registrar uma entrada de teste em um registro canônico, reutilizar dados no briefing e tornar pendências, duplicidades, permissões e fallback demonstráveis.
-- **No prazo?** sim — F1-T001 aplicada; aguardando teste humano.
+- **No prazo?** sim — F1-T001 concluída; próxima task liberada conforme pré-condições.
 
 ## Progresso da fase
 
-- **Tasks:** 0/15 (0%) — F1-T001 em teste humano
-- **Task ativa:** F1-T001 — homologação e dicionário de campos do registro canônico
+- **Tasks:** 1/15 (6,67%)
+- **Task concluída:** F1-T001 — homologação e dicionário de campos do registro canônico
+- **Próxima task elegível:** F1-T002 — configurar entidades, campos, estados iniciais e pendência do registro canônico
 
 ## Travas ativas
 
 | Critério de execução | Desde | Quem resolve | Ação em curso |
 |---|---|---|---|
-| Teste humano da F1-T001 | 2026-08-25 | Fernanda (champion) | Criar registro de teste em https://nexus-emilia-49529--preview.goskip.app |
 | Matriz de campos do briefing | 2026-08-25 | Gestão | F1-T004 |
 | Fonte e versão inicial do catálogo | 2026-08-25 | Gestão | F1-T007 |
 | Matriz de usuários e RLS/auditoria | 2026-08-25 | Responsável técnico | F1-T010 |
@@ -29,7 +29,7 @@
 | Fase | O que foi entregue | Fechada em |
 |---|---|---|
 | Preparação | SPECs, tasks e handoff da Fase 1 preparados | 2026-08-25 |
-| F1-T001 | Recibo de homologação + migração 0001 (6 coleções + 3 usuários seed) | 2026-08-25 (em teste) |
+| F1-T001 | Recibo de homologação, dicionário baseado na API GestãoClick, 6 coleções no Skip e teste humano aprovado | 2026-08-25 |
 
 ## Próxima reunião
 
