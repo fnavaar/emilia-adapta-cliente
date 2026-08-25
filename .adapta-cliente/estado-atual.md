@@ -3,21 +3,18 @@
 - task_id: F1-T002
 - champion: Fernanda (CEO)
 - spec: 04-fase-atual/specs/spec-1-001-registro-canonico.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: ausente
+- etapa: aguardando_teste_humano
+- autorizacao_implementacao: confirmada em 2026-08-25 15:52; trecho: "pode implementar o plano"
 - teste_humano: pendente
-- verificacao_automatica: pendente
+- verificacao_automatica: passou — migração 0002 aplicada; QA completo OK; 15 coleções confirmadas
 - aprendizado: pendente
-- ultima_acao: Revisão de escopo aprovada e primeira task elegível selecionada
-- proxima_acao: Aguardar autorização para implementar F1-T002
-- atualizado_em: 2026-08-25T15:50:00-03:00
+- ultima_acao: F1-T002 implementada com modelo revisado de clientes, cerimonialistas, grupos parceiros, unidades, contatos e eventos
+- proxima_acao: Fernanda executar teste humano no preview e confirmar se o modelo atende aos casos reais
+- atualizado_em: 2026-08-25T15:56:00-03:00
 
-## Contexto aprovado que impacta a task
+## Evidência
 
-- Telefone principal obrigatório no Cliente.
-- Segmentos: Casamento/Noiva, Eventos sociais, Maternidade, Corporativo, Cerimonialista, Revenda/Parceiros comerciais, Presentes, Consumo próprio e Outros.
-- Cerimonialista é entidade própria, com empresa, múltiplos contatos e endereço opcional.
-- Parceiros/revendas podem ser simples ou grupos; grupos podem conter empresas, CNPJs, unidades, endereços e um ou vários contatos.
-- Cada contato pode solicitar pedidos para uma ou mais unidades.
-- Oportunidade vira Pedido Reserva quando orçamento aprovado e dados de fechamento PF/PJ enviados.
-- Nenhuma implementação da F1-T002 foi iniciada nesta resposta.
+- Recibo: `05_entregas/F1-T002-recibo-modelo-revisado.md`
+- Migração: `pocketbase/migrations/0002_revisao_clientes_parceiros.js`
+- Versão Skip: 0.0.7, hash `42e7477`
+- Produção não publicada nem alterada.
