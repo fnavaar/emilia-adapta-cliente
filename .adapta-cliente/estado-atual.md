@@ -1,24 +1,23 @@
 # Estado atual — Adapta Cliente
 
-- task_id: nenhuma
+- task_id: F1-T002
 - champion: Fernanda (CEO)
-- spec: nenhuma
-- etapa: bloqueada
+- spec: 04-fase-atual/specs/spec-1-001-registro-canonico.md
+- etapa: aguardando_autorizacao
 - autorizacao_implementacao: ausente
-- teste_humano: nao_aplicavel
+- teste_humano: pendente
 - verificacao_automatica: pendente
-- aprendizado: capturado:06_notas/aprendizado-continuo/controle.md
-- ultima_acao: Modelo de grupos parceiros/revendedores corrigido na revisão de escopo
-- proxima_acao: Aguardar incorporação da revisão aprovada na SPEC-1-001 antes de abrir a F1-T002
-- atualizado_em: 2026-08-25T15:41:00-03:00
+- aprendizado: pendente
+- ultima_acao: Revisão de escopo aprovada e primeira task elegível selecionada
+- proxima_acao: Aguardar autorização para implementar F1-T002
+- atualizado_em: 2026-08-25T15:50:00-03:00
 
-## Revisão aprovada aguardando incorporação na SPEC
+## Contexto aprovado que impacta a task
 
-- Documento: `06_notas/revisao-escopo-clientes-intermediados.md`
-- Entidade de casamentos: Cerimonialista.
-- Segmento de revenda: Grupo Parceiro, com empresas, CNPJs, contatos e unidades/endereço flexíveis.
-- Um grupo pode ter um ou vários contatos e uma ou várias unidades.
-- Cada contato pode atender uma ou mais unidades.
-- Pedidos devem ser consolidados por grupo e detalhados por empresa, CNPJ, unidade, endereço e contato.
-- Exemplos: Casa do Pão de Queijo e Bisutti.
-- Nenhum código foi alterado nesta revisão.
+- Telefone principal obrigatório no Cliente.
+- Segmentos: Casamento/Noiva, Eventos sociais, Maternidade, Corporativo, Cerimonialista, Revenda/Parceiros comerciais, Presentes, Consumo próprio e Outros.
+- Cerimonialista é entidade própria, com empresa, múltiplos contatos e endereço opcional.
+- Parceiros/revendas podem ser simples ou grupos; grupos podem conter empresas, CNPJs, unidades, endereços e um ou vários contatos.
+- Cada contato pode solicitar pedidos para uma ou mais unidades.
+- Oportunidade vira Pedido Reserva quando orçamento aprovado e dados de fechamento PF/PJ enviados.
+- Nenhuma implementação da F1-T002 foi iniciada nesta resposta.
