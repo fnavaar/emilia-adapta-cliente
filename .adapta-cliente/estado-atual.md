@@ -3,18 +3,19 @@
 - task_id: F1-T002
 - champion: Fernanda (CEO)
 - spec: 04-fase-atual/specs/spec-1-001-registro-canonico.md
-- etapa: em_correcao
-- autorizacao_implementacao: confirmada em 2026-08-25 15:52; trecho: "pode implementar o plano"
-- teste_humano: falhou em 2026-08-25 16:01; preview continuou sem permitir acesso ao sistema
-- verificacao_automatica: falhou — QA da migração 0002 passou, mas login humano não autenticou
+- etapa: aguardando_teste_humano
+- autorizacao_implementacao: confirmada em 2026-08-25; trecho: "pode implementar o plano"
+- teste_humano: falhou em 2026-08-25 16:01; corrigido em 2026-08-25 16:05; novo teste pendente
+- verificacao_automatica: passou — migrações 0002, 0003 e 0004 aplicadas; QA completo OK; login reproduzido com sucesso no navegador
 - aprendizado: pendente
-- ultima_acao: Reproduzido no preview; tela de login aparece, porém credencial seed não conclui autenticação
-- proxima_acao: Corrigir definição das senhas seed usando a API própria de senha do PocketBase e repetir login
-- atualizado_em: 2026-08-25T16:03:00-03:00
+- ultima_acao: Corrigido login; Fernanda autenticada no preview e painel exibido
+- proxima_acao: Fernanda testar cadastro revisado no preview e confirmar se funcionou
+- atualizado_em: 2026-08-25T16:06:00-03:00
 
-## Diagnóstico inicial
+## Evidência
 
-- Preview confirmado: `https://nexus-emilia-49529--preview.goskip.app/login`.
-- A tela de login atual aparece no navegador.
-- Ao usar `fernanda@emiliabemcasados.local` e `Emilia@2026`, a tela permanece em `/login`.
-- Hipótese confirmada pelo código da migração: usuários foram criados com `password` e `passwordConfirm` no objeto Record, em vez de `setPassword`, conforme regra do runtime de migrações.
+- Debug Summary: `06_notas/debug/debug-2026-08-25-login-preview.md`
+- Migração de correção: `pocketbase/migrations/0004_criar_contas_homologacao.js`
+- Versão Skip: 0.0.9, hash `d90f03f`
+- Login verificado em navegador: `/login` → `/`; painel com “Olá, Fernanda” exibido.
+- Produção não publicada nem alterada.
