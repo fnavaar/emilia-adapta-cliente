@@ -4,7 +4,8 @@
 - **Task**: F1-T001
 - **SPEC**: SPEC-1-001 — Registro canônico de cliente e oportunidade
 - **Executor**: ETHOS (Bia)
-- **Autorização**: Fernanda autorizou explicitamente a implementação em 2026-08-25 às 11:22.
+- **Autorização**: Fernanda autorizou explicitamente a implementação em 2026-08-25.
+- **Teste humano**: Fernanda confirmou que os registros apareceram no preview.
 
 ## Superfície confirmada
 
@@ -12,41 +13,30 @@
 - **Project ID**: 52694
 - **Superfície de homologação**: https://nexus-emilia-49529--preview.goskip.app
 - **Backend hostname**: nexus-emilia-49529
-- **Produção**: `isPublished: false`; URL de produção identificada, mas não publicada e não alterada.
-- **Rotas observadas**: `/` (Index) e fallback (`*`).
+- **Produção**: `isPublished: false`; produção não foi alterada.
 
-## Estado real observado
+## Evidência técnica
 
-- O projeto frontend ainda é o template inicial, com `Index` de exemplo.
-- O Skip Cloud possui somente a coleção auth `users`.
-- A coleção `users` possui os campos de autenticação, `name`, `avatar`, `created` e `updated`.
-- Não foram observadas coleções Cliente, Participante, Oportunidade/PedidoBase, Pendência ou HistóricoEvento.
-- Não foram observados campos ou estados de negócio no backend que permitam confirmar os identificadores técnicos do ERP/Skip.
+- Migração aplicada: `pocketbase/migrations/0001_criar_entidades.js`.
+- Versão Skip: 0.0.2, hash `b70f57e`.
+- QA da migração: setup, análise estática, build, integrações e testes passaram.
+- Coleções confirmadas no Skip Cloud: `clientes`, `participantes`, `oportunidades`, `pendencias`, `historico_eventos` e `dados_entrega`, além de `users`.
+- Usuários de homologação confirmados: Fernanda, Mara e Anie.
+- Frontend de homologação posteriormente recebeu login, dashboard e formulários de cliente/oportunidade; versão 0.0.4 teve QA completo OK.
 
-## Dicionário aprovado para a próxima configuração
+## Dicionário confirmado
 
-### Registro canônico e oportunidade/pedido-base
+A documentação anexada pela Fernanda (`uploads/60bb9ea8-gestaoclick_3_.apib`) confirma:
 
-| Campo | Tipo lógico | Obrigatório/regra | Observação |
-|---|---|---|---|
-| cliente_id | relação | obrigatório | Cliente identificado/criado |
-| nome | texto | obrigatório quando informado | Nome do cliente |
-| telefone_principal | texto | obrigatório quando informado | Normalizar apenas formato |
-| tipo_cliente | seleção | conforme contexto | Tipo de cliente |
-| cpf_cnpj | texto | condicional | Coletar somente quando aplicável |
-| participantes | relações | conforme contexto | Participantes do pedido |
-| tipo_pedido | seleção | necessário para oportunidade | Tipo do pedido |
-| origem_contato | seleção/texto | obrigatório ou pendência explícita | Origem informada |
-| responsavel_atual | relação | obrigatório | Atendimento responsável |
-| status | seleção | obrigatório | Novo, Em briefing ou Aguardando dados |
-| proxima_acao | texto | obrigatório | Próximo passo operacional |
-| prazo_proxima_acao | data | conforme pendência | Prazo |
-| source_ref | texto | conforme origem | Idempotência/reuso |
-| valor_estimado | número monetário | **preenchimento obrigatório** | Confirmado por Fernanda; não calcular automaticamente nesta task |
+- GestãoClick API base: `https://api.gestaoclick.com`.
+- Autenticação por `access-token` e `secret-access-token`.
+- Limite de 3 requisições por segundo e 100 registros por página.
+- Cliente em `/clientes`, com nome, tipo de pessoa, CPF/CNPJ, telefones, email e endereços.
+- Orçamento em `/orcamentos`, com cliente, vendedor, data, previsão de entrega, situação, valor, pagamentos, produtos e observações.
+- Situações de orçamento consultadas em `/situacoes_orcamentos`, incluindo Em aberto, Em andamento, Confirmado e Cancelado.
+- Campos extras de orçamento consultados em `/atributos_orcamentos`, com tipo `texto_simples` e regra `exibir_impressao`.
 
-### Dados de entrega do ERP
-
-Todos os campos abaixo foram fornecidos por Fernanda como **Texto**. A regra de impressão deve ser preservada na configuração futura.
+### Campos extras de entrega fornecidos pela gestão
 
 | Campo | Tipo | Exibir na impressão |
 |---|---|---|
@@ -64,18 +54,20 @@ Todos os campos abaixo foram fornecidos por Fernanda como **Texto**. A regra de 
 | Pedido do Ifood | Texto | Quando preenchido |
 | SITUAÇÃO DO PEDIDO | Texto | Quando preenchido |
 
-## Matriz inicial de usuários
+### Matriz de usuários
 
-| Usuário | Papel | Escopo confirmado |
-|---|---|---|
-| Fernanda | Gestão/admin | Consulta e decisão de duplicidades |
-| Mara | Gestão/admin | Consulta e decisão de duplicidades |
-| Anie | Atendimento | Criação e edição de dados comerciais |
+| Usuário | Papel |
+|---|---|
+| Fernanda | Gestão/admin |
+| Mara | Gestão/admin |
+| Anie | Atendimento |
 
-Nenhum usuário adicional foi criado. RLS/auditoria são tratados na F1-T010.
+`valor_estimado` foi confirmado pela gestão como campo que deve ser preenchido. O sistema não calcula preço automaticamente nesta task.
 
-## Veredito e bloqueio
+## Resultado e limites
 
-**B1-REG-01 permanece bloqueado.** A superfície Skip de homologação foi confirmada, mas faltam os identificadores técnicos dos campos no ERP e os estados reais do pedido no tenant autorizado. Como o backend Skip ainda não tem o modelo de negócio, não é possível anexar um dicionário técnico aprovado nem avançar para a configuração da F1-T002 sem decisão/acesso adicional.
+**F1-T001 concluída.** O ambiente de homologação, a fonte técnica da API e o dicionário lógico dos campos foram registrados; o teste humano confirmou que o fluxo básico aparece no preview; produção permaneceu sem publicação e sem alteração.
 
-Não houve escrita em produção. Não foram criadas coleções, registros, usuários, integrações ou credenciais. A F1-T001 deve permanecer bloqueada até a confirmação dos dados técnicos e do acesso de homologação do ERP.
+Limite conhecido para tasks futuras: os IDs técnicos de atributos personalizados do tenant real e a homologação de integração externa ainda exigem consulta autenticada própria. Não foram colocadas credenciais no repositório.
+
+A configuração de entidades e a interface de cadastro foram implementadas para homologação e serão exercitadas em profundidade nas tasks seguintes, sem considerar seus critérios como concluídos nesta task.
