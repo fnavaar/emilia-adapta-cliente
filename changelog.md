@@ -7,6 +7,7 @@
 
 ## Registro
 
+- 2026-08-25 · ETHOS (Bia) · DEBUG F1-T002: API autenticada confirmou criação de cliente; sessão do frontend foi reforçada com redirecionamento após login, validação de sessão antes do envio e payload compatível; QA 0.0.14 OK; cadastro de Romy Godoy Assessoria salvo no navegador e dashboard mostrou 5 clientes.
 - 2026-08-25 · ETHOS (Bia) · DEBUG F1-T002: cadastro de cerimonialista pedia empresa repetida, telefones eram texto livre e salvamento falhava → formulário passou a usar nome do cliente como empresa, aplicar máscara Brasil/aceitar outro país, validar campos e migração 0006 restaurou `nome_noivos`; QA 0.0.12 OK e caso Romy Godoy Assessoria salvo no navegador.
 - 2026-08-25 · ETHOS (Bia) · DEBUG F1-T002: nova reprodução confirmou login OK e campos condicionais funcionando no preview; Casamento / Noiva mostra Nome dos Noivos e Eventos sociais mostra seus campos próprios. Versão 0.0.10; QA completo OK; devolvida ao teste humano.
 - 2026-08-25 · ETHOS (Bia) · DEBUG F1-T002: campo Nome dos Noivos permanecia fixo → causa confirmada no formulário antigo → UI condicional implementada na versão 0.0.10 e migração 0005 aplicada; QA automático OK, mas nova sessão de navegador não autenticou de forma consistente; task permanece em correção.
