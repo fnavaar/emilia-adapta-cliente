@@ -3,19 +3,19 @@
 - task_id: F1-T002
 - champion: Fernanda (CEO)
 - spec: 04-fase-atual/specs/spec-1-001-registro-canonico.md
-- etapa: em_correcao
+- etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-08-25; trecho: "pode implementar o plano"
-- teste_humano: falhou em 2026-08-25 16:10; novo teste não solicitado
-- verificacao_automatica: passou no QA da versão 0.0.10, mas verificação de navegador falhou — login não avançou em nova sessão
+- teste_humano: pendente após correção do formulário condicional
+- verificacao_automatica: passou — QA completo da versão 0.0.10; login e campos condicionais verificados no navegador
 - aprendizado: pendente
-- ultima_acao: Campos condicionais implementados e QA OK; reprodução no navegador não confirmou login/fluxo completo
-- proxima_acao: Diagnosticar por que a sessão do navegador não autentica de forma consistente antes de solicitar novo teste
-- atualizado_em: 2026-08-25T16:12:00-03:00
+- ultima_acao: Corrigido formulário para campos condicionais e verificado no navegador por segmento
+- proxima_acao: Fernanda testar os segmentos e confirmar se a exibição está correta
+- atualizado_em: 2026-08-25T16:20:00-03:00
 
-## Diagnóstico atual
+## Evidência
 
-- A tela antiga continha `nome_noivos` fixo em `src/pages/NovoCliente.tsx`.
-- A versão 0.0.10 contém campos condicionais e a migração 0005 adiciona campos correspondentes ao cadastro.
-- QA automático passou.
-- Na nova sessão de navegador, o preview abriu `/login`, mas após preencher e clicar em Entrar permaneceu em `/login`; não há evidência suficiente para considerar o fluxo validado.
-- Task permanece em correção; não solicitar novo teste humano até confirmar a causa.
+- Debug Summary: `06_notas/debug/debug-2026-08-25-campos-condicionais.md`
+- Migração: `pocketbase/migrations/0005_campos_condicionais_cliente.js`
+- Versão Skip: 0.0.10, hash `0d76746`
+- Teste de navegador: login OK; Casamento / Noiva mostra Nome dos Noivos; Eventos sociais mostra Nome do Aniversariante e Nome do Casal.
+- Produção não publicada nem alterada.
