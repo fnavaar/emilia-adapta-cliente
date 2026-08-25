@@ -2,22 +2,21 @@
 
 - task_id: F1-T002
 - champion: Fernanda (CEO)
-- spec: 04-fase-atual/spec-1-001-registro-canonico.md
-- etapa: em_correcao
+- spec: 04-fase-atual/specs/spec-1-001-registro-canonico.md
+- etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-08-25; trecho: "pode implementar o plano"
-- teste_humano: falhou em 2026-08-25 16:10; novo teste não solicitado
-- verificacao_automatica: passou no QA da versão 0.0.10; correção de telefone e erro de salvamento em andamento
+- teste_humano: pendente após correção de cerimonialista, telefones e salvamento
+- verificacao_automatica: passou — QA completo da versão 0.0.12; cadastro da Romy salvo no navegador
 - aprendizado: pendente
-- ultima_acao: Novo requisito recebido: Brasil como padrão e possibilidade de telefone internacional
-- proxima_acao: Aplicar máscara por país, corrigir persistência dos campos condicionais e executar QA
-- atualizado_em: 2026-08-25T16:31:00-03:00
+- ultima_acao: Corrigido cadastro de cerimonialista, máscara/país de telefone e erro de salvamento; caso Romy validado no preview
+- proxima_acao: Fernanda repetir o teste no preview com cerimonialista e telefone internacional
+- atualizado_em: 2026-08-25T16:38:00-03:00
 
-## Requisitos confirmados no debug
+## Evidência
 
-- O campo Nome dos Noivos deve aparecer somente para Casamento / Noiva.
-- Telefones devem ter máscara, não ser texto livre.
-- Brasil (+55) é o país padrão.
-- Contatos de outros países também devem ser aceitos em formato internacional.
-- A regra vale para telefone principal, secundário e telefone de contato de empresa.
-- Cerimonialista: o nome do cliente já representa a empresa; não exigir repetição desnecessária.
-- A correção deve preservar dados existentes e não alterar produção.
+- Debug Summary: `06_notas/debug/debug-2026-08-25-cerimonialista-telefone.md`
+- Migração: `pocketbase/migrations/0006_restaurar_nome_noivos.js`
+- Versão Skip: 0.0.12, hash `4e442c1`
+- QA: setup, staticAnalysis, build, integrations e test passaram.
+- Navegador: Romy Godoy Assessoria salva com sucesso; dashboard mostrou 1 cliente.
+- Produção não publicada nem alterada.
