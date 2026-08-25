@@ -7,6 +7,7 @@
 
 ## Registro
 
+- 2026-08-25 · ETHOS (Bia) · F1-T002 implementada no Skip: telefone principal obrigatório, segmentos revisados, estados Novo/Diagnosticando/Aguardando dados, cadastro de Cerimonialista, grupos parceiros simples ou compostos, empresas/CNPJs, unidades/endereço, contatos, vínculo contato-unidade e eventos. Migração 0002 aplicada; versão 0.0.7; QA completo OK; aguardando teste humano.
 - 2026-08-25 · Fernanda · Esclareceu que Casa do Pão de Queijo e Bisutti são exemplos de grupos parceiros/revendedores: cada grupo pode ter várias empresas, CNPJs, unidades e endereços; um ou vários contatos podem solicitar pedidos. O total deve ser consolidado por grupo e detalhado por empresa, unidade e contato.
 - 2026-08-25 · ETHOS (Bia) · Revisão atualizada em `06_notas/revisao-escopo-clientes-intermediados.md` para tratar Revenda/Parceiros como Grupo Parceiro.
 - 2026-08-25 · Fernanda · Decisões da revisão de escopo aprovadas: entidade Cerimonialista; empresa com múltiplos contatos; parceiros com estrutura opcional; caso Casa do Pão de Queijo com múltiplos endereços/CNPJs e vínculo por contato; segmentos definidos; Outros com tipo e descrição; oportunidade vira Pedido Reserva após aprovação do orçamento e envio dos dados de fechamento PF/PJ.
