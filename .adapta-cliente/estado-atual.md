@@ -3,20 +3,17 @@
 - task_id: F1-T002
 - champion: Fernanda (CEO)
 - spec: 04-fase-atual/specs/spec-1-001-registro-canonico.md
-- etapa: aguardando_teste_humano
+- etapa: em_correcao
 - autorizacao_implementacao: confirmada em 2026-08-25; trecho: "pode implementar o plano"
-- teste_humano: pendente após correção de cerimonialista, telefones e salvamento
-- verificacao_automatica: passou — QA completo da versão 0.0.12; cadastro da Romy salvo no navegador
+- teste_humano: falhou em 2026-08-25; cadastro continuou retornando erro
+- verificacao_automatica: pendente após nova correção
 - aprendizado: pendente
-- ultima_acao: Corrigido cadastro de cerimonialista, máscara/país de telefone e erro de salvamento; caso Romy validado no preview
-- proxima_acao: Fernanda repetir o teste no preview com cerimonialista e telefone internacional
-- atualizado_em: 2026-08-25T16:38:00-03:00
+- ultima_acao: API autenticada criou cliente com sucesso; erro do formulário isolado na sessão/autenticação do navegador
+- proxima_acao: Tornar autenticação e salvamento do formulário robustos e validar caso completo no navegador
+- atualizado_em: 2026-08-25T17:08:00-03:00
 
-## Evidência
+## Diagnóstico
 
-- Debug Summary: `06_notas/debug/debug-2026-08-25-cerimonialista-telefone.md`
-- Migração: `pocketbase/migrations/0006_restaurar_nome_noivos.js`
-- Versão Skip: 0.0.12, hash `4e442c1`
-- QA: setup, staticAnalysis, build, integrations e test passaram.
-- Navegador: Romy Godoy Assessoria salva com sucesso; dashboard mostrou 1 cliente.
-- Produção não publicada nem alterada.
+- Backend correto: criação autenticada via API retornou registro de cliente.
+- Causa provável do erro no preview: sessão de autenticação não persistia de forma confiável antes do envio do formulário.
+- Correção em andamento: login explícito com sessão persistente e tratamento de erro detalhado; formulário envia payload compatível e só permite salvamento após autenticação válida.
