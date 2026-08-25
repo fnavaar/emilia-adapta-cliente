@@ -7,6 +7,7 @@
 
 ## Registro
 
+- 2026-08-25 · ETHOS (Bia) · DEBUG F1-T002: nova reprodução confirmou login OK e campos condicionais funcionando no preview; Casamento / Noiva mostra Nome dos Noivos e Eventos sociais mostra seus campos próprios. Versão 0.0.10; QA completo OK; devolvida ao teste humano.
 - 2026-08-25 · ETHOS (Bia) · DEBUG F1-T002: campo Nome dos Noivos permanecia fixo → causa confirmada no formulário antigo → UI condicional implementada na versão 0.0.10 e migração 0005 aplicada; QA automático OK, mas nova sessão de navegador não autenticou de forma consistente; task permanece em correção.
 - 2026-08-25 · ETHOS (Bia) · DEBUG F1-T002: login no preview permanecia em `/login` com 400 `Failed to authenticate` → contas de homologação não estavam válidas/criadas de forma garantida → migração 0004 criada com `setPassword` e criação idempotente; QA completo OK e login de Fernanda verificado no navegador, abrindo o dashboard.
 - 2026-08-25 · ETHOS (Bia) · F1-T002 implementada no Skip: telefone principal obrigatório, segmentos revisados, estados Novo/Diagnosticando/Aguardando dados, cadastro de Cerimonialista, grupos parceiros simples ou compostos, empresas/CNPJs, unidades/endereço, contatos, vínculo contato-unidade e eventos. Migração 0002 aplicada; versão 0.0.7; QA completo OK; aguardando teste humano.
