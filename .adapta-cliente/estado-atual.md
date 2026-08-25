@@ -3,18 +3,18 @@
 - task_id: F1-T002
 - champion: Fernanda (CEO)
 - spec: 04-fase-atual/specs/spec-1-001-registro-canonico.md
-- etapa: aguardando_teste_humano
+- etapa: em_correcao
 - autorizacao_implementacao: confirmada em 2026-08-25 15:52; trecho: "pode implementar o plano"
-- teste_humano: pendente
-- verificacao_automatica: passou — migração 0002 aplicada; QA completo OK; 15 coleções confirmadas
+- teste_humano: falhou em 2026-08-25 16:01; preview continuou sem permitir acesso ao sistema
+- verificacao_automatica: falhou — QA da migração 0002 passou, mas login humano não autenticou
 - aprendizado: pendente
-- ultima_acao: F1-T002 implementada com modelo revisado de clientes, cerimonialistas, grupos parceiros, unidades, contatos e eventos
-- proxima_acao: Fernanda executar teste humano no preview e confirmar se o modelo atende aos casos reais
-- atualizado_em: 2026-08-25T15:56:00-03:00
+- ultima_acao: Reproduzido no preview; tela de login aparece, porém credencial seed não conclui autenticação
+- proxima_acao: Corrigir definição das senhas seed usando a API própria de senha do PocketBase e repetir login
+- atualizado_em: 2026-08-25T16:03:00-03:00
 
-## Evidência
+## Diagnóstico inicial
 
-- Recibo: `05_entregas/F1-T002-recibo-modelo-revisado.md`
-- Migração: `pocketbase/migrations/0002_revisao_clientes_parceiros.js`
-- Versão Skip: 0.0.7, hash `42e7477`
-- Produção não publicada nem alterada.
+- Preview confirmado: `https://nexus-emilia-49529--preview.goskip.app/login`.
+- A tela de login atual aparece no navegador.
+- Ao usar `fernanda@emiliabemcasados.local` e `Emilia@2026`, a tela permanece em `/login`.
+- Hipótese confirmada pelo código da migração: usuários foram criados com `password` e `passwordConfirm` no objeto Record, em vez de `setPassword`, conforme regra do runtime de migrações.
