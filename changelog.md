@@ -7,6 +7,8 @@
 
 ## Registro
 
+- 2026-08-25 · Fernanda · Esclareceu que Casa do Pão de Queijo e Bisutti são exemplos de grupos parceiros/revendedores: cada grupo pode ter várias empresas, CNPJs, unidades e endereços; um ou vários contatos podem solicitar pedidos. O total deve ser consolidado por grupo e detalhado por empresa, unidade e contato.
+- 2026-08-25 · ETHOS (Bia) · Revisão atualizada em `06_notas/revisao-escopo-clientes-intermediados.md` para tratar Revenda/Parceiros como Grupo Parceiro.
 - 2026-08-25 · Fernanda · Decisões da revisão de escopo aprovadas: entidade Cerimonialista; empresa com múltiplos contatos; parceiros com estrutura opcional; caso Casa do Pão de Queijo com múltiplos endereços/CNPJs e vínculo por contato; segmentos definidos; Outros com tipo e descrição; oportunidade vira Pedido Reserva após aprovação do orçamento e envio dos dados de fechamento PF/PJ.
 - 2026-08-25 · ETHOS (Bia) · Revisão de escopo registrada em `06_notas/revisao-escopo-clientes-intermediados.md`: cliente direto e cliente intermediado por cerimonialista; cerimonialista com empresa e múltiplos contatos; telefone principal obrigatório; segmentos definidos; campos condicionais por evento. Implementação preservada até validação das decisões pendentes.
 - 2026-08-25 · Fernanda · Task F1-T001 concluída: superfície de homologação, dicionário baseado na documentação API do GestãoClick, matriz inicial de usuários e declaração de não-escrita em produção registrados; migração Skip aplicada com QA completo e teste humano aprovado.
