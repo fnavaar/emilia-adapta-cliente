@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "adapta-cliente-handoff/v1",
+  "phase": 1,
+  "versions": {
+    "package": "0.1.0",
+    "adapta": "0.7.0",
+    "adaptaCliente": "0.2.0"
+  },
+  "generatedAt": "2026-08-25T13:49:38.958Z",
+  "files": [
+    {
+      "path": "04_fase-atual/README.md",
+      "sha256": "57843f15414253dfbcc46b12fc0860f4aa0481fefdd8440eca68b80a3663f4cc",
+      "classification": "template-publico"
+    },
+    {
+      "path": "04_fase-atual/fase.md",
+      "sha256": "0007e373c21b85a9d91f1cd46c83a0a8ae518981540812da0587748e24f88a76",
+      "classification": "fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-1-001-registro-canonico.md",
+      "sha256": "36b803a2c46813f04c7cee2e200204c0a81aef406e040295b76075a2155c3abb",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-1-002-briefing-condicional.md",
+      "sha256": "84f3e22c91bb3ac5ca9aa74bd0d54a567a188d534248f1ca81ef170a7e062140",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-1-003-catalogo-versionado.md",
+      "sha256": "8a411974f6c210fc952f64db6b87ea4f29c451529ff519b814fd9a2432996ebe",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-1-004-permissoes-auditoria.md",
+      "sha256": "81db7f807a57200a91d30b526cf783a67fb7d79168a517dbdbe11c4f99711767",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-1-005-webhook-fallback.md",
+      "sha256": "683ed113a727b714100cbdc8e430a84d70c2146b47ff39299fa023c924ca0ab0",
+      "classification": "spec-fase-atual"
+    }
+  ]
+}
