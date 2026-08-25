@@ -8,19 +8,17 @@
 - teste_humano: nao_aplicavel
 - verificacao_automatica: pendente
 - aprendizado: capturado:06_notas/aprendizado-continuo/controle.md
-- ultima_acao: Decisões da revisão de escopo aprovadas pela Fernanda e registradas
-- proxima_acao: Aguardar incorporação das decisões na SPEC-1-001 antes de abrir a F1-T002
-- atualizado_em: 2026-08-25T15:33:00-03:00
+- ultima_acao: Modelo de grupos parceiros/revendedores corrigido na revisão de escopo
+- proxima_acao: Aguardar incorporação da revisão aprovada na SPEC-1-001 antes de abrir a F1-T002
+- atualizado_em: 2026-08-25T15:41:00-03:00
 
 ## Revisão aprovada aguardando incorporação na SPEC
 
 - Documento: `06_notas/revisao-escopo-clientes-intermediados.md`
-- Entidade intermediária: Cerimonialista.
-- Cerimonialista: empresa, múltiplos contatos e endereço opcional.
-- Caso Casa do Pão de Queijo: múltiplos endereços/unidades, CNPJs diferentes e vínculo de cada contato aos endereços que solicita.
-- Segmentos: Casamento/Noiva, Eventos sociais, Maternidade, Corporativo, Cerimonialista, Revenda/Parceiros comerciais, Presentes, Consumo próprio e Outros.
-- Outros: tipo de evento + descrição livre obrigatória.
-- Telefone principal: obrigatório.
-- Oportunidade vira Pedido Reserva quando orçamento aprovado e dados de fechamento enviados.
-- Dados de fechamento PF/PJ registrados no documento de revisão.
+- Entidade de casamentos: Cerimonialista.
+- Segmento de revenda: Grupo Parceiro, com empresas, CNPJs, contatos e unidades/endereço flexíveis.
+- Um grupo pode ter um ou vários contatos e uma ou várias unidades.
+- Cada contato pode atender uma ou mais unidades.
+- Pedidos devem ser consolidados por grupo e detalhados por empresa, CNPJ, unidade, endereço e contato.
+- Exemplos: Casa do Pão de Queijo e Bisutti.
 - Nenhum código foi alterado nesta revisão.
