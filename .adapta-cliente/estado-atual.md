@@ -2,18 +2,21 @@
 
 - task_id: F1-T002
 - champion: Fernanda (CEO)
-- spec: 04-fase-atual/specs/spec-1-001-registro-canonico.md
-- etapa: em_correcao
+- spec: 04-fase-atual/spec-1-001-registro-canonico.md
+- etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-08-25; trecho: "pode implementar o plano"
-- teste_humano: falhou em 2026-08-25; cadastro continuou retornando erro
-- verificacao_automatica: pendente após nova correção
+- teste_humano: pendente após correção final do salvamento
+- verificacao_automatica: passou — QA completo da versão 0.0.14; login e cadastro de cerimonialista verificados no navegador
 - aprendizado: pendente
-- ultima_acao: API autenticada criou cliente com sucesso; erro do formulário isolado na sessão/autenticação do navegador
-- proxima_acao: Tornar autenticação e salvamento do formulário robustos e validar caso completo no navegador
-- atualizado_em: 2026-08-25T17:08:00-03:00
+- ultima_acao: Corrigido fluxo de sessão/salvamento; Romy Godoy Assessoria cadastrada com sucesso no preview
+- proxima_acao: Fernanda testar novamente o cadastro no preview e confirmar se funcionou
+- atualizado_em: 2026-08-25T17:10:00-03:00
 
-## Diagnóstico
+## Evidência
 
-- Backend correto: criação autenticada via API retornou registro de cliente.
-- Causa provável do erro no preview: sessão de autenticação não persistia de forma confiável antes do envio do formulário.
-- Correção em andamento: login explícito com sessão persistente e tratamento de erro detalhado; formulário envia payload compatível e só permite salvamento após autenticação válida.
+- Debug Summary: `06_notas/debug/debug-2026-08-25-erro-salvar.md`
+- Versão Skip: 0.0.14, hash `22c0e97`
+- QA: setup, staticAnalysis, build, integrations e test passaram.
+- API autenticada: criação de cliente confirmou sucesso.
+- Navegador: login persistido; cadastro de Romy Godoy Assessoria salvo; dashboard mostrou 5 clientes.
+- Produção não publicada nem alterada.
