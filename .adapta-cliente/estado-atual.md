@@ -3,19 +3,19 @@
 - task_id: F1-T002
 - champion: Fernanda (CEO)
 - spec: 04-fase-atual/specs/spec-1-001-registro-canonico.md
-- etapa: aguardando_teste_humano
+- etapa: em_correcao
 - autorizacao_implementacao: confirmada em 2026-08-25; trecho: "pode implementar o plano"
-- teste_humano: falhou em 2026-08-25 16:01; corrigido em 2026-08-25 16:05; novo teste pendente
-- verificacao_automatica: passou — migrações 0002, 0003 e 0004 aplicadas; QA completo OK; login reproduzido com sucesso no navegador
+- teste_humano: falhou em 2026-08-25 16:10; novo teste não solicitado
+- verificacao_automatica: passou no QA da versão 0.0.10, mas verificação de navegador falhou — login não avançou em nova sessão
 - aprendizado: pendente
-- ultima_acao: Corrigido login; Fernanda autenticada no preview e painel exibido
-- proxima_acao: Fernanda testar cadastro revisado no preview e confirmar se funcionou
-- atualizado_em: 2026-08-25T16:06:00-03:00
+- ultima_acao: Campos condicionais implementados e QA OK; reprodução no navegador não confirmou login/fluxo completo
+- proxima_acao: Diagnosticar por que a sessão do navegador não autentica de forma consistente antes de solicitar novo teste
+- atualizado_em: 2026-08-25T16:12:00-03:00
 
-## Evidência
+## Diagnóstico atual
 
-- Debug Summary: `06_notas/debug/debug-2026-08-25-login-preview.md`
-- Migração de correção: `pocketbase/migrations/0004_criar_contas_homologacao.js`
-- Versão Skip: 0.0.9, hash `d90f03f`
-- Login verificado em navegador: `/login` → `/`; painel com “Olá, Fernanda” exibido.
-- Produção não publicada nem alterada.
+- A tela antiga continha `nome_noivos` fixo em `src/pages/NovoCliente.tsx`.
+- A versão 0.0.10 contém campos condicionais e a migração 0005 adiciona campos correspondentes ao cadastro.
+- QA automático passou.
+- Na nova sessão de navegador, o preview abriu `/login`, mas após preencher e clicar em Entrar permaneceu em `/login`; não há evidência suficiente para considerar o fluxo validado.
+- Task permanece em correção; não solicitar novo teste humano até confirmar a causa.
