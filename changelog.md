@@ -2,7 +2,8 @@
 
 ## Registro
 
-- 2026-08-27 · ETHOS (Bia) · DEBUG F1-T002: Fernanda aprovou a base e pediu alerta automático quando telefone principal já estiver cadastrado → consulta automática implementada com debounce de 450ms, alerta de duplicidade e opção de reutilizar Pessoa; QA completo 0.0.21 OK. Teste com telefone não existente não gerou alerta, como esperado; aguardando teste humano com telefone existente.
+- 2026-08-27 · ETHOS (Bia) · DEBUG F1-T002: Fernanda relatou erro ao salvar sem clientes prévios → reprodução com sessão autenticada salvou Cliente Teste corretamente e contador passou de 5 para 6; telefone internacional implementado com Brasil padrão, máscara local e opção Outro país sem máscara brasileira; QA 0.0.22 OK; aguardando teste humano.
+- 2026-08-27 · ETHOS (Bia) · DEBUG F1-T002: alerta automático de duplicidade implementado com debounce de 450ms e opção de reutilizar Pessoa; QA 0.0.21 OK.
 - 2026-08-27 · Fernanda · Confirmou categoria obrigatória para Origem por Indicação, com opção "Não informado".
 - 2026-08-27 · Fernanda · Validou a base da nova especificação e autorizou implementação: Pessoa reaproveitável, cadastro progressivo, Natureza/Classificação, Origem/Canal e endereços.
 - 2026-08-27 · Fernanda · Enviou a especificação funcional da Base de Cadastro de Clientes para validação.
