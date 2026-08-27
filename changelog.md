@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-08-27 · ETHOS (Bia) · DEBUG F1-T002: causa do aparente não salvamento totalmente compreendida; `fill` do teste automatizado alterava apenas o valor visual sem atualizar o estado React, fazendo o handler sair na validação sem POST. Com digitação real (`type`), cadastro mínimo criou Cliente, Pessoa e vínculo; três POSTs retornaram 200. QA 0.0.32 OK; aguardando teste humano.
 - 2026-08-27 · ETHOS (Bia) · DEBUG F1-T002: Fernanda relatou erro ao salvar sem clientes prévios → reprodução com sessão autenticada salvou Cliente Teste corretamente e contador passou de 5 para 6; telefone internacional implementado com Brasil padrão, máscara local e opção Outro país sem máscara brasileira; QA 0.0.22 OK; aguardando teste humano.
 - 2026-08-27 · ETHOS (Bia) · DEBUG F1-T002: alerta automático de duplicidade implementado com debounce de 450ms e opção de reutilizar Pessoa; QA 0.0.21 OK.
 - 2026-08-27 · Fernanda · Confirmou categoria obrigatória para Origem por Indicação, com opção "Não informado".
