@@ -3,20 +3,11 @@
 - task_id: F1-T002
 - champion: Fernanda (CEO)
 - spec: 04_fase-atual/spec-1-001-registro-canonico.md + especificação funcional enviada em 2026-08-27
-- etapa: aguardando_teste_humano
-- autorizacao_implementacao: confirmada em 2026-08-27; trecho: "está correto, podemos prosseguir"
-- teste_humano: pendente após correção de salvamento e telefone internacional
-- verificacao_automatica: passou — QA completo da versão 0.0.22; schema e migrations anteriores preservados
+- etapa: em_correcao
+- autorizacao_implementacao: confirmada em 2026-08-27; trecho: "sim"
+- teste_humano: aprovado para a base, mas correção de salvamento ainda não aprovada
+- verificacao_automatica: versão 0.0.27 passou, mas a reprodução manual final falhou
 - aprendizado: pendente
-- ultima_acao: Salvamento reproduzido com base vazia; telefone internacional implementado com Brasil padrão e opção Outro país
-- proxima_acao: Fernanda testar cadastro, aviso automático e os dois formatos de telefone no preview
-- atualizado_em: 2026-08-27T16:18:00-03:00
-
-## Evidência
-
-- Versão Skip: 0.0.22, hash `3c4afb8`.
-- QA: setup, staticAnalysis, build, integrations e test passaram.
-- Reprodução: cadastro de Cliente Teste com nome e telefone brasileiro foi salvo; painel passou de 5 para 6 clientes.
-- Telefone: Brasil é o padrão, com máscara brasileira; Outro país aceita o valor internacional sem aplicar máscara brasileira.
-- Verificação automática de duplicidade continua ativa após a pausa de digitação.
-- Nova sessão direta sem login redirecionou corretamente ao login; produção não publicada nem alterada.
+- ultima_acao: última tentativa deixou a tela em /clientes/novo após Salvar; logs apontam 400 em pessoas; telefone e layout ajustados
+- proxima_acao: Capturar resposta detalhada da requisição real e corrigir a etapa que bloqueia o salvamento
+- atualizado_em: 2026-08-27T16:37:00-03:00
