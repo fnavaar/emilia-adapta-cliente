@@ -2,12 +2,12 @@
 
 - task_id: F1-T002
 - champion: Fernanda (CEO)
-- spec: 04_fase-atual/specs/spec-1-001-registro-canonico.md + especificação funcional enviada em 2026-08-27
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: ausente para o novo modelo; implementação anterior autorizada em 2026-08-25 foi supersedida pela nova especificação
-- teste_humano: pendente; preview anterior não representa o modelo novo
-- verificacao_automatica: versão anterior 0.0.18 passou, mas não é evidência do novo modelo
+- spec: 04_fase-atual/spec-1-001-registro-canonico.md + especificação funcional enviada em 2026-08-27
+- etapa: implementando
+- autorizacao_implementacao: confirmada em 2026-08-27; trecho: "está correto, podemos prosseguir"
+- teste_humano: pendente após nova implementação
+- verificacao_automatica: pendente após nova implementação
 - aprendizado: pendente
-- ultima_acao: Fernanda corrigiu Natureza/Classificação para escolhas exclusivas, confirmou CPF/CNPJ opcional também no fechamento e definiu regra de atualização de endereços conforme entrega
-- proxima_acao: Fechar dúvidas funcionais restantes antes de atualizar SPEC e implementar
-- atualizado_em: 2026-08-27T14:34:00-03:00
+- ultima_acao: Fernanda validou a estrutura e o funcionamento da especificação, incluindo Pessoa reaproveitável, origem, vínculos e endereços
+- proxima_acao: Atualizar SPEC, migrar modelo e implementar cadastro progressivo no preview
+- atualizado_em: 2026-08-27T15:46:00-03:00
