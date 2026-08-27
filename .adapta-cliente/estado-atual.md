@@ -1,13 +1,25 @@
 # Estado atual — Adapta Cliente
 
-- task_id: nenhuma
+- task_id: F1-T004
 - champion: Fernanda (CEO)
-- spec: nenhuma; F1-T003 encerrada conforme 04-fase-atual/specs/spec-1-001-registro-canonico.md
-- etapa: concluida
-- autorizacao_implementacao: confirmada em 2026-08-27; trecho: "pode implementar"
-- teste_humano: aprovado em 2026-08-27; Fernanda confirmou: "teste efetuado, tudo funcionando"
-- verificacao_automatica: versão 0.0.35 passou em setup, staticAnalysis, build, integrations e test; migration 0011 aplicada; schema de oportunidades e histórico conferido
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-08-27-source-ref-duplicidade.md
-- ultima_acao: F1-T003 concluída após teste humano aprovado para repetição por source_ref, decisão reutilizar/criar novo, histórico e rollback não destrutivo
-- proxima_acao: aguardar novo pedido explícito para analisar a próxima task; F1-T004 permanece liberada e F1-T005 planejada
-- atualizado_em: 2026-08-27T18:45:00-03:00
+- spec: 04-fase-atual/specs/spec-1-002-briefing-condicional.md
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente
+- teste_humano: pendente
+- verificacao_automatica: pendente; análise sem alterações de produto
+- aprendizado: pendente
+- ultima_acao: F1-T004 analisada; critério confirmado como aprovação de matriz para evento, degustação, revendedor e bem-nascido, com campos mínimos, responsável e confirmação antes de Em proposta
+- proxima_acao: aguardar autorização para consolidar a matriz
+- atualizado_em: 2026-08-27T18:55:00-03:00
+
+## Análise da F1-T004
+
+- **Objetivo:** produzir e aprovar uma matriz operacional de briefing condicional antes de liberar a transição comercial para Em proposta.
+- **Resultado observável:** para cada contexto, a equipe sabe quais campos são mínimos, quem deve preencher/validar, o que fica como pendência e qual confirmação humana é necessária antes de avançar.
+- **Escopo:** quatro contextos previstos na task: evento, degustação, revendedor e bem-nascido.
+- **Base já validada:** cliente, pessoa, oportunidade, evento, pendência e histórico são entidades separadas; segmento e dados do evento pertencem à oportunidade; o primeiro cadastro não deve exigir dados completos de fechamento.
+- **Decisões que a matriz precisa explicitar:** campos mínimos por contexto; responsável nominal por coleta, validação e decisão; condição de completude; confirmação humana antes de Em proposta; tratamento de campo ausente como pendência com motivo, dono, próxima ação e prazo.
+- **Fora do escopo:** preço, desconto, produção, estoque, integração externa e automação de transição sem confirmação.
+- **Riscos:** liberar proposta com informação insuficiente; misturar dados do cliente com dados do evento; perder o dono da pendência; automatizar uma decisão comercial sem confirmação.
+- **Provas planejadas:** matriz versionada; quatro exemplos de contexto; campo ausente gerando pendência; responsável e prazo visíveis; confirmação explícita antes de Em proposta; regressão para garantir que a matriz não altera cadastro nem política comercial.
+- **Dependência:** a SPEC não foi retornada pelo conector no caminho esperado; a tabela operacional fornece o critério e os limites mínimos. Se houver divergência material na SPEC, parar antes da implementação.
