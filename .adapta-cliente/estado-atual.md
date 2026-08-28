@@ -8,6 +8,6 @@
 - teste_humano: pendente
 - verificacao_automatica: pendente; análise de baseline concluída sem alterar o produto; repositório não contém PDFs/imagens do catálogo nem registro aprovado de fonte vigente
 - aprendizado: pendente
-- ultima_acao: F1-T007 selecionada e analisada; B1-CAT-01 identificado porque fonte, versão e aprovador da primeira lista de catálogo ainda não estão registrados
-- proxima_acao: Fernanda informar o documento/arquivo vigente, a versão do catálogo e confirmar a aprovação da primeira lista de opções
-- atualizado_em: 2026-08-28T14:51:00-03:00
+- ultima_acao: Fernanda forneceu a decisão inicial da F1-T007: documento catálogo de papel e fita 2026.1 (parcial, requer atualizações), versão 2026.1, aprovadores Fernanda e Mara; decisão registrada em 06_notas/decisao-b1-cat-01.md
+- proxima_acao: Fernanda enviar os arquivos atualizados do catálogo para fechar B1-CAT-01 e aprovar a primeira lista de opções
+- atualizado_em: 2026-08-28T16:22:00-03:00
