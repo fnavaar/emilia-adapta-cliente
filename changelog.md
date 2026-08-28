@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-08-28 · Fernanda / ETHOS (Bia) · Decisão parcial da F1-T007 registrada: documento vigente catálogo de papel e fita 2026.1 (parcial, requer atualizações), versão 2026.1, aprovadores Fernanda e Mara; falta enviar arquivos atualizados para fechar B1-CAT-01.
 - 2026-08-28 · Fernanda / ETHOS (Bia) · Task F1-T004 concluída: briefing de oportunidade com busca incremental de cliente por nome ou telefone, opção "+ Adicionar novo" dentro da lista de resultados, segmento derivado oculto e subtipos de aniversário corrigidos; QA 0.0.42 passou e aprovação humana confirmada no preview.
 - 2026-08-27 · ETHOS (Bia) · Task F1-T003 concluída: source_ref, detecção de repetição, decisão humana entre reutilizar/criar novo, histórico da decisão e rollback de fixture não destrutivo implementados; migration 0011 aplicada; QA 0.0.35 passou; teste humano aprovado pela Fernanda.
 - 2026-08-27 · ETHOS (Bia) · Task F1-T002 concluída: cadastro progressivo, Pessoa reaproveitável, Natureza/Classificação, origem/categoria, telefone Brasil/Outro país e detecção de duplicidade implementados; QA 0.0.33 passou; teste humano no preview aprovado pela Fernanda; salvamento confirmado com Cliente, Pessoa e vínculo persistidos.
