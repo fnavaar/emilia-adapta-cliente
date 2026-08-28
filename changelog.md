@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-08-28 · Fernanda / ETHOS (Bia) · F1-T007 em validação humana: inventário de fontes registrado em `06_notas/inventario-fontes-catalogo-f1-t007.md`; B1-CAT-01 fechada documentalmente com catálogo Emília 2026.1 como fonte vigente parcial, tabela de preço apenas como inventário de materiais, fontes de fornecedores e recortes aprovados; nenhuma política comercial ou publicação alterada.
 - 2026-08-28 · Fernanda / ETHOS (Bia) · Decisão parcial da F1-T007 registrada: documento vigente catálogo de papel e fita 2026.1 (parcial, requer atualizações), versão 2026.1, aprovadores Fernanda e Mara; falta enviar arquivos atualizados para fechar B1-CAT-01.
 - 2026-08-28 · Fernanda / ETHOS (Bia) · Task F1-T004 concluída: briefing de oportunidade com busca incremental de cliente por nome ou telefone, opção "+ Adicionar novo" dentro da lista de resultados, segmento derivado oculto e subtipos de aniversário corrigidos; QA 0.0.42 passou e aprovação humana confirmada no preview.
 - 2026-08-27 · ETHOS (Bia) · Task F1-T003 concluída: source_ref, detecção de repetição, decisão humana entre reutilizar/criar novo, histórico da decisão e rollback de fixture não destrutivo implementados; migration 0011 aplicada; QA 0.0.35 passou; teste humano aprovado pela Fernanda.
