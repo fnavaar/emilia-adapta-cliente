@@ -8,6 +8,6 @@
 - teste_humano: pendente
 - verificacao_automatica: passou; inventário de fontes, decisão B1-CAT-01, hashes/localizadores e recortes foram registrados sem alteração do produto ou aplicação de política comercial; regra de não consulta operacional das fontes de fornecedores verificada nos documentos
 - aprendizado: pendente
-- ultima_acao: após validação da Fernanda, inventário e decisão B1-CAT-01 foram corrigidos para classificar páginas de fornecedores como fundamento técnico interno בלבד; changelog atualizado
+- ultima_acao: após validação da Fernanda, inventário e decisão B1-CAT-01 foram corrigidos para classificar páginas de fornecedores como fundamento técnico interno; changelog atualizado
 - proxima_acao: Fernanda revisar o recibo do inventário e confirmar fontes, recortes, limites e regra de uso operacional
 - atualizado_em: 2026-08-28T18:44:00-03:00
