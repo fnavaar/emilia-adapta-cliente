@@ -27,7 +27,7 @@ Variações estruturais reconhecidas para o inventário: papel + tecido; modelos
 
 | Fonte | Categoria | Uso nesta fase | Versão/identificador | Estado |
 |---|---|---|---|---|
-| `CAT_LOGO_CLIENTE_-_PAPEL_E_FITA_2026.1.pdf` | Catálogo da Emília | Fonte vigente inicial para opções de papel encerado e fita de cetim/cor | 2026.1 · SHA-256 `bfb5f437ebd029ef5e61aa18cf61f0c420a0910c420a0910a2b` | Vigente, cobertura parcial |
+| `CAT_LOGO_CLIENTE_-_PAPEL_E_FITA_2026.1.pdf` | Catálogo da Emília | Fonte vigente inicial para opções de papel encerado e fita de cetim/cor | 2026.1 · SHA-256 `bfb5f437ebd029ef5e61aa18cf61f0c420a09150c3c73ebd3964009160a2b` | Vigente, cobertura parcial |
 | `TABELA_DE_PREÇO_2026_DEFINITIVA_.pdf` | Tabela de preço da Emília | Inventariar famílias de materiais, tipos de fita, larguras e variações; não aplicar valores | 2026 · SHA-256 `9f3242e9965ed74a3dac02f955e0fd1b9093fffbb49e44031ef758af8f60e1ac` | Auxiliar, sem política comercial |
 | `Apresentação_2026.pdf` | Apresentação institucional | Inventariar produto, sabores e versões alimentares | 2026 · SHA-256 `f0c15150c241604c09e230b3ba231e9cc4a192ea57a90b277030f7a810ce57f1` | Auxiliar |
 | Armarinhos Santa Cecília — [Crepom Italiano 90g](https://www.armarinhosantacecilia.com.br/papel-crepom-italiano-90gr-15-metros.92618.html) | Papel | Referência para papel italiano 90 g, rolo de 15 m | URL consultada em 2026-08-28 | Referência |
@@ -35,8 +35,6 @@ Variações estruturais reconhecidas para o inventário: papel + tecido; modelos
 | Indústrias Najar — [Cartela de Cores](https://najar.com.br/?page_id=1911) | Fitas | Referência de cores e famílias de fitas/rendas; selecionar somente materiais efetivamente usados pela Emília | URL consultada em 2026-08-28 | Referência |
 | Fitas Progresso — [Fitas de cetim](https://comprefitasprogresso.com.br/categoria/linha/fitas-de-cetim) | Fitas | Considerar a aba **Fitas**, com cetim e gorgurão para laços; a página apresenta larguras e códigos de cor | URL consultada em 2026-08-28 | Referência com recorte aprovado |
 | Danitex — [Cordão encerado](https://danitex.com.br/produto/cordao-encerado/) | Fita/cordão | Considerar somente Dani Bijou Class 05, diâmetro 1,00 mm | URL consultada em 2026-08-28 | Referência com recorte aprovado |
-
-> **Nota de integridade:** o primeiro SHA-256 acima foi preservado conforme o arquivo recebido. A confirmação do hash/localizador do documento é parte da revisão humana do recibo; se houver divergência de digitação, corrigir antes da conclusão da task.
 
 ## Famílias de materiais e recortes aprovados
 
