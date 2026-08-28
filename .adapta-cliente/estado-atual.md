@@ -6,8 +6,8 @@
 - etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-08-28; trecho: "Está ótimo, pode fazer dessa forma, só adicione também a opção: Presente -> segmento presente"
 - teste_humano: pendente
-- verificacao_automatica: versão 0.0.39 passou em setup, staticAnalysis, build, integrations e test; migrations 0012, 0013 e 0014 aplicadas; schema de oportunidades conferido
+- verificacao_automatica: versão 0.0.40 passou em setup, staticAnalysis, build, integrations e test; migrations 0012, 0013 e 0014 aplicadas; validação manual confirmou busca por nome e telefone e subtipos de aniversário
 - aprendizado: pendente
-- ultima_acao: campo Segmento removido do formulário; segmento derivado salvo em segmento_classificado; cadastro rápido de cliente adicionado na tela de oportunidade
-- proxima_acao: Fernanda testar no preview cadastro rápido de cliente, tipos de evento e campos condicionais
-- atualizado_em: 2026-08-28T12:25:00-03:00
+- ultima_acao: busca de cliente por nome ou telefone adicionada; subtipos de aniversário corrigidos; segmento mantido oculto
+- proxima_acao: Fernanda confirmar no preview o fluxo de oportunidade com busca e cadastro rápido
+- atualizado_em: 2026-08-28T12:34:00-03:00
