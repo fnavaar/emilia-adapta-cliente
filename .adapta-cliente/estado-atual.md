@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: nenhuma
+- task_id: F1-T008
 - champion: Fernanda (CEO)
-- spec: nenhuma
-- etapa: concluida
-- autorizacao_implementacao: confirmada em 2026-08-28; trecho: "Sim, pode registrar e fechar"
-- teste_humano: aprovado em 2026-08-28 18:54; trecho: "revisei tudo e está correto"
-- verificacao_automatica: passou; revalidação independente confirmou SPEC, inventário, B1-CAT-01, fontes, versionamento, aprovadores, limites e regra de não consulta operacional; cinco critérios da task atendidos documentalmente
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-08-28-1858-fontes-fornecedores.md
-- ultima_acao: F1-T007 concluída após aprovação humana; fase, STATUS, changelog e aprendizado atualizados
-- proxima_acao: selecionar e analisar uma única próxima task liberada, sem iniciar implementação automaticamente
-- atualizado_em: 2026-08-28T18:54:00-03:00
+- spec: 04-fase-atual/specs/spec-1-003-catalogo-versionado.md
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente
+- teste_humano: pendente
+- verificacao_automatica: pendente; análise concluída sem alteração do produto; F1-T007 concluída, SPEC-1-003 e fontes revalidadas; implementação atual possui apenas as entidades-base e ainda não possui catálogo versionado
+- aprendizado: pendente
+- ultima_acao: F1-T008 analisada; foram identificados como prováveis afetados a migration do PocketBase, a entidade CatalogoItem e a interface/consulta de catálogo, sem alterações realizadas
+- proxima_acao: aguardar autorização para implementar
+- atualizado_em: 2026-08-28T19:08:00-03:00
