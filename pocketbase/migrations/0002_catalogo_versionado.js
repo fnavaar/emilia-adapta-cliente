@@ -7,8 +7,8 @@ migrate(
       type: 'base',
       listRule: '@request.auth.id != ""',
       viewRule: '@request.auth.id != ""',
-      createRule: '@request.auth.id != ""',
-      updateRule: '@request.auth.id != ""',
+      createRule: '@request.auth.id != "" && (review_status = "rascunho" || (codigo != "" && source_document != "" && source_version != ""))',
+      updateRule: '@request.auth.id != "" && (review_status = "rascunho" || (codigo != "" && source_document != "" && source_version != ""))',
       deleteRule: null,
       fields: [
         { name: 'codigo', type: 'text', required: false },
@@ -30,7 +30,7 @@ migrate(
       ],
       indexes: [
         'CREATE INDEX idx_catalogo_categoria ON catalogo_itens (categoria)',
-        'CREATE INDEX idx_catalogo_codigo ON catalogo_itens (codigo)',
+        'CREATE UNIQUE INDEX idx_catalogo_codigo_unico ON catalogo_itens (codigo) WHERE codigo != ""',
         'CREATE INDEX idx_catalogo_status ON catalogo_itens (review_status)',
       ],
     })
