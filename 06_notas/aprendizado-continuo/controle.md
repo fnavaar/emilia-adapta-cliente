@@ -9,3 +9,4 @@
 - 2026-08-31T13:35:00-03:00 · task F1-T005 · sinal registrado em `06_notas/aprendizado-continuo/AP-2026-08-31-1335-campos-condicionais.md` · regra confirmada: grupos condicionais devem ser testados isoladamente e na troca de tipo; campos não aplicáveis desaparecem sem apagar valores persistidos.
 - 2026-08-31T14:00:00-03:00 · task F1-T006 · sinal registrado em `06_notas/aprendizado-continuo/AP-2026-08-31-1400-edicoes-blocos.md` · regra confirmada: reler antes de editar, usar âncoras únicas e conferir marcadores/símbolos antes do build.
 - 2026-08-31T16:35:00-03:00 · task F1-T009 · sinal registrado em `06_notas/debug/debug-2026-08-31-catalogo-ausente.md` · regra confirmada: validar no preview a presença visual do componente, além da existência da lógica de carregamento e seleção.
+- 2026-08-31T16:40:00-03:00 · task F1-T009 · aprovação humana confirmada · campo do catálogo apareceu no briefing e o teste foi concluído com sucesso.
