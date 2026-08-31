@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-08-31 · Fernanda / ETHOS (Bia) · F1-T010 bloqueada: análise da matriz de permissões e capacidade real de RLS/auditoria mostrou que a coleção users não possui papel configurado e as coleções de negócio usam regras amplas para usuários autenticados; B1-SEC-01 permanece ativo, sem liberar acesso real nem simular segurança na interface.
 - 2026-08-31 · Fernanda / ETHOS (Bia) · Task F1-T009 concluída: seleção de item aprovado do catálogo no briefing com código, label e versão salvos no pedido; itens não aprovados não aparecem; migration 0019 aplicada; QA 0.0.56 passou em todas as etapas; campo confirmado no preview e teste humano aprovado pela Fernanda.
 - 2026-08-31 · Fernanda / ETHOS (Bia) · Task F1-T006 concluída: fila de pendências e registro de conflitos no briefing; migration 0018; campo faltante com motivo, responsável, próxima ação e prazo; dois valores conflitantes preservados com confirmação humana; QA 0.0.52 passou em todas as etapas; teste humano aprovado pela Fernanda.
 - 2026-08-31 · Fernanda / ETHOS (Bia) · DEBUG task F1-T009: o campo Opção aprovada do catálogo não apareceu na primeira entrega → causa raiz: lógica de carregamento existia, mas o bloco visual não estava renderizado → corrigido com inclusão do componente visual; QA 0.0.55 passou em todas as etapas e preview confirmou item aprovado PAP-CREP-ENC-001/v2026.1; novo teste humano solicitado.
