@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: nenhuma
+- task_id: F1-T005
 - champion: Fernanda (CEO)
-- spec: nenhuma
-- etapa: concluida
-- autorizacao_implementacao: confirmada em 2026-08-31; trecho: "Sim, pode implementar"
-- teste_humano: aprovado em 2026-08-31 12:47; trecho: "Testei e funcionou"
-- verificacao_automatica: passou; Skip QA 0.0.44 passou em setup, análise estática, build, integrações e testes; coleção catalogo_itens confirmada no Skip; preview confirmou item aprovado, rascunho sem fonte/código e busca por código
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-08-31-1247-regras-skip.md
-- ultima_acao: F1-T008 concluída após revalidação independente e aprovação humana; fase, STATUS, changelog e aprendizado atualizados
-- proxima_acao: selecionar e analisar uma única próxima task liberada, sem iniciar implementação automaticamente
-- atualizado_em: 2026-08-31T12:47:00-03:00
+- spec: 04-fase-atual/specs/spec-1-002-briefing-condicional.md
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente
+- teste_humano: pendente
+- verificacao_automatica: pendente; análise concluída sem alteração do produto; F1-T004 e F1-T008 concluídas; template atual de Nova Oportunidade ainda não possui grupos condicionais do briefing
+- aprendizado: pendente
+- ultima_acao: F1-T005 analisada; dependências, SPEC, matriz condicional, critérios de aceite e superfícies prováveis foram revisados; nenhuma alteração de produto realizada
+- proxima_acao: aguardar autorização para implementar
+- atualizado_em: 2026-08-31T13:01:00-03:00
