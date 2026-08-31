@@ -7,19 +7,19 @@
 
 - **Fase atual:** 1 — Registro canônico, entrada e briefing estruturado · aberta em 2026-08-25 · reunião de fechamento ainda não agendada
 - **Objetivo desta fase:** registrar uma entrada de teste em um registro canônico, reutilizar dados no briefing e tornar pendências, duplicidades, permissões e fallback demonstráveis.
-- **No prazo?** sim — F1-T009 concluída após QA 0.0.56 e teste humano aprovado.
+- **No prazo?** sim — F1-T010 concluída com matriz incremental da Fase 1; configuração técnica de RLS/auditoria permanece para T011/T012.
 
 ## Progresso da fase
 
-- **Tasks:** 9/15 (60,0%)
-- **Tasks concluídas:** F1-T001, F1-T002, F1-T003, F1-T004, F1-T005, F1-T006, F1-T007, F1-T008 e F1-T009
-- **Próxima task após nova análise e autorização:** F1-T010 ou outra task liberada da Leva 1, conforme seleção própria
+- **Tasks:** 10/15 (66,7%)
+- **Tasks concluídas:** F1-T001, F1-T002, F1-T003, F1-T004, F1-T005, F1-T006, F1-T007, F1-T008, F1-T009 e F1-T010
+- **Próxima task após nova análise e autorização:** F1-T011 ou outra task liberada da Leva 1, conforme seleção própria
 
 ## Travas ativas
 
 | Critério de execução | Desde | Quem resolve | Ação em curso |
 |---|---|---|---|
-| Matriz de usuários e RLS/auditoria | 2026-08-25 | Responsável técnico | F1-T010 |
+| Configuração técnica de RLS/auditoria por papel | 2026-08-31 | Responsável técnico | F1-T011/T012 |
 | Contrato e homologação do webhook/bridge | 2026-08-25 | Responsável técnico | F1-T013 |
 
 ## Entregas concluídas
@@ -36,6 +36,7 @@
 | F1-T007 | Inventário das fontes, B1-CAT-01, versão 2026.1, hashes/localizadores, recortes de fornecedores como fundamento técnico interno e regra de uso exclusivo do catálogo aprovado da Emília durante a venda; revisão humana aprovada | 2026-08-28 |
 | F1-T008 | Catálogo versionado com coleção `catalogo_itens`, estados de revisão, campos de rastreabilidade, regra contra aprovação sem código/fonte/versão, índice único de código, fixtures e tela `/catalogo`; QA 0.0.44 passou e teste humano aprovado | 2026-08-31 |
 | F1-T009 | Seleção de item aprovado do catálogo no briefing, com código, label e versão salvos; itens não aprovados não aparecem; migration 0019; QA 0.0.56 passou e teste humano aprovado | 2026-08-31 |
+| F1-T010 | Matriz incremental dos papéis e acessos necessários na Fase 1, com escopo futuro deliberadamente aberto; capacidade atual de RLS por papel/auditoria registrada como dependência técnica para T011/T012 | 2026-08-31 |
 
 ## Próxima reunião
 
