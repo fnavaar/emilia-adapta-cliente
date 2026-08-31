@@ -3,11 +3,11 @@
 - task_id: F1-T011
 - champion: Fernanda (CEO)
 - spec: 04-fase-atual/specs/spec-1-004-permissoes-auditoria.md
-- etapa: aguardando_teste_humano
+- etapa: em_correcao
 - autorizacao_implementacao: confirmada em 2026-08-31 17:12; trecho: "sim, pode"
-- teste_humano: pendente
-- verificacao_automatica: passou; QA Skip v0.0.58 passou em setup, análise estática, build, integrações e testes; regras persistidas conferidas para clientes, catálogo, histórico e usuários; histórico sem update/delete; produção externa não foi liberada
+- teste_humano: falhou; catálogo não permitia criar/alterar, histórico não estava localizado e faltavam contas de homologação para testar os papéis operacionais
+- verificacao_automatica: versão 0.0.58 passou, mas o teste humano revelou cobertura incompleta da superfície da task
 - aprendizado: pendente até fechamento após aprovação humana
-- ultima_acao: F1-T011 implementada com perfil Administrador, RLS por papel e auditoria protegida; correção dos predicados validada na v0.0.58
-- proxima_acao: executar teste humano no preview e aguardar confirmação
-- atualizado_em: 2026-08-31T17:22:00-03:00
+- ultima_acao: diagnosticada falha de cobertura: backend tinha RLS, mas a UI não expunha manutenção do catálogo nem consulta do histórico
+- proxima_acao: corrigir a superfície de homologação e repetir QA
+- atualizado_em: 2026-08-31T17:25:00-03:00
