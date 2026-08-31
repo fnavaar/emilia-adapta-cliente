@@ -10,3 +10,4 @@
 - 2026-08-31T14:00:00-03:00 · task F1-T006 · sinal registrado em `06_notas/aprendizado-continuo/AP-2026-08-31-1400-edicoes-blocos.md` · regra confirmada: reler antes de editar, usar âncoras únicas e conferir marcadores/símbolos antes do build.
 - 2026-08-31T16:35:00-03:00 · task F1-T009 · sinal registrado em `06_notas/debug/debug-2026-08-31-catalogo-ausente.md` · regra confirmada: validar no preview a presença visual do componente, além da existência da lógica de carregamento e seleção.
 - 2026-08-31T16:40:00-03:00 · task F1-T009 · aprovação humana confirmada · campo do catálogo apareceu no briefing e o teste foi concluído com sucesso.
+- 2026-08-31T17:35:00-03:00 · task F1-T011 · sinal registrado em `06_notas/aprendizado-continuo/AP-2026-08-31-f1-t011-superficie-de-permissoes.md` · regra confirmada: validar superfície visual, ações permitidas/negadas, consulta autorizada e usuários de teste separadamente da regra de backend.
