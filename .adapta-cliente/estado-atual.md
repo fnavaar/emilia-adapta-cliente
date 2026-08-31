@@ -8,6 +8,6 @@
 - teste_humano: pendente
 - verificacao_automatica: pendente; análise de baseline concluída sem alterar o produto; matriz incremental da T010 registrada; RLS atual ainda amplo e histórico não é append-only para todas as coleções
 - aprendizado: pendente
-- ultima_acao: F1-T011 selecionada e analisada; menor recorte é configurar papéis apenas para as ações existentes da Fase 1 e reforçar bloqueios de alterações protegidas
+- ultima_acao: Fê confirmou incluir o perfil Administrador com acesso total aos recursos da Fase 1; permanecem bloqueadas produção externa e alteração/exclusão dos logs de auditoria
 - proxima_acao: aguardar autorização para implementar
-- atualizado_em: 2026-08-31T17:19:00-03:00
+- atualizado_em: 2026-08-31T17:10:00-03:00
