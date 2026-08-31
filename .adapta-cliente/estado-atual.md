@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: nenhuma
+- task_id: F1-T012
 - champion: Fernanda (CEO)
-- spec: nenhuma
-- etapa: concluida
-- autorizacao_implementacao: confirmada em 2026-08-31 17:12; trecho: "sim, pode"
-- teste_humano: aprovado em 2026-08-31 17:31; Fernanda confirmou: "agora tudo ok"
-- verificacao_automatica: passou; QA Skip v0.0.60 passou em setup, análise estática, build, integrações e testes; regras RLS persistidas conferidas; Administrador, catálogo, histórico, consulta operacional e bloqueios testados no preview
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-08-31-f1-t011-superficie-de-permissoes.md
-- ultima_acao: F1-T011 concluída após correção da superfície de homologação e aprovação humana
-- proxima_acao: selecionar e analisar uma única próxima task, sem iniciar implementação automaticamente
-- atualizado_em: 2026-08-31T17:31:00-03:00
+- spec: 04-fase-atual/specs/spec-1-004-permissoes-auditoria.md
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente
+- teste_humano: pendente
+- verificacao_automatica: baseline da F1-T011 permanece aprovado na versão 0.0.60; nenhuma alteração de produto feita nesta análise
+- aprendizado: pendente
+- ultima_acao: F1-T012 selecionada e analisada; pré-condição F1-T011 concluída; grade de cores permanece requisito separado do catálogo
+- proxima_acao: aguardar autorização para implementar
+- atualizado_em: 2026-08-31T17:36:00-03:00
