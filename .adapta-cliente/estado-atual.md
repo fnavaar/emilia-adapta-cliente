@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: nenhuma
+- task_id: F1-T009
 - champion: Fernanda (CEO)
-- spec: nenhuma
-- etapa: concluida
-- autorizacao_implementacao: confirmada em 2026-08-31 13:44; trecho: "pode implementar"
-- teste_humano: aprovado em 2026-08-31 15:40; trecho: "teste feito, tudo certo"
-- verificacao_automatica: passou; Skip QA 0.0.52 passou em setup, análise estática, build, integrações e testes; a tela registrou pendência com campo, motivo, responsável, próxima ação e prazo; conflito preservou valor anterior e novo e exigiu confirmação humana
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-08-31-1400-edicoes-blocos.md
-- ultima_acao: F1-T006 revalidada após teste humano aprovado; os registros de fechamento foram atualizados
-- proxima_acao: selecionar e analisar uma única próxima task, sem iniciar implementação automaticamente
-- atualizado_em: 2026-08-31T15:40:00-03:00
+- spec: 04-fase-atual/specs/spec-1-003-catalogo-versionado.md
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente
+- teste_humano: pendente
+- verificacao_automatica: pendente; análise de baseline concluída sem alterar o produto; catálogo versionado disponível na versão Skip 0.0.52
+- aprendizado: pendente
+- ultima_acao: F1-T009 selecionada e analisada; catálogo possui item aprovado com código/fonte/versão e item em rascunho, enquanto o briefing ainda não possui seleção de item do catálogo
+- proxima_acao: aguardar autorização para implementar
+- atualizado_em: 2026-08-31T16:12:00-03:00
