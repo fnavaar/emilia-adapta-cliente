@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-08-31 · Fernanda / ETHOS (Bia) · Task F1-T008 concluída: catálogo versionado com coleção `catalogo_itens`, campos de rastreabilidade, estados de revisão, regra contra aprovação sem código/fonte/versão, índice único de código, fixtures e tela protegida `/catalogo`; QA 0.0.44 passou em todas as etapas, coleção foi confirmada no Skip e teste humano aprovado.
 - 2026-08-31 · ETHOS (Bia) · F1-T008 em teste humano: migration 0015 criou `catalogo_itens` versionado com categoria, código, label, tipo/variante/cor/largura, fonte, versão, localizador e estados Rascunho/Aprovado/Conflito/Inativo; regra impede aprovação sem código/fonte/versão e índice único bloqueia código duplicado; tela protegida `/catalogo` criada com busca e contadores; Skip QA 0.0.44 passou em setup, análise estática, build, integrações e testes; preview confirmou fixture aprovada, rascunho sem fonte/código e busca por código.
 - 2026-08-28 · Fernanda / ETHOS (Bia) · Task F1-T007 concluída: inventário de fontes e B1-CAT-01 revalidados; catálogo Emília 2026.1 é a fonte vigente parcial; fornecedores são fundamento técnico interno e não são consultados durante a venda; tabela de preço serve apenas para inventariar materiais; revisão humana aprovada.
 - 2026-08-28 · Fernanda / ETHOS (Bia) · Ajuste da F1-T007 após validação da Fernanda: fontes de fornecedores são exclusivamente fundamento técnico interno do projeto e não devem ser consultadas durante atendimento/venda; vendedoras usarão somente catálogo/opções aprovados da Emília. Inventário e decisão B1-CAT-01 corrigidos.
