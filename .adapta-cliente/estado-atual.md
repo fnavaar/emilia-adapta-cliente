@@ -2,12 +2,12 @@
 
 - task_id: F1-T010
 - champion: Fernanda (CEO)
-- spec: 04_fase-atual/specs/spec-1-004-permissoes-auditoria.md
-- etapa: bloqueada
-- autorizacao_implementacao: ausente
+- spec: 04-fase-atual/specs/spec-1-004-permissoes-auditoria.md
+- etapa: implementando
+- autorizacao_implementacao: confirmada em 2026-08-31 17:01; trecho: "ok, pode serguir assim"
 - teste_humano: pendente
-- verificacao_automatica: pendente; nenhuma alteração de produto foi feita; análise da capacidade nativa mostrou que a coleção users permite que cada usuário veja apenas a si próprio e não possui campo de papel; as coleções de negócio usam regras amplas para qualquer usuário autenticado
+- verificacao_automatica: pendente
 - aprendizado: pendente
-- ultima_acao: F1-T010 analisada; B1-SEC-01 confirmado como bloqueio real, pois ainda não há matriz de papéis aplicável nem auditoria append-only demonstrável
-- proxima_acao: decidir com o consultor técnico como comprovar ou suprir RLS por papel e auditoria antes de configurar acessos
-- atualizado_em: 2026-08-31T16:45:00-03:00
+- ultima_acao: bloqueio anterior reavaliado; escopo ajustado para matriz incremental dos papéis e ações existentes na Fase 1
+- proxima_acao: registrar matriz inicial, limites atuais e veredito de capacidade sem configurar permissões futuras
+- atualizado_em: 2026-08-31T17:01:00-03:00
