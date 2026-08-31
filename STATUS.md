@@ -1,18 +1,18 @@
 # STATUS — Projeto Mara Cristina Amaral Santos - ME
 
-> **Atualizado em:** 2026-08-28 · **Por:** ETHOS (Bia)
+> **Atualizado em:** 2026-08-31 · **Por:** ETHOS (Bia)
 > O painel do projeto: fase atual, progresso e o que precisa de atenção.
 
 ## Onde estamos
 
 - **Fase atual:** 1 — Registro canônico, entrada e briefing estruturado · aberta em 2026-08-25 · reunião de fechamento ainda não agendada
 - **Objetivo desta fase:** registrar uma entrada de teste em um registro canônico, reutilizar dados no briefing e tornar pendências, duplicidades, permissões e fallback demonstráveis.
-- **No prazo?** sim — F1-T007 concluída após revisão humana aprovada.
+- **No prazo?** sim — F1-T008 concluída após QA 0.0.44 e teste humano aprovado.
 
 ## Progresso da fase
 
-- **Tasks:** 5/15 (33,3%)
-- **Tasks concluídas:** F1-T001, F1-T002, F1-T003, F1-T004 e F1-T007
+- **Tasks:** 6/15 (40,0%)
+- **Tasks concluídas:** F1-T001, F1-T002, F1-T003, F1-T004, F1-T007 e F1-T008
 - **Próxima task após nova análise e autorização:** F1-T005 ou outra task liberada da Leva 1, conforme seleção própria
 
 ## Travas ativas
@@ -32,6 +32,7 @@
 | F1-T003 | Busca/reuso por source_ref, decisão humana de duplicidade, histórico da decisão e rollback de fixture não destrutivo | 2026-08-27 |
 | F1-T004 | Briefing de oportunidade com tipo de evento, segmento derivado oculto, busca de cliente por nome/telefone, opção de adicionar novo dentro da lista e subtipos de aniversário corrigidos; QA 0.0.42 passou e teste humano aprovado no preview | 2026-08-28 |
 | F1-T007 | Inventário das fontes, B1-CAT-01, versão 2026.1, hashes/localizadores, recortes de fornecedores como fundamento técnico interno e regra de uso exclusivo do catálogo aprovado da Emília durante a venda; revisão humana aprovada | 2026-08-28 |
+| F1-T008 | Catálogo versionado com coleção `catalogo_itens`, estados de revisão, campos de rastreabilidade, regra contra aprovação sem código/fonte/versão, índice único de código, fixtures e tela `/catalogo`; QA 0.0.44 passou e teste humano aprovado | 2026-08-31 |
 
 ## Próxima reunião
 
