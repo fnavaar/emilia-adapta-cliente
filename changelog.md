@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-08-31 · Fernanda / ETHOS (Bia) · DEBUG task F1-T006: edição incremental corrompeu temporariamente o handler e impediu o build → causa raiz: bloco de substituição foi aplicado em posição inválida, deixando fechamento sintático incompleto → corrigido com restauração controlada e reaplicação dos blocos; QA 0.0.52 passou em todas as etapas, aguardando teste humano.
 - 2026-08-31 · Fernanda / ETHOS (Bia) · Task F1-T005 concluída: template único de briefing com grupos condicionais para degustação, revendedor, bem-nascido e eventos; migrations 0016/0017 aplicadas; QA 0.0.47 passou em setup, análise estática, build, integrações e testes; preview confirmou os quatro grupos e ausência de regras comerciais; teste humano aprovado.
 - 2026-08-31 · ETHOS (Bia) · F1-T005 em teste humano: migration 0016 criou campos condicionais e migration 0017 expandiu tipos; tela Nova Oportunidade exibiu grupos distintos no mesmo pedido-base; QA 0.0.47 passou; preview confirmou degustação, revendedor, bem-nascido e evento.
 - 2026-08-31 · Fernanda / ETHOS (Bia) · Task F1-T008 concluída: catálogo versionado com coleção `catalogo_itens`, campos de rastreabilidade, estados de revisão, regra contra aprovação sem código/fonte/versão, índice único de código, fixtures e tela protegida `/catalogo`; QA 0.0.44 passou em todas as etapas, coleção foi confirmada no Skip e teste humano aprovado.
