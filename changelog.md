@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-08-31 · Fernanda · DEBUG task F1-T011: catálogo sem ação visível, histórico não exposto e contas operacionais ausentes → causa raiz foi cobertura incompleta da superfície de homologação; manutenção do catálogo, histórico somente leitura e contas fictícias adicionados; QA v0.0.59 passou.
 - 2026-08-31 · Fernanda / ETHOS (Bia) · Task F1-T010 concluída: matriz incremental de papéis e acessos da Fase 1 registrada em `06_notas/matriz-permissoes-f1-t010.md`; escopo futuro deliberadamente aberto; capacidade atual de RLS por papel/auditoria registrada como dependência técnica para T011/T012; nenhum acesso real amplo liberado.
 - 2026-08-31 · Fernanda / ETHOS (Bia) · Task F1-T009 concluída: seleção de item aprovado do catálogo no briefing com código, label e versão salvos no pedido; itens não aprovados não aparecem; migration 0019 aplicada; QA 0.0.56 passou; campo confirmado no preview e teste humano aprovado.
 - 2026-08-31 · Fernanda / ETHOS (Bia) · DEBUG F1-T009: campo do catálogo não apareceu na primeira entrega → causa raiz: lógica existia, mas o bloco visual não estava renderizado → corrigido; QA 0.0.55 passou e preview confirmou PAP-CREP-ENC-001/v2026.1.
