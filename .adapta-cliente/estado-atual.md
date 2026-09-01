@@ -5,9 +5,9 @@
 - spec: 04-fase-atual/specs/spec-1-004-permissoes-auditoria.md
 - etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-08-31 18:08; trecho: "sim, pode implementar esses ajustes"
-- teste_humano: pendente; rodada anterior revelou auditoria vazia, ausência de gestão de usuários e acesso direto sem mensagem clara
-- verificacao_automatica: passou; QA Skip v0.0.63 passou em setup, análise estática, build, integrações e testes; runtime confirmou login, criação auditada, negação auditada e revogação com login posterior bloqueado
+- teste_humano: pendente; rodada revelou descrição técnica e ausência de tentativa negada exercitável
+- verificacao_automatica: passou; QA Skip v0.0.65 passou; descrição legível e negação registrada com 400/403; revogação com login posterior bloqueado validada
 - aprendizado: pendente até fechamento após aprovação humana
-- ultima_acao: F1-T012 corrigida com coleção de auditoria genérica append-only, hooks de criação e negação, revogação exclusiva do Administrador, bloqueio de login revogado e mensagem de acesso não permitido
-- proxima_acao: executar novo teste humano no preview e aguardar confirmação
-- atualizado_em: 2026-08-31T18:20:00-03:00
+- ultima_acao: F1-T012 corrigida com descrição legível na auditoria e botões de catálogo visíveis para exercitar a negação
+- proxima_acao: executar nova rodada de teste humano no preview e aguardar confirmação
+- atualizado_em: 2026-08-31T18:28:00-03:00
