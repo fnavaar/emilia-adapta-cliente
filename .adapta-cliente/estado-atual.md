@@ -3,11 +3,11 @@
 - task_id: CORREÇÃO-SEGMENTO-EVENTO
 - champion: Fernanda (CEO)
 - spec: 04-fase-atual/specs/spec-1-002-briefing-condicional.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: ausente para esta correção específica
+- etapa: aguardando_teste_humano
+- autorizacao_implementacao: confirmada em 2026-09-01 18:01; trecho: "sim, pode"
 - teste_humano: pendente
-- verificacao_automatica: baseline analisado sem alteração de produto; F1-T013 permanece aguardando aprovação final; backend já possui `segmento`, `segmento_classificado` e `subtipo_evento`, mas o formulário usa `tipo_pedido` como campo principal
+- verificacao_automatica: passou; QA Skip v0.0.68 passou em setup, análise estática, build, integrações e testes; alteração aplicada em `src/pages/NovaOportunidade.tsx`; tentativa de validação visual no navegador não avançou do login e não foi considerada evidência
 - aprendizado: pendente
-- ultima_acao: requisito refinado por Fernanda: segmento ficará oculto e será salvo internamente; somente o tipo de evento será exibido no atendimento/cadastro
-- proxima_acao: aguardar autorização para implementar o Tipo de evento visível com Segmento interno
-- atualizado_em: 2026-09-01T18:00:00-03:00
+- ultima_acao: tipo de evento ficou como único campo visível; segmento derivado é persistido internamente; Maternidade foi removida da lista de eventos; dados históricos não foram alterados
+- proxima_acao: aguardar teste humano da correção no preview
+- atualizado_em: 2026-09-01T18:03:00-03:00
