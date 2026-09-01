@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: nenhuma
+- task_id: F1-T013
 - champion: Fernanda (CEO)
-- spec: nenhuma
-- etapa: concluida
-- autorizacao_implementacao: confirmada em 2026-08-31 18:08; trecho: "sim, pode implementar esses ajustes"
-- teste_humano: aprovado em 2026-09-01 17:19; trecho: "tudo ok aprovado"
-- verificacao_automatica: passou; QA Skip v0.0.66 passou em setup, análise estática, build, integrações e testes; runtime confirmou criação auditada com descrição/ator legíveis, tentativa negada registrada, revogação e bloqueio de login; regras persistidas conferidas
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-01-f1-t012-regressao-seguranca.md
-- ultima_acao: F1-T012 concluída após aprovação humana dos cenários de auditoria, negação, acesso direto e revogação
-- proxima_acao: selecionar e analisar uma única próxima task, sem iniciar implementação automaticamente
-- atualizado_em: 2026-09-01T17:21:00-03:00
+- spec: 04_fase-atual/specs/spec-1-005-webhook-fallback.md
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente
+- teste_humano: pendente
+- verificacao_automatica: baseline lido sem alterar o produto; F1-T012 concluída; B1-INT-01 permanece bloqueando ativação externa; não há endpoint externo nem credencial configurados no projeto
+- aprendizado: pendente
+- ultima_acao: F1-T013 selecionada e analisada; menor recorte é documentar envelope/schema, autenticação em modo fixture, limites, idempotência e decisão explícita de não ativação externa
+- proxima_acao: aguardar autorização para implementar
+- atualizado_em: 2026-09-01T17:29:00-03:00
