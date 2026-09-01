@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: F1-T012
+- task_id: nenhuma
 - champion: Fernanda (CEO)
-- spec: 04-fase-atual/specs/spec-1-004-permissoes-auditoria.md
-- etapa: aguardando_teste_humano
+- spec: nenhuma
+- etapa: concluida
 - autorizacao_implementacao: confirmada em 2026-08-31 18:08; trecho: "sim, pode implementar esses ajustes"
-- teste_humano: pendente; rodada confirmou revogação e acesso não permitido; ajuste final para descrição legível e catálogo oculto para não gestores
-- verificacao_automatica: passou; QA Skip v0.0.66 passou; runtime confirmou "Criação de novo cliente · Permitida" com Ator Fernanda/Administrador; catálogo sem formulário para Atendimento; revogação e bloqueio de login validados
-- aprendizado: pendente até fechamento após aprovação humana
-- ultima_acao: F1-T012 corrigida com descrições legíveis completas, ator real e catálogo oculto para não gestores
-- proxima_acao: executar teste final no preview e aguardar confirmação
-- atualizado_em: 2026-08-31T18:36:00-03:00
+- teste_humano: aprovado em 2026-09-01 17:19; trecho: "tudo ok aprovado"
+- verificacao_automatica: passou; QA Skip v0.0.66 passou em setup, análise estática, build, integrações e testes; runtime confirmou criação auditada com descrição/ator legíveis, tentativa negada registrada, revogação e bloqueio de login; regras persistidas conferidas
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-01-f1-t012-regressao-seguranca.md
+- ultima_acao: F1-T012 concluída após aprovação humana dos cenários de auditoria, negação, acesso direto e revogação
+- proxima_acao: selecionar e analisar uma única próxima task, sem iniciar implementação automaticamente
+- atualizado_em: 2026-09-01T17:21:00-03:00
