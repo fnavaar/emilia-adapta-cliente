@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-09-01 · Fernanda · Correção de modelo concluída: Segmento ficou oculto no atendimento e somente Tipo de evento é exibido; segmento derivado foi persistido internamente; QA v0.0.68 passou e consulta autenticada confirmou `tipo_evento=bem_nascido` → `segmento=maternidade`.
 - 2026-09-01 · Fernanda · Task F1-T013 concluída: contrato de entrada v1, schema JSON, cinco fixtures, respostas, idempotência, estruturas de eventos/fallback e documentação; QA v0.0.67 passou, B1-INT-01 foi mantido e teste humano aprovado.
 - 2026-09-01 · Fernanda · Task F1-T012 concluída: regressão de permissões, auditoria genérica legível, tentativas negadas, revogação, bloqueio de login revogado, acesso direto protegido e minimização; QA v0.0.66 passou e teste humano aprovado.
 - 2026-08-31 · Fernanda · DEBUG task F1-T012: auditoria vazia, ausência de gestão de usuários e acesso direto sem mensagem clara → coleção de auditoria genérica, hooks de criação/negação, revogação administrativa, bloqueio de login revogado e mensagem de permissão adicionados; QA v0.0.63 passou; runtime confirmou criação auditada, negação auditada e revogação.
