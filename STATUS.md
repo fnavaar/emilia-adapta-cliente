@@ -8,6 +8,7 @@
 - **Fase atual:** 1 — Registro canônico, entrada e briefing estruturado · aberta em 2026-08-25 · reunião de fechamento ainda não agendada
 - **Objetivo desta fase:** registrar uma entrada de teste em um registro canônico, reutilizar dados no briefing e tornar pendências, duplicidades, permissões e fallback demonstráveis.
 - **No prazo?** sim — F1-T013 concluída com contrato de entrada e fallback documentado em homologação; integração externa continua bloqueada por B1-INT-01.
+- **Correção concluída:** Segmento permanece oculto no atendimento; somente Tipo de evento é exibido, com segmento derivado e persistido internamente.
 
 ## Progresso da fase
 
@@ -40,6 +41,7 @@
 | F1-T011 | Perfis/RLS por papel, Administrador da Fase 1, histórico protegido, manutenção de catálogo, consulta operacional e contas de homologação; QA 0.0.60 passou e teste aprovado | 2026-08-31 |
 | F1-T012 | Regressão de permissões, auditoria genérica legível, tentativas negadas, revogação, bloqueio de login revogado, acesso direto protegido e minimização; QA 0.0.66 passou e teste aprovado | 2026-09-01 |
 | F1-T013 | Contrato v1, schema JSON, cinco fixtures, respostas, idempotência, estruturas de eventos/fallback e documentação; QA 0.0.67 passou, B1-INT-01 mantido e teste humano aprovado | 2026-09-01 |
+| Correção de modelo | Segmento oculto no atendimento; Tipo de evento visível; segmento derivado persistido internamente; QA 0.0.68 passou e consulta autenticada confirmou `bem_nascido` → `maternidade` | 2026-09-01 |
 
 ## Próxima reunião
 
