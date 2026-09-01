@@ -7,19 +7,20 @@
 
 - **Fase atual:** 1 — Registro canônico, entrada e briefing estruturado · aberta em 2026-08-25 · reunião de fechamento ainda não agendada
 - **Objetivo desta fase:** registrar uma entrada de teste em um registro canônico, reutilizar dados no briefing e tornar pendências, duplicidades, permissões e fallback demonstráveis.
-- **No prazo?** sim — F1-T012 concluída com regressão de permissões, auditoria, revogação e minimização validadas; F1-T013 segue como próxima preparação liberada.
+- **No prazo?** sim — F1-T013 concluída com contrato de entrada e fallback documentado em homologação; integração externa continua bloqueada por B1-INT-01.
 
 ## Progresso da fase
 
-- **Tasks:** 12/15 (80,0%)
-- **Tasks concluídas:** F1-T001 a F1-T012, exceto nenhuma; F1-T013 liberada para análise
-- **Próxima task após nova análise e autorização:** F1-T013
+- **Tasks:** 13/15 (86,7%)
+- **Tasks concluídas:** F1-T001 a F1-T013, exceto nenhuma
+- **Próxima task após nova análise e autorização:** F1-T014
 
 ## Travas ativas
 
 | Critério de execução | Desde | Quem resolve | Ação em curso |
 |---|---|---|---|
-| Contrato e homologação do webhook/bridge | 2026-08-25 | Responsável técnico | F1-T013 |
+| Construção do harness de validação, idempotência e fallback | 2026-09-01 | Responsável técnico | F1-T014 |
+| Endpoint, autenticação real, limites e autorização de escrita externa | 2026-08-25 | Responsável técnico/Gestão | B1-INT-01; não ativar integração |
 
 ## Entregas concluídas
 
@@ -37,7 +38,8 @@
 | F1-T009 | Seleção de catálogo aprovado no briefing com snapshot e inativação preservando histórico; QA passou e teste aprovado | 2026-08-31 |
 | F1-T010 | Matriz incremental de papéis e capacidade real registrada | 2026-08-31 |
 | F1-T011 | Perfis/RLS por papel, Administrador da Fase 1, histórico protegido, manutenção de catálogo, consulta operacional e contas de homologação; QA 0.0.60 passou e teste aprovado | 2026-08-31 |
-| F1-T012 | Regressão de permissões, auditoria genérica legível, tentativas negadas, revogação, bloqueio de login revogado, acesso direto protegido e minimização; QA 0.0.66 passou e teste humano aprovado | 2026-09-01 |
+| F1-T012 | Regressão de permissões, auditoria genérica legível, tentativas negadas, revogação, bloqueio de login revogado, acesso direto protegido e minimização; QA 0.0.66 passou e teste aprovado | 2026-09-01 |
+| F1-T013 | Contrato v1, schema JSON, cinco fixtures, respostas, idempotência, estruturas de eventos/fallback e documentação; QA 0.0.67 passou, B1-INT-01 mantido e teste humano aprovado | 2026-09-01 |
 
 ## Próxima reunião
 
