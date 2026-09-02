@@ -3,11 +3,11 @@
 - task_id: F1-T015
 - champion: Fernanda (CEO)
 - spec: 04_fase-atual/specs/spec-1-005-webhook-fallback.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: ausente
+- etapa: implementando
+- autorizacao_implementacao: confirmada em 2026-09-02 12:57; trecho: "pode implementar"
 - teste_humano: pendente
-- verificacao_automatica: pendente; baseline lido sem alterar produto — harness F1-T014 (migrations 0028/0029, fixtures, schema, contrato) presente; sem endpoint/credencial externa configurada (env apenas VITE_POCKETBASE_URL interno; secrets apenas de sistema)
+- verificacao_automatica: em execução; regressão dos cinco cenários e prova de bloqueio externo
 - aprendizado: pendente
-- ultima_acao: F1-T015 analisada (SPEC-1-005 íntegra; harness e estado do projeto inspecionados; recorte: regressão dos 5 cenários no preview + relatório de integração + registro de não ativação externa com B1-INT-01 mantido)
-- proxima_acao: aguardar autorização para implementar a regressão
-- atualizado_em: 2026-09-02T12:50:00-03:00
+- ultima_acao: autorização recebida para executar a regressão do consumidor da F1-T015
+- proxima_acao: executar regressão das fixtures no preview, comprovar bloqueio externo e gerar relatório de integração
+- atualizado_em: 2026-09-02T12:58:00-03:00
