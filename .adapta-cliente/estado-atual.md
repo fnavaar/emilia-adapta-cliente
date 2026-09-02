@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: F1-T014
+- task_id: nenhuma
 - champion: Fernanda (CEO)
-- spec: 04_fase-atual/specs/spec-1-005-webhook-fallback.md
-- etapa: aguardando_teste_humano
+- spec: nenhuma
+- etapa: concluida
 - autorizacao_implementacao: confirmada em 2026-09-01 21:10; trecho: "pode implementar"
-- teste_humano: pendente
-- verificacao_automatica: passou; QA Skip v0.0.73 passou em setup, análise estática, build, integrações e testes; tela `/integracoes/homologacao`, processamento das cinco fixtures, idempotência por event_id/hash, conflito, rejeição e fallback foram implementados; validação automatizada anterior das rotas customizadas retornou 404 e foi removida do desenho final
-- aprendizado: pendente
-- ultima_acao: harness administrativo de homologação implementado; rota customizada experimental removida; artefato de teste salvo em artifacts/f1-t014-harness-homologacao.md
-- proxima_acao: executar teste humano das cinco fixtures no preview
-- atualizado_em: 2026-09-01T21:25:00-03:00
+- teste_humano: aprovado em 2026-09-02 22:17; trecho: "testei e tudo está funcionando, pode continuar"
+- verificacao_automatica: passou; QA Skip v0.0.73 passou em setup, análise estática, build, integrações e testes; migration 0029 aplicada; teste humano confirmou as cinco fixtures no preview; B1-INT-01 permanece bloqueio explícito para integração externa
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-02-f1-t014-harness-admin.md
+- ultima_acao: F1-T014 concluída após validação humana do harness de homologação, idempotência, conflito, rejeição e fallback; STATUS e changelog atualizados
+- proxima_acao: selecionar e analisar uma única próxima task, sem iniciar implementação automaticamente
+- atualizado_em: 2026-09-02T22:20:00-03:00
