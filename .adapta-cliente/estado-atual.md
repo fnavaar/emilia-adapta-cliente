@@ -3,11 +3,11 @@
 - task_id: F1-T014
 - champion: Fernanda (CEO)
 - spec: 04_fase-atual/specs/spec-1-005-webhook-fallback.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: ausente para F1-T014
+- etapa: implementando
+- autorizacao_implementacao: confirmada em 2026-09-01 21:10; trecho: "pode implementar"
 - teste_humano: pendente
-- verificacao_automatica: análise de baseline concluída sem alteração do produto; F1-T013 está concluída; migração 0028 aplicada com `integration_events` e `integration_fallbacks`; correção Segmento → Evento permanece concluída e isolada
+- verificacao_automatica: baseline registrado; F1-T013 concluída; migração 0028 aplicada; harness de validação ainda não implementado antes desta execução
 - aprendizado: pendente
-- ultima_acao: analisada a F1-T014, a SPEC-1-005 e as coleções existentes; identificado que o contrato/estrutura existe, mas o consumidor de homologação e a execução das cinco fixtures ainda não foram demonstrados
-- proxima_acao: aguardar autorização para implementar o harness de validação, idempotência e fallback em homologação
-- atualizado_em: 2026-09-01T18:14:00-03:00
+- ultima_acao: autorização confirmada e task preparada para implementação
+- proxima_acao: implementar harness de homologação, idempotência e fallback sem ativar integração externa
+- atualizado_em: 2026-09-01T21:11:00-03:00
