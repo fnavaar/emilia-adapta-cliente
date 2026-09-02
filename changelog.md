@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-09-02 · Fernanda · Task F1-T015 concluída: regressão final do consumidor com as cinco fixtures no harness de homologação (prévia v0.0.75), correção da reexecução idempotente (append-only de eventos + upsert de fallback), relatório de integração (`integration/RELATORIO-INTEGRACAO-F1-T015.md`) e B1-INT-01 mantido como bloqueio de ativação externa; QA passou e teste humano aprovado.
 - 2026-09-02 · Fernanda · Task F1-T014 concluída: harness administrativo de homologação com cinco fixtures, idempotência por event_id/hash, conflito, rejeição e fallback; migration 0029 aplicada, QA v0.0.73 passou e teste humano aprovado.
 - 2026-09-01 · Fernanda · Correção de modelo concluída: Segmento ficou oculto no atendimento e somente Tipo de evento é exibido; segmento derivado foi persistido internamente; QA v0.0.68 passou e consulta autenticada confirmou `tipo_evento=bem_nascido` → `segmento=maternidade`.
 - 2026-09-01 · Fernanda · Task F1-T013 concluída: contrato de entrada v1, schema JSON, cinco fixtures, respostas, idempotência, estruturas de eventos/fallback e documentação; QA v0.0.67 passou, B1-INT-01 foi mantido e teste humano aprovado.
