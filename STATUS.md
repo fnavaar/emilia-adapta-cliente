@@ -5,7 +5,7 @@
 
 ## Onde estamos
 
-- **Fase atual:** 1 — Registro canônico, entrada e briefing estruturado · aberta em 2026-08-25 · reunião de fechamento ainda não agendada
+- **Fase atual:** 1 — Registro canônico, entrada e briefing estruturado · aberta em 2026-08-25 · **demonstração das 06 etapas realizada e validada em 2026-09-02** · fechamento formal com o consultor pendente
 - **Objetivo desta fase:** registrar uma entrada de teste em um registro canônico, reutilizar dados no briefing e tornar pendências, duplicidades, permissões e fallback demonstráveis.
 - **No prazo?** sim — F1-T015 concluída com a regressão final do consumidor; as 15 tasks da Fase 1 estão fechadas; integração externa continua bloqueada por B1-INT-01.
 - **Correção concluída:** Segmento permanece oculto no atendimento; somente Tipo de evento é exibido, com segmento derivado e persistido internamente.
@@ -14,7 +14,7 @@
 
 - **Tasks:** 15/15 (100%)
 - **Tasks concluídas:** F1-T001 a F1-T015
-- **Próxima ação:** agendar a demonstração/reunião de fechamento da Fase 1 (entrada, registro canônico, briefing, pendência, duplicidade, permissão, rollback e fallback com fixtures).
+- **Próxima ação:** fechamento formal da Fase 1 com o consultor / decisão de próxima fase (design visual ou integrações reais, respeitando o B1-INT-01). Melhorias futuras registradas em `06_notas/melhorias-futuras.md`.
 
 ## Travas ativas
 
@@ -46,4 +46,4 @@
 
 ## Próxima reunião
 
-Ainda não agendada — demonstração prevista: entrada, registro canônico, briefing, pendência, duplicidade, permissão, rollback e fallback com fixtures.
+Demonstração das 06 etapas realizada e validada em 2026-09-02 (painel, cadastro, briefing, duplicidade, permissões e rollback). Próximo passo: fechamento formal com o consultor ou decisão de próxima fase.
