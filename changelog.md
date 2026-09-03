@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-09-03 · Fernanda e Mara · Task F2-T001 concluída: tabela oficial de preços 2026 aprovada; moeda R$, vigência de 01/01/2026 a 31/12/2026, perfis CF/REV/CB/BUFFET A/APOGEO e fonte/hash registrados em `05_entregas/F2-T001-recibo-tabela-precos.md`. Lacunas de caixinhas, laços externos, embalagens especiais e condições sob consulta ficaram separadas para F2-T002, sem inventar valores.
 - 2026-09-02 · Fernanda / ETHOS (Bia) · Demonstração de fechamento da Fase 1 realizada e validada (06/06 etapas): painel, cadastro progressivo de cliente (Marina Esteves), briefing com pendência e conflito preservando versões, duplicidade com decisão humana, permissões por perfil (atendimento/financeiro bloqueados no histórico, catálogo liberado) e rollback não destrutivo. Melhorias futuras anotadas em `06_notas/melhorias-futuras.md`.
 - 2026-09-02 · Fernanda · Task F1-T015 concluída: regressão final do consumidor com as cinco fixtures no harness de homologação (prévia v0.0.75), correção da reexecução idempotente (append-only de eventos + upsert de fallback), relatório de integração (`integration/RELATORIO-INTEGRACAO-F1-T015.md`) e B1-INT-01 mantido como bloqueio de ativação externa; QA passou e teste humano aprovado.
 - 2026-09-02 · Fernanda · Task F1-T014 concluída: harness administrativo de homologação com cinco fixtures, idempotência por event_id/hash, conflito, rejeição e fallback; migration 0029 aplicada, QA v0.0.73 passou e teste humano aprovado.
