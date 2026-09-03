@@ -3,11 +3,11 @@
 - task_id: F2-T001
 - champion: Fernanda (CEO)
 - spec: 04_fase-atual/specs/spec-2-001-composicao-politicas-proposta.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: ausente
+- etapa: implementando
+- autorizacao_implementacao: confirmada em 2026-09-03 14:00; trecho: "7. autorizado"
 - teste_humano: pendente
-- verificacao_automatica: pendente; análise documental realizada sem alteração de produto; Fase 2 liberada no `04_fase-atual/fase.md`, F2-T001 é a primeira task da Leva 1
+- verificacao_automatica: pendente; formalização da política B2-POL-01 em andamento, sem alteração de produto
 - aprendizado: pendente
-- ultima_acao: STATUS corrigido para Fase 2; F2-T001 analisada em nível de escopo e critérios
-- proxima_acao: aguardar autorização para executar F2-T001, após confirmação da tabela comercial pela Gestão/Financeiro
-- atualizado_em: 2026-09-03T13:13:00-03:00
+- ultima_acao: autorização recebida; confirmação da tabela TABELA_2026.xlsx, moeda R$, vigência 01/01/2026 a 31/12/2026, perfis e aprovadoras registrada
+- proxima_acao: criar recibo B2-POL-01, marcar F2-T001 e solicitar teste humano da documentação
+- atualizado_em: 2026-09-03T14:02:00-03:00
