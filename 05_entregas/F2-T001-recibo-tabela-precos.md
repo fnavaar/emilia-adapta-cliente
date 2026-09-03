@@ -2,9 +2,9 @@
 
 **Task:** F2-T001 — Aprovar tabela de preços, moeda e vigência  
 **SPEC:** SPEC-2-001 — Composição versionada e proposta comercial  
-**Status:** aguardando validação humana da Gestão  
-**Data da formalização:** 2026-09-03  
-**Aprovadoras indicadas:** Fernanda e Mara
+**Status:** concluída  
+**Data da aprovação:** 2026-09-03  
+**Aprovadoras:** Fernanda e Mara
 
 ## Fonte oficial
 
@@ -73,7 +73,7 @@ São exemplos confirmados de composição especial:
 
 ## Critério da F2-T001
 
-**B2-POL-01 em validação:** fonte, versão operacional, moeda, vigência e aprovadoras estão documentadas. A estrutura de tabelas personalizadas por cliente/grupo está registrada como regra do domínio. As lacunas de composição e precedência foram separadas para as decisões seguintes, sem inventar valores.
+**B2-POL-01 atendido:** fonte, versão operacional, moeda, vigência, aprovadoras e regra de tabelas configuráveis por cliente/grupo estão registrados. As lacunas de composição e precedência foram separadas para as decisões seguintes, sem inventar valores.
 
 ## Próxima dependência
 
