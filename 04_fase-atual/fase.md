@@ -13,7 +13,7 @@
 
 | ID | Task | Dono | SPEC | Critério binário | Pré-condições | Ponto de parada | Status | Leva |
 |---|---|---|---|---|---|---|---|---|
-| F2-T001 | Aprovar tabela de preços, moeda e vigência | Gestão + Financeiro | 2-001 | B2-POL-01 tem fonte, versão, vigência e aprovador | Catálogo vigente | Sem tabela, não calcular total | liberada | 1 |
+| F2-T001 | Aprovar tabela de preços, moeda e vigência | Gestão + Financeiro | 2-001 | B2-POL-01 tem fonte, versão, vigência e aprovador | Catálogo vigente | Sem tabela, não calcular total | concluída (2026-09-03) | 1 |
 | F2-T002 | Aprovar frete, desconto, adicionais, validade, termos e alçadas | Gestão + Financeiro | 2-001 | B2-POL-02/03 definidos ou bloqueios explícitos | F2-T001 para cálculo | Não inventar fórmula | liberada | 1 |
 | F2-T003 | Fechar aceite, vencimento, conferência e estados | Gestão + Financeiro + Atendimento | 2-002 | B2-APR-01, B2-FIN-01 e B2-EST-01 têm transições/responsáveis | Gestão disponível | Não tratar resposta como aprovação | liberada | 1 |
 | F2-T004 | Definir retenção, formato e acesso de comprovantes | Gestão + Financeiro + Técnico | 2-002 | B2-FIN-02 especifica retenção, acesso e formatos | Usuários de homologação | Não receber arquivo real sem regra | liberada | 1 |
