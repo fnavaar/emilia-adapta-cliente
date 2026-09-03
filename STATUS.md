@@ -12,35 +12,36 @@
 
 ## Progresso da fase
 
-- **Tasks:** 0/10 concluídas
-- **Task ativa:** F2-T001 — Aprovar tabela de preços, moeda e vigência
+- **Tasks:** 1/10 concluídas (10%)
+- **Tasks concluídas:** F2-T001
+- **Task ativa:** nenhuma
 - **Leva atual:** 1 — decisões e contrato
-- **Estado:** recibo B2-POL-01 formalizado; aguardando validação humana antes de marcar a task como concluída.
-- **Próxima ação:** revisar B2-POL-01 e confirmar a F2-T001.
+- **Última conclusão:** F2-T001 — B2-POL-01 aprovado e validado humanamente.
+- **Próxima ação:** selecionar e analisar uma única próxima task; F2-T002, F2-T003 e F2-T004 estão liberadas.
 
 ## Travas ativas
 
 | Critério de execução | Desde | Quem resolve | Ação em curso |
 |---|---|---|---|
 | Endpoint, autenticação real, limites e autorização de escrita externa | 2026-08-25 | Responsável técnico/Gestão | B1-INT-01; não ativar integração |
-| Validação humana da tabela oficial, moeda e vigência | 2026-09-03 | Fernanda/Mara | Revisar `05_entregas/F2-T001-recibo-tabela-precos.md` |
+| Frete, descontos, adicionais, validade, termos e alçadas | 2026-09-03 | Gestão + Financeiro | F2-T002; não inventar fórmula |
 
 ## Entregas concluídas
 
 | Fase | O que foi entregue | Fechada em |
 |---|---|---|
 | Fase 1 | Registro canônico, briefing, catálogo, permissões, auditoria, harness, regressão e demonstração; 15/15 tasks | 2026-09-02 |
-| F2-T001 | Recibo B2-POL-01 formalizado; aguardando validação humana | — |
+| F2-T001 | B2-POL-01: tabela 2026, moeda, vigência, fonte, aprovadoras e modelo de tabelas configuráveis por cliente/grupo | 2026-09-03 |
 | F2-T002 a F2-T010 | Planejadas na Fase 2; nenhuma concluída | — |
 
 ## Documentos da Fase 2
 
-- `04_fase-atual/fase.md` — contrato da fase e tabela operacional das 10 tasks
-- `04_fase-atual/specs/spec-2-001-composicao-politicas-proposta.md` — composição e proposta
-- `04_fase-atual/specs/spec-2-002-aprovacao-conversao-fila-financeira.md` — aprovação, conversão e fila financeira
-- `05_entregas/F2-T001-recibo-tabela-precos.md` — recibo B2-POL-01
+- `04-fase-atual/fase.md` — contrato da fase e tabela operacional das 10 tasks
+- `04-fase-atual/specs/spec-2-001-composicao-politicas-proposta.md` — composição e proposta
+- `04-fase-atual/specs/spec-2-002-aprovacao-conversao-fila-financeira.md` — aprovação, conversão e fila financeira
+- `05_entregas/F2-T001-recibo-tabela-precos.md` — recibo B2-POL-01 concluído
 - `06_notas/melhorias-futuras.md` — melhorias identificadas na Fase 1
 
 ## Próxima reunião
 
-F2-T001: validar o recibo B2-POL-01. Depois, avançar somente se a política estiver completa; caso contrário, registrar ou manter o bloqueio B2-POL-01.
+Próxima análise: uma única task da Leva 1 (F2-T002, F2-T003 ou F2-T004). A F2-T002 deve tratar frete, descontos, adicionais, validade, termos, alçadas e atualização dos componentes especiais/produtos mais vendidos.
