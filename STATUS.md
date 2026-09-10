@@ -12,19 +12,20 @@
 
 ## Progresso da fase
 
-- **Tasks:** 1/10 concluídas (10%)
-- **Tasks concluídas:** F2-T001
-- **Task ativa:** F2-T002 — aguardando validação humana
+- **Tasks:** 2/10 concluídas (20%)
+- **Tasks concluídas:** F2-T001, F2-T002
+- **Task ativa:** nenhuma
 - **Leva atual:** 1 — decisões e contrato
-- **Última ação:** B2-POL-02 e B2-POL-03 formalizados com regras comerciais recebidas.
-- **Próxima ação:** revisar os dois recibos da F2-T002 e confirmar a task.
+- **Última conclusão:** F2-T002 — B2-POL-02 e B2-POL-03 validados.
+- **Próxima ação:** selecionar e analisar uma única próxima task; F2-T003 ou F2-T004 estão liberadas.
 
 ## Travas ativas
 
 | Critério de execução | Desde | Quem resolve | Ação em curso |
 |---|---|---|---|
 | Endpoint, autenticação real, limites e autorização de escrita externa | 2026-08-25 | Responsável técnico/Gestão | B1-INT-01; não ativar integração |
-| Validação humana de frete, descontos, adicionais, validade, pagamentos, termos e alçadas | 2026-09-10 | Fernanda/Mara | Revisar recibos B2-POL-02 e B2-POL-03 |
+| Valores de adicionais e acumulação de descontos | 2026-09-10 | Gestão + Financeiro | Bloqueados até atualização/decisão; não calcular silenciosamente |
+| Regra de cancelamento para pedidos até 100 unidades | 2026-09-10 | Gestão + Financeiro | Bloqueada; não inferir regra |
 
 ## Entregas concluídas
 
@@ -32,19 +33,19 @@
 |---|---|---|
 | Fase 1 | Registro canônico, briefing, catálogo, permissões, auditoria, harness, regressão e demonstração; 15/15 tasks | 2026-09-02 |
 | F2-T001 | B2-POL-01: tabela 2026, moeda, vigência, fonte, aprovadoras e modelo de tabelas configuráveis por cliente/grupo | 2026-09-03 |
-| F2-T002 | B2-POL-02/B2-POL-03 formalizados; aguardando validação humana | — |
+| F2-T002 | B2-POL-02/B2-POL-03: frete, descontos, validade, pagamentos, alterações, cancelamentos e alçadas | 2026-09-10 |
 | F2-T003 a F2-T010 | Planejadas na Fase 2; nenhuma concluída | — |
 
 ## Documentos da Fase 2
 
 - `04_fase-atual/fase.md` — contrato da fase e tabela operacional das 10 tasks
-- `04_fase-atual/specs/spec-2-001-composicao-politicas-proposta.md` — composição e proposta
-- `04_fase-atual/specs/spec-2-002-aprovacao-conversao-fila-financeira.md` — aprovação, conversão e fila financeira
+- `04-fase-atual/specs/spec-2-001-composicao-politicas-proposta.md` — composição e proposta
+- `04-fase-atual/specs/spec-2-002-aprovacao-conversao-fila-financeira.md` — aprovação, conversão e fila financeira
 - `05_entregas/F2-T001-recibo-tabela-precos.md` — recibo B2-POL-01 concluído
-- `05_entregas/F2-T002-recibo-frete-descontos-adicionais.md` — recibo B2-POL-02
-- `05_entregas/F2-T002-recibo-validade-pagamentos-alcadas.md` — recibo B2-POL-03
+- `05_entregas/F2-T002-recibo-frete-descontos-adicionais.md` — recibo B2-POL-02 concluído
+- `05_entregas/F2-T002-recibo-validade-pagamentos-alcadas.md` — recibo B2-POL-03 concluído
 - `06_notas/melhorias-futuras.md` — melhorias identificadas na Fase 1
 
 ## Próxima reunião
 
-F2-T002: validar B2-POL-02 e B2-POL-03. Depois, a próxima task da Leva 1 será F2-T003 ou F2-T004.
+Próxima análise: F2-T003 ou F2-T004, uma task por vez. A construção permanece bloqueada até as decisões da Leva 1 e suas dependências.
