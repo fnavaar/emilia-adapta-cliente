@@ -6,8 +6,8 @@
 - etapa: aguardando_autorizacao
 - autorizacao_implementacao: ausente
 - teste_humano: pendente
-- verificacao_automatica: pendente; decisões comerciais recebidas, sem alteração de produto; execução aguarda fechamento de duas ambiguidades e autorização explícita
+- verificacao_automatica: pendente; decisões comerciais recebidas e registradas, sem alteração de produto; execução aguarda autorização explícita
 - aprendizado: pendente
-- ultima_acao: F2-T002 analisada com regras recebidas: frete como exceção com justificativa opcional; desconto Pix por quantidade (3% 50–149, 5% 150–399, 7% acima de 400); descontos maiores somente Administrador; validade 30 dias; pagamentos à vista e parcelados; alterações/cancelamentos com autorização identificada
-- proxima_acao: confirmar tratamento da mudança de tabela dentro da validade e calendário das parcelas Pix; depois autorizar execução da F2-T002
-- atualizado_em: 2026-09-10T11:42:00-03:00
+- ultima_acao: F2-T002 detalhada com frete como exceção e justificativa opcional; descontos Pix de 3%/5%/7% por quantidade; descontos superiores restritos a Administrador; proposta válida por 30 dias mantendo o valor enviado; pagamentos à vista e parcelados; primeira parcela Pix no fechamento, última até 10 dias antes da entrega e parcelas intermediárias em datas livremente combinadas; alterações e cancelamentos com autorização identificada
+- proxima_acao: aguardar autorização para formalizar B2-POL-02/B2-POL-03 no GitHub
+- atualizado_em: 2026-09-10T11:43:00-03:00
