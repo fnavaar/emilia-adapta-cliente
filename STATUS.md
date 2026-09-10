@@ -7,21 +7,21 @@
 
 - **Fase atual:** 2 — Composição, proposta, aprovação, conversão e fila financeira · liberada para execução sequencial em homologação
 - **Objetivo desta fase:** transformar uma oportunidade com briefing em proposta estruturada, aprovação rastreável, pedido-base e fila financeira visível.
-- **No prazo?** sim — Fase 1 encerrada com 15/15 tasks; Fase 2 detalhada no GitHub com 10 tasks e 2 SPECs.
+- **No prazo?** sim — Fase 1 encerrada com 15/15 tasks; Fase 2 detalhada no GitHub com 10 tasks e 3 tasks concluídas.
 - **Limites:** integração externa, conciliação bancária automática e liberação de produção permanecem fora desta fase.
 
 ## Onde está a execução
 
-- **Task ativa:** F2-T003 — Fechar aceite, vencimento, conferência e estados
-- **Etapa:** aguardando teste humano do contrato formalizado
-- **Progresso das tasks:** 2 concluídas + F2-T003 formalizada documentalmente; construção permanece nas tasks da Leva 2
-- **Próxima ação:** Fernanda revisar e aprovar o recibo/contrato; somente depois avançar para construção dependente
+- **Task ativa:** nenhuma
+- **Etapa:** F2-T003 concluída; nenhuma nova task iniciada
+- **Progresso das tasks:** 3/10 concluídas (30%)
+- **Próxima ação:** selecionar e analisar uma única task liberada, sem iniciar implementação automaticamente
 
 ## Progresso da fase
 
-- **Tasks:** 2/10 concluídas; F2-T003 com contrato formalizado e teste humano pendente
-- **Tasks concluídas:** F2-T001, F2-T002
-- **Task ativa:** F2-T003
+- **Tasks:** 3/10 concluídas (30%)
+- **Tasks concluídas:** F2-T001, F2-T002, F2-T003
+- **Task ativa:** nenhuma
 - **Leva atual:** 1 — decisões e contrato
 - **Última entrega:** contrato da F2-T003 em `05_entregas/F2-T003-recibo-aceite-estados-degustacoes.md`.
 
@@ -40,7 +40,7 @@
 | Fase 1 | Registro canônico, briefing, catálogo, permissões, auditoria, harness, regressão e demonstração; 15/15 tasks | 2026-09-02 |
 | F2-T001 | B2-POL-01: tabela 2026, moeda, vigência, fonte, aprovadoras e modelo de tabelas configuráveis por cliente/grupo | 2026-09-03 |
 | F2-T002 | B2-POL-02/B2-POL-03: frete, descontos, validade, pagamentos, alterações, cancelamentos e alçadas | 2026-09-10 |
-| F2-T003 | B2-APR-01/B2-FIN-01/B2-EST-01: aceite antes do pagamento, estados separados, entregas derivadas e degustações sem contas a receber; teste humano pendente | — |
+| F2-T003 | B2-APR-01/B2-FIN-01/B2-EST-01: aceite antes do pagamento, estados separados, entregas derivadas e degustações sem contas a receber; contrato aprovado e revalidado | 2026-09-10 |
 | F2-T004 a F2-T010 | Planejadas na Fase 2; nenhuma concluída | — |
 
 ## Documentos da Fase 2
