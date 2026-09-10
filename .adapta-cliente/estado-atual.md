@@ -6,8 +6,8 @@
 - etapa: aguardando_autorizacao
 - autorizacao_implementacao: ausente
 - teste_humano: pendente
-- verificacao_automatica: pendente; análise documental realizada sem alteração de produto; F2-T001 e F2-T002 concluídas; F2-T003 liberada na Leva 1
+- verificacao_automatica: pendente; requisitos funcionais detalhados pela Gestão, sem alteração de produto
 - aprendizado: pendente
-- ultima_acao: F2-T003 selecionada e analisada em nível de escopo; bloqueios B2-APR-01, B2-FIN-01 e B2-EST-01 identificados
-- proxima_acao: aguardar autorização para executar F2-T003 e receber definições de aceite, estados e conferência financeira
-- atualizado_em: 2026-09-10T11:50:00-03:00
+- ultima_acao: F2-T003 detalhada com proposta/orçamento de múltiplas opções, aceite por link/WhatsApp, aprovação separada de conversão, validade promocional, pedidos flexíveis, estados de pedido/financeiro/pendências, suspensão, crédito e histórico
+- proxima_acao: confirmar decisões bloqueantes e autorizar formalização de B2-APR-01/B2-FIN-01/B2-EST-01
+- atualizado_em: 2026-09-10T17:10:00-03:00
