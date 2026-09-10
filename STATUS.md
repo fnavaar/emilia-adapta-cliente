@@ -7,19 +7,19 @@
 
 - **Fase atual:** 2 — Composição, proposta, aprovação, conversão e fila financeira · liberada para execução sequencial em homologação
 - **Objetivo desta fase:** transformar uma oportunidade com briefing em proposta estruturada, aprovação rastreável, pedido-base e fila financeira visível.
-- **No prazo?** sim — Fase 1 encerrada com 15/15 tasks; Fase 2 detalhada no GitHub com 10 tasks e 5 tasks concluídas.
+- **No prazo?** sim — Fase 1 encerrada com 15/15 tasks; Fase 2 detalhada no GitHub com 10 tasks e 4 tasks concluídas.
 - **Limites:** integração externa, conciliação bancária automática e liberação de produção permanecem fora desta fase.
 
 ## Onde está a execução
 
 - **Task ativa:** nenhuma
 - **Etapa:** F2-T004 concluída; nenhuma nova task iniciada
-- **Progresso das tasks:** 5/10 concluídas (50%)
+- **Progresso das tasks:** 4/10 concluídas (40%)
 - **Próxima ação:** selecionar e analisar uma única task liberada, sem iniciar implementação automaticamente
 
 ## Progresso da fase
 
-- **Tasks:** 5/10 concluídas (50%)
+- **Tasks:** 4/10 concluídas (40%)
 - **Tasks concluídas:** F2-T001, F2-T002, F2-T003, F2-T004
 - **Task ativa:** nenhuma
 - **Leva atual:** 1 — decisões e contrato
