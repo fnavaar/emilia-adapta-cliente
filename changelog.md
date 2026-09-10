@@ -2,6 +2,7 @@
 
 ## Registro
 
+- 2026-09-10 · Fernanda · Decisão F2-T004: Produção não deve acessar comprovantes nem dados financeiros. Produção receberá apenas informações operacionais necessárias para executar o pedido.
 - 2026-09-10 · DÚVIDA F2-T004: decisões recebidas: sem prazo automático de retenção; formatos PDF/JPG/JPEG/PNG; até 10 MB por arquivo e 3 arquivos por pagamento; substituição cria nova versão e preserva a anterior; Atendimento pode incluir e consultar comprovantes e consultar status financeiro do pedido; não pode editar pagamento confirmado, confirmar pagamento, excluir comprovante ou abonar dívida. Alteração posterior da forma de pagamento deve criar nova versão do plano, preservando valores já pagos e histórico. Permissão da Produção permanece ambígua porque foi marcada no formulário, mas não aparece no detalhamento operacional.
 - 2026-09-10 · DÚVIDA: F2-T004 depende de decisão da Gestão sobre retenção, formatos/limites, substituição e acesso aos comprovantes de pagamento. Sem essas regras, não formalizar B2-FIN-02 nem receber arquivo real.
 - 2026-09-10 · Fernanda · Task F2-T003 concluída: contrato de aceite, conferência, estados e degustações aprovado e revalidado. Evidências: B2-APR-01, B2-FIN-01 e B2-EST-01 formalizados na SPEC e no recibo; aceite antes do pagamento; estados comercial/operacional/financeiro separados; entregas derivadas preservam saldo e histórico; degustações sem contas a receber; B1-INT-01 e ausência de liberação automática de produção preservados.
