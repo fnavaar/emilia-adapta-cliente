@@ -8,6 +8,6 @@
 - teste_humano: pendente
 - verificacao_automatica: pendente; requisitos funcionais detalhados pela Gestão, sem alteração de produto
 - aprendizado: pendente
-- ultima_acao: F2-T003 detalhada: orçamento com múltiplas opções; vendedora envia a versão; cliente pode selecionar opções de sabor/embalagem e ajustar quantidade, mas cores ficam sob orientação da vendedora; ajustes retornam para a vendedora e geram nova versão; pedido final mostra dados obrigatórios, pendências e termos antes do aceite; pagamento só é enviado após aprovação do pedido; pedido principal pode gerar entregas derivadas por data para retiradas/parciais; campos obrigatórios e “a definir” classificados por evento; suspensão/crédito com validade de 1 ano; cancelamento conforme regras recebidas e identificação de autorizador
-- proxima_acao: confirmar duas lacunas de modelagem: aprovação do pedido sem pagamento versus conversão operacional, e estados separados de pedido/financeiro; depois autorizar formalização de B2-APR-01/B2-FIN-01/B2-EST-01
-- atualizado_em: 2026-09-10T18:05:00-03:00
+- ultima_acao: F2-T003 fechada em decisão: cliente deve preencher/conferir os dados em interface amigável e confirmar pedido antes de receber QR Pix, dados bancários ou fluxo Stone; status comercial, operacional e financeiro são separados; pedido principal pode gerar entregas/retiradas derivadas por data, preservando saldo e histórico; degustações são cortesia, podem ter frete ou não, inclusive para parceiras recorrentes, e geram ordem de produção sem contas a receber; degustações devem registrar origem/parceira, frete, destinatário, retorno, indicação e eventual fechamento para medir desempenho de parceiras e clientes
+- proxima_acao: formalizar B2-APR-01/B2-FIN-01/B2-EST-01 e preparar implementação autorizada da F2-T003, sem ativar Stone, liberar produção ou criar financeiro real nesta task
+- atualizado_em: 2026-09-10T18:14:00-03:00
