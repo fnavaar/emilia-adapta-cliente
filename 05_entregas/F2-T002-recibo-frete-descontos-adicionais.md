@@ -2,8 +2,8 @@
 
 **Task:** F2-T002 — Aprovar frete, desconto, adicionais, validade, termos e alçadas  
 **SPEC:** SPEC-2-001 — Composição versionada e proposta comercial  
-**Status:** aguardando validação humana  
-**Data da formalização:** 2026-09-10  
+**Status:** concluída e validada pela Gestão  
+**Data da aprovação:** 2026-09-10  
 **Gestão:** Fernanda
 
 ## Frete
@@ -25,7 +25,7 @@ Aplicam-se à quantidade total de bem-casados, conforme a política confirmada:
 
 - Descontos maiores que os limites acima somente podem ser concedidos e autorizados por perfil Administrador.
 - A autorização de desconto excepcional deve guardar identificador do autorizador e motivo.
-- Não foi definida acumulação com outros descontos; permanece pendente de decisão antes do cálculo automático.
+- Não foi definida acumulação com outros descontos; permanece bloqueada para decisão antes do cálculo automático.
 
 ## Adicionais e composição especial
 
@@ -39,7 +39,7 @@ A proposta pode conter componentes adicionais, inclusive mais de um, conforme a 
 - manuseio de material fornecido pelo cliente;
 - formatos especiais, como bem-casado em fralda com alfinete, sem fita.
 
-Os valores específicos desses componentes ainda precisam ser atualizados/confirmados a partir do mix de vendas e permanecem sem cálculo automático até decisão. Itens “sob consulta” não devem gerar valor silenciosamente.
+Os valores específicos desses componentes ainda precisam ser atualizados/confirmados a partir do mix de vendas e permanecem bloqueados para cálculo automático até decisão. Itens “sob consulta” não devem gerar valor silenciosamente.
 
 ## Limites
 
@@ -48,6 +48,6 @@ Os valores específicos desses componentes ainda precisam ser atualizados/confir
 - Não substitui a definição de validade, termos, pagamento e alçadas registrada em B2-POL-03.
 - Não há integração externa nem liberação de produção.
 
-## Critério parcial
+## Critério
 
-B2-POL-02 fica **formalizado e aguardando validação humana**. Frete, descontos por quantidade e restrição de descontos excepcionais foram registrados; lacunas de adicionais e acumulação de descontos foram preservadas como pendências, sem inventar valores.
+**B2-POL-02 atendido:** frete como exceção, descontos via Pix por quantidade e restrição de descontos excepcionais estão registrados e validados. Lacunas de adicionais e acumulação de descontos ficaram explicitamente bloqueadas, sem inventar valores.
