@@ -2,8 +2,8 @@
 
 **Task:** F2-T002 — Aprovar frete, desconto, adicionais, validade, termos e alçadas  
 **SPEC:** SPEC-2-001 — Composição versionada e proposta comercial  
-**Status:** aguardando validação humana  
-**Data da formalização:** 2026-09-10  
+**Status:** concluída e validada pela Gestão  
+**Data da aprovação:** 2026-09-10  
 **Gestão:** Fernanda
 
 ## Validade da proposta
@@ -48,7 +48,7 @@ As datas combinadas e os valores das parcelas devem ser registrados na proposta/
 - Para pedidos acima de 100 unidades, é retida a importância de **20% do valor total do pedido** para cobrir custos administrativos.
 - Qualquer pessoa pode realizar e autorizar o cancelamento, desde que a autorização tenha identificação.
 - O registro deve preservar o pedido, a proposta e o motivo do cancelamento.
-- Não foi definida nesta task a regra para pedidos de até 100 unidades; permanece pendente, sem inferência.
+- A regra para pedidos de até 100 unidades permanece bloqueada para decisão futura, sem inferência.
 
 ## Alçadas e auditoria
 
@@ -60,8 +60,8 @@ As datas combinadas e os valores das parcelas devem ser registrados na proposta/
 
 - Este recibo formaliza regras; não cria cálculo automático nem fluxo de aprovação.
 - Não libera produção nem ativa integração externa.
-- Termos não definidos, como cancelamento até 100 unidades e acumulação de descontos, permanecem pendentes.
+- Termos não definidos, como cancelamento até 100 unidades e acumulação de descontos, permanecem bloqueados.
 
-## Critério parcial
+## Critério
 
-B2-POL-03 fica **formalizado e aguardando validação humana**. Validade, pagamentos, calendário mínimo do Pix, alterações, cancelamentos e identificação de autorizações foram registrados sem inventar os pontos não definidos.
+**B2-POL-03 atendido:** validade, pagamentos, calendário mínimo do Pix, alterações, cancelamentos e identificação de autorizações estão registrados e validados. Os pontos não definidos ficaram explicitamente bloqueados, sem inventar regras.
