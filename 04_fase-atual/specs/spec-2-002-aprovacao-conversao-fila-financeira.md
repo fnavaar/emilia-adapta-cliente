@@ -1,8 +1,8 @@
 # SPEC-2-002 — Aprovação, conversão e fila financeira controlada
 
 **Fase:** 2 — Composição, proposta, aprovação, conversão e fila financeira
-**Status:** contrato funcional da F2-T003 formalizado; construção depende das tasks da Leva 2
-**Dono:** Atendimento para proposta; Cliente/intermediário para resposta; Financeiro para conferência; Administrador para alçadas
+**Status:** contrato funcional das F2-T003 e F2-T004 formalizado; construção depende das tasks da Leva 2
+**Dono:** Atendimento para proposta e operação do pedido; Cliente/intermediário para resposta; Financeiro para conferência; Administrador para alçadas
 **Origem no escopo:** RQ-007 a RQ-010; AC-005, AC-006, AC-007, AC-010 e AC-014; DH-002, DH-005 e DH-007
 **Degrau da solução:** construção de fluxo comercial e financeiro mínimo sobre proposta versionada. Converte sem redigitação e cria fila de conferência; não concilia banco, não libera produção e não escreve em integração externa.
 
@@ -31,16 +31,25 @@ Uma proposta enviada pode ser aprovada, devolvida para alteração, recusada ou 
 17. Suspensão e crédito têm validade de 1 ano, contada da solicitação de suspensão, transformação em crédito ou aquisição do crédito, conforme o caso. Crédito é registro financeiro separado do pedido, pode ser utilizado parcialmente e congela valor, não preço nem quantidade.
 18. Cancelamento respeita a política aprovada: 7 dias para reembolso integral; pedidos abaixo de 100 unidades têm reembolso integral até uma semana antes da entrega; após esse prazo, autorização de Administrador e retenção de 20%; pedidos acima de 100 unidades, após os 7 dias, têm retenção de 20%. Devolução via cartão segue a operadora; via Pix ocorre em até 10 dias úteis, conforme política. Toda exceção identifica o autorizador.
 19. Perfis envolvidos: Atendimento/equipe de vendas pode montar, revisar e acompanhar; Financeiro confere pagamentos; Administrador executa alçadas e acessa os recursos autorizados.
+20. Comprovantes aceitos: PDF, JPG/JPEG e PNG; limite de 10 MB por arquivo e até 3 arquivos por pagamento.
+21. Não há prazo automático de retenção definido para comprovantes. Até nova decisão, o sistema não deve excluir automaticamente nem receber arquivos reais sem a política técnica de armazenamento e LGPD.
+22. A substituição de comprovante cria nova versão e preserva a anterior para histórico e auditoria. Não há sobrescrita destrutiva.
+23. Atendimento pode incluir e consultar comprovantes vinculados aos pedidos sob sua responsabilidade e consultar o status financeiro do pedido. Não pode editar pagamento confirmado, confirmar pagamento, excluir comprovante ou abonar dívida.
+24. Financeiro pode consultar, conferir ou marcar divergência conforme suas permissões. Administrador possui as alçadas administrativas previstas.
+25. Produção não acessa comprovantes nem dados financeiros; recebe apenas informações operacionais necessárias para executar o pedido.
+26. A alteração posterior da forma de pagamento não edita pagamento confirmado: cria nova versão do plano de pagamento, preserva valores pagos, parcelas, datas e histórico anteriores e registra autor, motivo e data da alteração.
+27. Relatórios de total de vendas, comparativo mensal, férias e divisão de crédito entre vendedoras ficam fora desta task e exigem regra própria de atribuição e visibilidade; não liberar visão financeira global ao Atendimento por inferência.
 
 ## Bloqueios resolvidos nesta task
 
-- **B2-APR-01:** canal de aceite por link, interface de conferência, identidade do aprovador, confirmação antes do pagamento, revisão por nova versão e seleção limitada de opções definidos. A futura integração Stone permanece fora do escopo desta task.
+- **B2-APR-01:** canal de aceite por link, interface de conferência, identidade do aprovador, confirmação antes do pagamento, revisão por nova versão e seleção limitada de opções definidos.
 - **B2-FIN-01:** estados financeiro/comercial/operacional separados; pagamento apresentado somente após aceite; responsáveis e divergência definidos; degustação sem contas a receber definida.
+- **B2-FIN-02:** formatos, limites, versões e permissões dos comprovantes definidos; pagamento confirmado é imutável, mudanças geram nova versão; Produção sem acesso financeiro.
 - **B2-EST-01:** estados operacionais canônicos definidos, com Falta Definição e entregas derivadas por data; Reserva de degustação não é venda nem contas a receber.
 
 ## Dependências preservadas
 
-- **B2-FIN-02:** retenção, acesso e formato técnico de comprovantes/anexos permanecem para F2-T004.
+- Política técnica de armazenamento, LGPD, retenção futura e anexos reais ainda deve ser implementada e testada nas tasks de construção.
 - **B1-INT-01:** nenhuma integração externa é ativada nesta task.
 - Não há liberação automática para produção nesta SPEC.
 
@@ -55,7 +64,7 @@ Uma proposta enviada pode ser aprovada, devolvida para alteração, recusada ou 
 
 ## TDD da SPEC
 
-RED: aprovação duplicada, versão expirada, comprovante divergente e acesso indevido. GREEN: fixtures de aprovação, alteração, recusa, expiração, repetição e divergência. REGRESSÃO: repetir conversão e modificar versão após resposta. As entregas derivadas e a cortesia de degustação deverão ser cobertas na construção/regressão das tasks dependentes.
+RED: aprovação duplicada, versão expirada, comprovante divergente, acesso indevido, formato/tamanho/quantidade inválidos, tentativa de editar pagamento confirmado, tentativa de excluir comprovante e acesso da Produção a dados financeiros. GREEN: fixtures de aprovação, alteração, recusa, expiração, repetição, divergência, nova versão de pagamento e permissões. REGRESSÃO: repetir conversão, modificar versão após resposta e substituir comprovante preservando o anterior.
 
 ## Tasks vinculadas
 
