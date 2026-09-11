@@ -1,29 +1,29 @@
 # STATUS — Projeto Mara Cristina Amaral Santos - ME
 
-> **Atualizado em:** 2026-09-10 · **Por:** ETHOS (Bia)
+> **Atualizado em:** 2026-09-11 · **Por:** ETHOS (Bia)
 > O painel do projeto: fase atual, progresso e o que precisa de atenção.
 
 ## Onde estamos
 
 - **Fase atual:** 2 — Composição, proposta, aprovação, conversão e fila financeira · liberada para execução sequencial em homologação
 - **Objetivo desta fase:** transformar uma oportunidade com briefing em proposta estruturada, aprovação rastreável, pedido-base e fila financeira visível.
-- **No prazo?** sim — Fase 1 encerrada com 15/15 tasks; Fase 2 detalhada no GitHub com 10 tasks e 4 tasks concluídas.
+- **No prazo?** sim — Fase 1 encerrada com 15/15 tasks; Fase 2 detalhada no GitHub com 10 tasks e 5 tasks concluídas.
 - **Limites:** integração externa, conciliação bancária automática e liberação de produção permanecem fora desta fase.
 
 ## Onde está a execução
 
 - **Task ativa:** nenhuma
-- **Etapa:** F2-T004 concluída; nenhuma nova task iniciada
-- **Progresso das tasks:** 4/10 concluídas (40%)
+- **Etapa:** F2-T005 concluída; nenhuma nova task iniciada
+- **Progresso das tasks:** 5/10 concluídas (50%)
 - **Próxima ação:** selecionar e analisar uma única task liberada, sem iniciar implementação automaticamente
 
 ## Progresso da fase
 
-- **Tasks:** 4/10 concluídas (40%)
-- **Tasks concluídas:** F2-T001, F2-T002, F2-T003, F2-T004
+- **Tasks:** 5/10 concluídas (50%)
+- **Tasks concluídas:** F2-T001, F2-T002, F2-T003, F2-T004, F2-T005
 - **Task ativa:** nenhuma
-- **Leva atual:** 1 — decisões e contrato
-- **Última entrega:** contrato da F2-T004 em `05_entregas/F2-T004-recibo-comprovantes-permissoes.md`.
+- **Leva atual:** 2 — construção
+- **Última entrega:** modelo persistente de propostas, políticas, itens, snapshots e auditoria aplicado no Preview, versão 0.0.76.
 
 ## Travas ativas
 
@@ -42,7 +42,8 @@
 | F2-T002 | B2-POL-02/B2-POL-03: frete, descontos, validade, pagamentos, alterações, cancelamentos e alçadas | 2026-09-10 |
 | F2-T003 | B2-APR-01/B2-FIN-01/B2-EST-01: aceite antes do pagamento, estados separados, entregas derivadas e degustações sem contas a receber; contrato aprovado e revalidado | 2026-09-10 |
 | F2-T004 | B2-FIN-02: formatos, limites, versionamento, permissões de comprovantes e troca não destrutiva de pagamento; contrato aprovado e revalidado | 2026-09-10 |
-| F2-T005 a F2-T010 | Planejadas na Fase 2; nenhuma concluída | — |
+| F2-T005 | Modelo persistente de propostas, itens, políticas, snapshots e auditoria; migration 0030 aplicada no Preview, QA 0.0.76 aprovado e teste humano aprovado | 2026-09-11 |
+| F2-T006 a F2-T010 | Planejadas na Fase 2; nenhuma concluída | — |
 
 ## Documentos da Fase 2
 
@@ -54,4 +55,5 @@
 - `05_entregas/F2-T002-recibo-validade-pagamentos-alcadas.md` — recibo B2-POL-03 concluído
 - `05_entregas/F2-T003-recibo-aceite-estados-degustacoes.md` — recibo do contrato funcional F2-T003
 - `05_entregas/F2-T004-recibo-comprovantes-permissoes.md` — recibo do contrato funcional F2-T004
+- `05_entregas/F2-T005-recibo-modelo-propostas-politicas.md` — recibo técnico do modelo F2-T005
 - `06_notas/melhorias-futuras.md` — melhorias identificadas na Fase 1
