@@ -29,19 +29,17 @@ migrate(
       listRule: '@request.auth.id != ""', viewRule: '@request.auth.id != ""', createRule: '@request.auth.id != ""', updateRule: '@request.auth.id != ""', deleteRule: null,
       fields: [
         { name: 'oportunidade_id', type: 'relation', required: true, collectionId: oportunidades.id, cascadeDelete: false, maxSelect: 1 }, { name: 'cliente_id', type: 'relation', required: true, collectionId: clientes.id, cascadeDelete: false, maxSelect: 1 },
-        { name: 'versao', type: 'number', required: true, onlyInt: true, min: 1 }, { name: 'versao_anterior_id', type: 'relation', required: false, collectionId: 'REPLACE_WITH_SELF_ID', cascadeDelete: false, maxSelect: 1 },
+        { name: 'versao', type: 'number', required: true, onlyInt: true, min: 1 },
         { name: 'status', type: 'select', values: ['rascunho', 'em_revisao', 'enviada', 'aprovada', 'recusada', 'expirada', 'substituida', 'bloqueada'], required: true, maxSelect: 1 }, { name: 'moeda', type: 'text', required: true },
         { name: 'subtotal_snapshot', type: 'number', required: false }, { name: 'desconto_snapshot', type: 'number', required: false }, { name: 'frete_snapshot', type: 'number', required: false }, { name: 'total_snapshot', type: 'number', required: false },
         { name: 'validade_ate', type: 'date', required: false }, { name: 'politica_id', type: 'relation', required: false, collectionId: politicas.id, cascadeDelete: false, maxSelect: 1 }, { name: 'politica_versao_snapshot', type: 'text', required: false },
         { name: 'tabela_comercial_snapshot', type: 'json', required: false }, { name: 'condicoes_snapshot', type: 'json', required: false }, { name: 'criada_por', type: 'relation', required: true, collectionId: auth.id, cascadeDelete: false, maxSelect: 1 },
         { name: 'enviada_em', type: 'date', required: false }, { name: 'aprovada_em', type: 'date', required: false }, { name: 'observacoes', type: 'text', required: false }, { name: 'created', type: 'autodate', onCreate: true, onUpdate: false }, { name: 'updated', type: 'autodate', onCreate: true, onUpdate: true },
       ],
-      indexes: ['CREATE INDEX idx_propostas_oportunidade ON propostas (oportunidade_id)', 'CREATE INDEX idx_propostas_cliente ON propostas (cliente_id)', 'CREATE INDEX idx_propostas_status ON propostas (status)', 'CREATE INDEX idx_propostas_versao_anterior ON propostas (versao_anterior_id)'],
+      indexes: ['CREATE INDEX idx_propostas_oportunidade ON propostas (oportunidade_id)', 'CREATE INDEX idx_propostas_cliente ON propostas (cliente_id)', 'CREATE INDEX idx_propostas_status ON propostas (status)'],
     })
     app.save(propostas)
-
-    const selfId = propostas.id
-    propostas.fields.find((f) => f.name === 'versao_anterior_id').collectionId = selfId
+    propostas.fields.add(new RelationField({ name: 'versao_anterior_id', required: false, collectionId: propostas.id, cascadeDelete: false, maxSelect: 1 }))
     app.save(propostas)
 
     const itens = new Collection({
