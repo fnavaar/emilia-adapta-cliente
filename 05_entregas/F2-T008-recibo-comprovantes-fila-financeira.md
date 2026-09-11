@@ -1,8 +1,11 @@
 # Recibo F2-T008 — Comprovantes e fila financeira
 
-**Status:** implementação realizada; aguardando teste humano
+**Status:** concluída e validada
 **Data:** 2026-09-11
-**Versão Preview:** 0.0.94
+**Versão entregue:** 0.0.99
+**Preview:** https://nexus-emilia-49529--preview.goskip.app
+**Produção:** https://nexus-emilia-49529.goskip.app
+**Ref publicada:** `597c62e`
 **Task:** F2-T008
 **SPEC:** SPEC-2-002 — Aprovação, conversão e fila financeira controlada
 
@@ -29,6 +32,7 @@
 - Comprovante recebido muda o pagamento para `comprovante_recebido`, sem confirmar pagamento.
 - Substituição cria nova versão e preserva a anterior.
 - Pagamento conferido registra autor/data e bloqueia novo comprovante.
+- Na interface, pagamento conferido é exibido como **Pago**; o status consolidado do pedido aparece separadamente como **Pago** ou **Parcialmente pago**.
 - Divergência exige motivo e cria pendência para Atendimento com responsável, prazo e próxima ação.
 - Plano de pagamento substituído cria nova versão, sem editar a versão anterior.
 - Produção não consulta pedidos financeiros, pagamentos, comprovantes ou auditoria financeira.
@@ -38,13 +42,15 @@
 
 ## QA automatizado
 
-Versão `0.0.94`:
+Versão `0.0.99`:
 
 - setup: passou
 - análise estática: passou
 - build: passou
 - integrações: passou
 - testes: passaram
+
+A versão `0.0.99` foi publicada explicitamente na produção com a ref `597c62e`.
 
 ## Provas backend
 
@@ -54,23 +60,19 @@ Versão `0.0.94`:
 - Comprovante válido recebido com HTTP 201 e pagamento ficou `comprovante_recebido`, com `valor_recebido=0`.
 - Divergência registrada com HTTP 200 e pendência criada para Atendimento.
 - Substituição de comprovante produziu versões 1 e 2.
-- Conferência financeira produziu `conferido` e `pago` no pedido de fixture.
+- Conferência financeira produziu `conferido` internamente e `pago` no pedido de fixture.
 - Quarto arquivo recusado com HTTP 400.
 - Novo comprovante após pagamento conferido recusado com HTTP 400.
 - Produção autenticada recebeu lista vazia para pedidos, pagamentos, comprovantes e auditoria financeira.
 - Criação direta de comprovante recusada com HTTP 403.
 
-## Teste humano pendente
+## Verificação visual e teste humano
 
-Validar no Preview, com a conta `financeiro@emiliabemcasados.local`:
-
-1. abrir Fila Financeira;
-2. preparar uma fixture;
-3. enviar um PNG fictício;
-4. confirmar que o status fica Comprovante recebido, não Pago;
-5. marcar divergente com motivo e conferir a pendência;
-6. preparar outra fixture, enviar comprovante e conferir;
-7. confirmar que o status vira Pago apenas após a decisão do Financeiro.
+- Fila Financeira verificada no Preview e na produção após a publicação da versão `0.0.99`.
+- Pagamento conferido exibido como **Pagamento: Pago**.
+- Pedido integralmente pago exibido como **Pedido: Pago**.
+- Pedido com outra parcela pendente exibido como **Pedido: Parcialmente pago**.
+- Fernanda confirmou em 2026-09-11: **“sim, agora deu certo!”**
 
 ## Limites desta task
 
