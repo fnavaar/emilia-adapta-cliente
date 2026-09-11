@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: F2-T005
+- task_id: nenhuma
 - champion: Fernanda (CEO)
-- spec: 04_fase-atual/specs/spec-2-001-composicao-politicas-proposta.md
-- etapa: aguardando_teste_humano
+- spec: nenhuma
+- etapa: concluida
 - autorizacao_implementacao: confirmada em 2026-09-11; “Autorizar implementação”
-- teste_humano: pendente
-- verificacao_automatica: passou; migration 0030 aplicada no Skip Cloud do projeto 52694 como applied; QA v0.0.76 passou em setup, análise estática, build, integrações e testes; quatro coleções e regras conferidas no backend
-- aprendizado: pendente
-- ultima_acao: migration de propostas/políticas/itens/auditoria aplicada no Preview e verificada; relação autorreferente versao_anterior_id e regras append-only da auditoria confirmadas
-- proxima_acao: Fernanda revisar o resultado aplicado no Preview e confirmar o teste humano
-- atualizado_em: 2026-09-11T13:18:00-03:00
+- teste_humano: aprovado em 2026-09-11; “sim, tudo ok”
+- verificacao_automatica: passou; migration 0030 applied no Skip Cloud, QA 0.0.76 passou em todas as etapas, quatro coleções/regras conferidas e Preview validado pela Gestão
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-11-relacao-autorreferente-pocketbase.md
+- ultima_acao: F2-T005 concluída após validação humana; modelo de propostas/políticas/snapshots/auditoria aplicado no Preview; progresso da Fase 2 atualizado para 5/10
+- proxima_acao: aguardar novo pedido para analisar uma única task liberada; nenhuma task nova foi iniciada
+- atualizado_em: 2026-09-11T13:22:00-03:00
