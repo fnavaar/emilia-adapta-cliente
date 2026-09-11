@@ -6,8 +6,8 @@
 - etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-09-11; “Autorizar implementação”
 - teste_humano: pendente
-- verificacao_automatica: passou; node --check da migration passou; coleções, relação autorreferente, regras não destrutivas e auditoria presentes; sem cálculo, integração externa ou liberação de produção
+- verificacao_automatica: passou; migration 0030 aplicada no Skip Cloud do projeto 52694 como applied; QA v0.0.76 passou em setup, análise estática, build, integrações e testes; quatro coleções e regras conferidas no backend
 - aprendizado: pendente
-- ultima_acao: migration 0003 criada e corrigida para adicionar a relação autorreferente após salvar propostas; recibo técnico criado
-- proxima_acao: Fernanda aplicar/verificar a migration em homologação e confirmar o teste humano
-- atualizado_em: 2026-09-11T13:05:00-03:00
+- ultima_acao: migration de propostas/políticas/itens/auditoria aplicada no Preview e verificada; relação autorreferente versao_anterior_id e regras append-only da auditoria confirmadas
+- proxima_acao: Fernanda revisar o resultado aplicado no Preview e confirmar o teste humano
+- atualizado_em: 2026-09-11T13:18:00-03:00
