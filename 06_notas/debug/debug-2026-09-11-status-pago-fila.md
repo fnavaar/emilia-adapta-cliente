@@ -1,38 +1,28 @@
-# Debug Summary — F2-T008 — status do pagamento na fila
+# Debug Summary — F2-T008 — status pago no Preview
 
 **Data:** 2026-09-11
-**Sintoma:** após a conferência, a tela mostrava “conferido” no passo final, enquanto a expectativa era “pago”.
-**Ambiente:** Preview do Nexus Emilia, fila financeira.
+**Sintoma relatado:** ainda aparece “conferido” e não “pago”.
 
-## Reprodução
+## Nova evidência recebida
 
-O backend registrou corretamente dois estados diferentes:
+O anexo mais recente não mostra a Fila Financeira nem o status “conferido”. Ele mostra a mensagem:
 
-- `pagamentos.status = conferido`: aquele pagamento foi conferido;
-- `pedidos.status_financeiro = pago` ou `parcial_em_dia`: resultado financeiro consolidado do pedido.
+`O orçamento não pode ser aprovado sem política comercial aprovada.`
 
-A interface usava apenas `pagamento.status` no badge principal. Em pedidos com mais de uma parcela, isso também poderia esconder que o pedido ainda estava parcialmente pago.
+Essa mensagem é o bloqueio esperado para aprovação de um orçamento sem política comercial válida; não é uma falha da fila financeira.
 
-## Causa raiz
+## Verificação independente
 
-A apresentação confundia o status da parcela/pagamento com o status financeiro consolidado do pedido.
+A tela `/financeiro/fila` foi aberta no Preview com a conta de homologação Financeiro após a versão `0.0.99`. A renderização observada para o pagamento conferido foi:
 
-## Correção
+- `Pagamento: Pago`;
+- quando havia outra parcela pendente: `Pedido: Parcialmente pago`;
+- para pedido integralmente pago: `Pagamento: Pago` e `Pedido: Pago`.
 
-- Badge principal agora usa `pedido.status_financeiro`.
-- Exibe “Pago” somente quando o pedido está integralmente pago.
-- Exibe “Parcialmente pago” ou “Parcialmente pago em atraso” quando ainda há parcelas pendentes.
-- Mantém “Pagamento conferido pelo Financeiro” como detalhe do pagamento individual.
+## Causa/estado
 
-## Verificação automática
+O sintoma “conferido” não foi reproduzido no Preview atual. O anexo recebido corresponde a outro fluxo, de bloqueio de aprovação sem política comercial, que está correto.
 
-- QA versão `0.0.96`: setup, análise estática, build, integrações e testes passaram.
-- Backend confirmou a distinção entre pagamento `conferido` e pedido `pago`/`parcial_em_dia`.
-- Preview exibiu:
-  - “Pago” para pedido integralmente conferido;
-  - “Parcialmente pago” para pedido com outra parcela pendente;
-  - detalhe “Pagamento conferido pelo Financeiro” no pagamento conferido.
+## Estado
 
-## Gate
-
-Correção concluída; aguardando novo teste humano no Preview. A F2-T008 continua aberta.
+Não fazer nova alteração até existir evidência do card da Fila Financeira que ainda mostre “conferido”. A F2-T008 permanece aberta até a confirmação correta.
