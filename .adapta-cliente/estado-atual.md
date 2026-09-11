@@ -3,11 +3,11 @@
 - task_id: F2-T007
 - champion: Fernanda (CEO)
 - spec: 04_fase-atual/specs/spec-2-002-aprovacao-conversao-fila-financeira.md
-- etapa: em_correcao
+- etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-09-11; “pode”
-- teste_humano: falhou em 2026-09-11; itens 1 e 2 ok, rascunho não salva
-- verificacao_automatica: passou antes da correção; falha reproduzida no salvamento do primeiro item
+- teste_humano: pendente; correção do salvamento validada automaticamente após falha humana
+- verificacao_automatica: passou; QA 0.0.86 passou em setup, análise estática, build, integrações e testes; prova backend criou orçamento em rascunho, item com ordem=1 e auditoria; vocabulário visível padronizado para “orçamento”
 - aprendizado: pendente
-- ultima_acao: causa provável confirmada: o primeiro item do orçamento é enviado com ordem=0 e o backend rejeita o valor como campo obrigatório vazio; Fernanda também definiu preferência de vocabulário: usar “orçamento” no lugar de “proposta” na interface
-- proxima_acao: corrigir a ordem inicial dos itens e os textos visíveis, rodar QA e repetir a prova de salvamento
-- atualizado_em: 2026-09-11T17:40:00-03:00
+- ultima_acao: corrigida a causa do rascunho não salvar: primeiro item recebia ordem=0; agora a numeração começa em 1. Debug registrado em 06_notas/debug/debug-2026-09-11-salvamento-orcamento.md
+- proxima_acao: Fernanda testar novamente no Preview o salvamento de um orçamento com um item e confirmar se funcionou
+- atualizado_em: 2026-09-11T17:43:00-03:00
