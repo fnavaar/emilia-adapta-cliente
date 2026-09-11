@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: F2-T006
+- task_id: nenhuma
 - champion: Fernanda (CEO)
-- spec: 04_fase-atual/specs/spec-2-001-composicao-politicas-proposta.md
-- etapa: aguardando_teste_humano
+- spec: nenhuma
+- etapa: concluida
 - autorizacao_implementacao: confirmada em 2026-09-11; “continue o trabalho”
-- teste_humano: pendente
-- verificacao_automatica: passou; QA 0.0.77 passou em setup, análise estática, build, integrações e testes; rota /propostas/nova abriu no Preview; item aprovado foi adicionado; revisão ficou bloqueada sem política aprovada
-- aprendizado: pendente
-- ultima_acao: montador de proposta criado no Preview com cumulativos, alternativas, grupos, snapshots, rascunho e auditoria; teste completo de salvamento ficou pendente porque as oportunidades de homologação listadas não estavam vinculadas ao cliente escolhido
-- proxima_acao: Fernanda testar /propostas/nova com cliente e oportunidade compatíveis, adicionar cumulativos/alternativas e salvar rascunho
-- atualizado_em: 2026-09-11T14:05:00-03:00
+- teste_humano: aprovado em 2026-09-11; “sim, tudo funcionando”
+- verificacao_automatica: passou; QA 0.0.77 passou, rota `/propostas/nova` abriu no Preview e modelo/coleções estavam disponíveis; teste humano validou o fluxo
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-11-alternativas-montador.md
+- ultima_acao: F2-T006 concluída após validação humana; montador de propostas com cumulativos, alternativas, snapshots e revisão bloqueada sem política; progresso da Fase 2 atualizado para 6/10
+- proxima_acao: aguardar novo pedido para analisar uma única task liberada; nenhuma task nova foi iniciada
+- atualizado_em: 2026-09-11T14:12:00-03:00
