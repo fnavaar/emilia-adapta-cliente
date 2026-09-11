@@ -23,7 +23,7 @@
 - **Tasks concluídas:** F2-T001, F2-T002, F2-T003, F2-T004, F2-T005, F2-T006, F2-T007, F2-T008
 - **Task em validação:** F2-T009
 - **Leva atual:** 3 — prova e handoff
-- **Última entrega:** regressão de proposta, política e versões com QA 0.0.102; RLS de propostas/políticas/auditoria restringido pela migration 0036.
+- **Última entrega:** regressão de proposta, política e versões com QA 0.0.105; RLS de propostas/políticas/auditoria aplicado; produção não publicada nesta task.
 
 ## Travas ativas
 
