@@ -2,13 +2,14 @@
 
 **Status:** implementação realizada; aguardando teste humano
 **Data:** 2026-09-11
-**Versão Preview:** 0.0.102
+**Versão Preview:** 0.0.104
 **Task:** F2-T009
 **SPEC:** SPEC-2-001 — Composição versionada e proposta comercial
 
 ## Correções aplicadas
 
 - Reordenação de itens após remoção corrigida para iniciar em `ordem=1`, preservando a sequência válida.
+- A ordem passou a aparecer na lista visual dos itens para facilitar a conferência humana.
 - Política comercial elegível na interface passa por validação de versão, fonte, aprovador, vigência e alçada.
 - Endpoint de aprovação bloqueia política incompleta, vigência inválida, vigência invertida, política futura ou expirada.
 - Devolução para alteração deixou de alterar a mesma versão: cria nova proposta com `versao_anterior_id`, copia itens e snapshots, marca a anterior como `substituida` e registra auditoria nas duas versões.
@@ -24,7 +25,7 @@
 
 ## Verificação automatizada
 
-Versão `0.0.102`:
+Versão `0.0.104`:
 
 - setup: passou
 - análise estática: passou
@@ -47,7 +48,7 @@ Versão `0.0.102`:
 No Preview `https://nexus-emilia-49529--preview.goskip.app/propostas/nova`, com conta de Atendimento ou Gestão:
 
 1. Criar um orçamento de homologação com um cliente, uma oportunidade e um item aprovado.
-2. Adicionar dois itens; remover o primeiro; confirmar que o item restante aparece com ordem 1 ao salvar o rascunho.
+2. Adicionar dois itens; remover o primeiro; confirmar que o item restante aparece com **ordem 1** na lista; salvar o rascunho.
 3. Tentar enviar para revisão sem política comercial completa; confirmar que a revisão permanece bloqueada.
 4. Com um orçamento salvo, usar “Devolver orçamento para alteração”; confirmar que a resposta informa nova versão e que a versão anterior não é apagada.
 5. Confirmar que a nova versão preserva item, label, código e versão do catálogo.
