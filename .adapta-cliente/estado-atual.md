@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: F2-T008
+- task_id: nenhuma
 - champion: Fernanda (CEO)
-- spec: 04_fase-atual/specs/spec-2-002-aprovacao-conversao-fila-financeira.md
-- etapa: aguardando_teste_humano
+- spec: nenhuma
+- etapa: concluida
 - autorizacao_implementacao: confirmada em 2026-09-11 18:03; “pode”
-- teste_humano: pendente; causa do sintoma persistente identificada como URL de produção desatualizada (publicada em ref antiga) e/ou cache do navegador
-- verificacao_automatica: versão 0.0.99 passou no QA; produção republicada em 2026-09-11 21:38 (ref 597c62e) e verificada: fila exibe “Pagamento: Pago” e “Pedido: Pago/Parcialmente pago”, sem “conferido”
-- aprendizado: pendente
-- ultima_acao: publicação da versão 0.0.99 na URL de produção e verificação da fila financeira nas duas URLs
-- proxima_acao: Fernanda reabrir /financeiro/fila (produção ou preview), com hard refresh se necessário, e retestar o passo 8
-- atualizado_em: 2026-09-11T18:40:00-03:00
+- teste_humano: aprovado em 2026-09-11 18:42; “sim, agora deu certo!”
+- verificacao_automatica: passou; QA 0.0.99 em setup, análise estática, build, integrações e testes; produção publicada na ref 597c62e e Preview/produção verificados
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-11-publicacao-preview-producao.md
+- ultima_acao: F2-T008 concluída após revalidação independente, publicação explícita em produção e aprovação humana
+- proxima_acao: selecionar e analisar uma única task liberada da Fase 2; não iniciar implementação automaticamente
+- atualizado_em: 2026-09-11T18:42:00-03:00
