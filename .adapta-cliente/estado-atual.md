@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: nenhuma
+- task_id: F2-T009
 - champion: Fernanda (CEO)
-- spec: nenhuma
-- etapa: concluida
-- autorizacao_implementacao: confirmada em 2026-09-11 18:03; “pode”
-- teste_humano: aprovado em 2026-09-11 18:42; “sim, agora deu certo!”
-- verificacao_automatica: passou; QA 0.0.99 em setup, análise estática, build, integrações e testes; produção publicada na ref 597c62e e Preview/produção verificados
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-11-publicacao-preview-producao.md
-- ultima_acao: F2-T008 concluída após revalidação independente, publicação explícita em produção e aprovação humana
-- proxima_acao: selecionar e analisar uma única task liberada da Fase 2; não iniciar implementação automaticamente
-- atualizado_em: 2026-09-11T18:42:00-03:00
+- spec: 04_fase-atual/specs/spec-2-001-composicao-politicas-proposta.md
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente
+- teste_humano: pendente
+- verificacao_automatica: baseline inspecionado sem alteração do produto; versão atual 0.0.99 publicada, com mudança pendente apenas em `.skip.config.json`
+- aprendizado: pendente
+- ultima_acao: análise da regressão F2-T009 concluída; identificados fluxos de snapshots, catálogo/política, RLS/alçada e risco de ordem 0 após remoção de item
+- proxima_acao: aguardar autorização para implementar
+- atualizado_em: 2026-09-11T18:44:00-03:00
