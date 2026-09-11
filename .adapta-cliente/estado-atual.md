@@ -3,11 +3,11 @@
 - task_id: F2-T005
 - champion: Fernanda (CEO)
 - spec: 04_fase-atual/specs/spec-2-001-composicao-politicas-proposta.md
-- etapa: implementando
+- etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-09-11; “Autorizar implementação”
 - teste_humano: pendente
-- verificacao_automatica: pendente
+- verificacao_automatica: passou; node --check da migration passou; coleções, relação autorreferente, regras não destrutivas e auditoria presentes; sem cálculo, integração externa ou liberação de produção
 - aprendizado: pendente
-- ultima_acao: autorização explícita recebida; implementação do modelo persistente de proposta, itens, políticas, snapshots e auditoria iniciada
-- proxima_acao: criar migration sem cálculo de preço, sem aplicação de precedência indefinida e sem integração externa
-- atualizado_em: 2026-09-11T13:00:00-03:00
+- ultima_acao: migration 0003 criada e corrigida para adicionar a relação autorreferente após salvar propostas; recibo técnico criado
+- proxima_acao: Fernanda aplicar/verificar a migration em homologação e confirmar o teste humano
+- atualizado_em: 2026-09-11T13:05:00-03:00
