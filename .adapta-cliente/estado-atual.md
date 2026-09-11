@@ -3,11 +3,11 @@
 - task_id: F2-T005
 - champion: Fernanda (CEO)
 - spec: 04_fase-atual/specs/spec-2-001-composicao-politicas-proposta.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: ausente
+- etapa: implementando
+- autorizacao_implementacao: confirmada em 2026-09-11; “Autorizar implementação”
 - teste_humano: pendente
-- verificacao_automatica: pendente; análise concluída, sem alteração de produto
+- verificacao_automatica: pendente
 - aprendizado: pendente
-- ultima_acao: F2-T005 selecionada e analisada; dependências F2-T001/F2-T002 concluídas; estrutura atual possui clientes, oportunidades, pendências, histórico e catálogo versionado, mas ainda não possui proposta, itens de proposta ou políticas comerciais
-- proxima_acao: aguardar autorização para modelar proposta, itens, políticas, snapshots e auditoria; não calcular preço, aplicar precedência indefinida, liberar produção ou conectar externo
-- atualizado_em: 2026-09-11T12:45:00-03:00
+- ultima_acao: autorização explícita recebida; implementação do modelo persistente de proposta, itens, políticas, snapshots e auditoria iniciada
+- proxima_acao: criar migration sem cálculo de preço, sem aplicação de precedência indefinida e sem integração externa
+- atualizado_em: 2026-09-11T13:00:00-03:00
