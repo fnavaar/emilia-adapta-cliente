@@ -7,23 +7,23 @@
 
 - **Fase atual:** 2 — Composição, proposta, aprovação, conversão e fila financeira · liberada para execução sequencial em homologação
 - **Objetivo desta fase:** transformar uma oportunidade com briefing em proposta estruturada, aprovação rastreável, pedido-base e fila financeira visível.
-- **No prazo?** sim — Fase 1 encerrada com 15/15 tasks; Fase 2 detalhada no GitHub com 10 tasks e 5 tasks concluídas.
+- **No prazo?** sim — Fase 1 encerrada com 15/15 tasks; Fase 2 detalhada no GitHub com 10 tasks e 6 tasks concluídas.
 - **Limites:** integração externa, conciliação bancária automática e liberação de produção permanecem fora desta fase.
 
 ## Onde está a execução
 
 - **Task ativa:** nenhuma
-- **Etapa:** F2-T005 concluída; nenhuma nova task iniciada
-- **Progresso das tasks:** 5/10 concluídas (50%)
+- **Etapa:** F2-T006 concluída; nenhuma nova task iniciada
+- **Progresso das tasks:** 6/10 concluídas (60%)
 - **Próxima ação:** selecionar e analisar uma única task liberada, sem iniciar implementação automaticamente
 
 ## Progresso da fase
 
-- **Tasks:** 5/10 concluídas (50%)
-- **Tasks concluídas:** F2-T001, F2-T002, F2-T003, F2-T004, F2-T005
+- **Tasks:** 6/10 concluídas (60%)
+- **Tasks concluídas:** F2-T001, F2-T002, F2-T003, F2-T004, F2-T005, F2-T006
 - **Task ativa:** nenhuma
 - **Leva atual:** 2 — construção
-- **Última entrega:** modelo persistente de propostas, políticas, itens, snapshots e auditoria aplicado no Preview, versão 0.0.76.
+- **Última entrega:** montador de propostas com cumulativos, alternativas, snapshots e revisão bloqueada sem política, aplicado no Preview versão 0.0.77.
 
 ## Travas ativas
 
@@ -43,7 +43,8 @@
 | F2-T003 | B2-APR-01/B2-FIN-01/B2-EST-01: aceite antes do pagamento, estados separados, entregas derivadas e degustações sem contas a receber; contrato aprovado e revalidado | 2026-09-10 |
 | F2-T004 | B2-FIN-02: formatos, limites, versionamento, permissões de comprovantes e troca não destrutiva de pagamento; contrato aprovado e revalidado | 2026-09-10 |
 | F2-T005 | Modelo persistente de propostas, itens, políticas, snapshots e auditoria; migration 0030 aplicada no Preview, QA 0.0.76 aprovado e teste humano aprovado | 2026-09-11 |
-| F2-T006 a F2-T010 | Planejadas na Fase 2; nenhuma concluída | — |
+| F2-T006 | Montador de propostas com cumulativos, alternativas, snapshots e revisão bloqueada sem política; QA 0.0.77 aprovado e teste humano aprovado | 2026-09-11 |
+| F2-T007 a F2-T010 | Planejadas na Fase 2; nenhuma concluída | — |
 
 ## Documentos da Fase 2
 
@@ -56,4 +57,5 @@
 - `05_entregas/F2-T003-recibo-aceite-estados-degustacoes.md` — recibo do contrato funcional F2-T003
 - `05_entregas/F2-T004-recibo-comprovantes-permissoes.md` — recibo do contrato funcional F2-T004
 - `05_entregas/F2-T005-recibo-modelo-propostas-politicas.md` — recibo técnico do modelo F2-T005
+- `05_entregas/F2-T006-recibo-montador-propostas.md` — recibo validado do montador F2-T006
 - `06_notas/melhorias-futuras.md` — melhorias identificadas na Fase 1
