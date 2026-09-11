@@ -3,26 +3,34 @@
 **Data:** 2026-09-11
 **Sintoma relatado:** ainda aparece “conferido” e não “pago”.
 
-## Nova evidência recebida
+## Evidências recebidas
 
-O anexo mais recente não mostra a Fila Financeira nem o status “conferido”. Ele mostra a mensagem:
+1. Primeiro anexo: mensagem “O orçamento não pode ser aprovado sem política comercial aprovada.” — bloqueio esperado do fluxo de aprovação, não é a fila financeira.
+2. Segundo anexo: dois cards da Fila Financeira (pedidos 544almaps7cgga2 e ub46hkz64xd6we6) com badge “Divergente”, sem o prefixo “Pagamento:” introduzido na versão 0.0.98.
 
-`O orçamento não pode ser aprovado sem política comercial aprovada.`
+## Diagnóstico
 
-Essa mensagem é o bloqueio esperado para aprovação de um orçamento sem política comercial válida; não é uma falha da fila financeira.
+O segundo anexo comprova que o navegador da Fernanda está carregando um bundle anterior à 0.0.98: o layout antigo não exibe o prefixo “Pagamento:”. Na versão em produção (0.0.99), a palavra “conferido” não existe mais em nenhum texto visível da fila — o pagamento conferido exibe “Pagamento: Pago” e, quando aplicável, “Pedido: Pago” ou “Pedido: Parcialmente pago”.
 
-## Verificação independente
+Os cards do anexo estão em status “Divergente”, que corretamente não exibe “Pago”.
 
-A tela `/financeiro/fila` foi aberta no Preview com a conta de homologação Financeiro após a versão `0.0.99`. A renderização observada para o pagamento conferido foi:
+## Causa raiz
 
-- `Pagamento: Pago`;
-- quando havia outra parcela pendente: `Pedido: Parcialmente pago`;
-- para pedido integralmente pago: `Pagamento: Pago` e `Pedido: Pago`.
+Cache do navegador servindo bundle anterior à 0.0.98, onde o texto “Pagamento conferido pelo Financeiro” ainda existia como detalhe do card.
 
-## Causa/estado
+## Correção aplicada (0.0.98 → 0.0.99)
 
-O sintoma “conferido” não foi reproduzido no Preview atual. O anexo recebido corresponde a outro fluxo, de bloqueio de aprovação sem política comercial, que está correto.
+- Badge do pagamento: “Pagamento: Pago” quando conferido.
+- Badge do pedido separado: “Pedido: Pago” ou “Pedido: Parcialmente pago”.
+- Botão de ação renomeado para “Marcar como pago”.
+- Mensagem pós-ação: “Pagamento marcado como pago.”
+- Nenhuma ocorrência visível da palavra “conferido” na fila.
 
-## Estado
+## Verificação automática
 
-Não fazer nova alteração até existir evidência do card da Fila Financeira que ainda mostre “conferido”. A F2-T008 permanece aberta até a confirmação correta.
+- QA 0.0.99 passou (setup, análise estática, build, integrações, testes).
+- Renderização verificada no Preview com conta Financeiro de homologação.
+
+## Ação pendente
+
+Fernanda fazer hard refresh (Ctrl+Shift+R) em `/financeiro/fila` e retestar o passo 8.
