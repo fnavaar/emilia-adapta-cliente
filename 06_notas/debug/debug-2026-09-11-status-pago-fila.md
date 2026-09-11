@@ -6,17 +6,14 @@
 ## Evidências recebidas
 
 1. Primeiro anexo: mensagem “O orçamento não pode ser aprovado sem política comercial aprovada.” — bloqueio esperado do fluxo de aprovação, não é a fila financeira.
-2. Segundo anexo: dois cards da Fila Financeira (pedidos 544almaps7cgga2 e ub46hkz64xd6we6) com badge “Divergente”, sem o prefixo “Pagamento:” introduzido na versão 0.0.98.
+2. Segundo anexo: cards da Fila Financeira com badges “Divergente” e “Conferido”, sem o prefixo “Pagamento:” introduzido na versão 0.0.98.
 
 ## Diagnóstico
 
-O segundo anexo comprova que o navegador da Fernanda está carregando um bundle anterior à 0.0.98: o layout antigo não exibe o prefixo “Pagamento:”. Na versão em produção (0.0.99), a palavra “conferido” não existe mais em nenhum texto visível da fila — o pagamento conferido exibe “Pagamento: Pago” e, quando aplicável, “Pedido: Pago” ou “Pedido: Parcialmente pago”.
+O segundo anexo comprova que a tela da Fernanda renderizava um bundle anterior à 0.0.98. Duas causas combinadas:
 
-Os cards do anexo estão em status “Divergente”, que corretamente não exibe “Pago”.
-
-## Causa raiz
-
-Cache do navegador servindo bundle anterior à 0.0.98, onde o texto “Pagamento conferido pelo Financeiro” ainda existia como detalhe do card.
+- A URL de **produção** (`nexus-emilia-49529.goskip.app`) só atualiza quando o projeto é publicado explicitamente; ela estava servindo uma versão antiga.
+- Cache do navegador pode manter bundle antigo mesmo após deploy.
 
 ## Correção aplicada (0.0.98 → 0.0.99)
 
@@ -29,8 +26,9 @@ Cache do navegador servindo bundle anterior à 0.0.98, onde o texto “Pagamento
 ## Verificação automática
 
 - QA 0.0.99 passou (setup, análise estática, build, integrações, testes).
-- Renderização verificada no Preview com conta Financeiro de homologação.
+- Produção republicada em 2026-09-11 21:38 (ref 597c62e).
+- Fila verificada nas URLs de preview e produção com conta Financeiro de homologação: pagamento conferido exibe “Pagamento: Pago” e “Pedido: Pago/Parcialmente pago”; sem “conferido”.
 
-## Ação pendente
+## Gate
 
-Fernanda fazer hard refresh (Ctrl+Shift+R) em `/financeiro/fila` e retestar o passo 8.
+aguardando_teste_humano — Fernanda reabrir /financeiro/fila (com hard refresh se necessário) e retestar o passo 8.
