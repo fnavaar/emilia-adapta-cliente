@@ -5,9 +5,9 @@
 - spec: 04_fase-atual/specs/spec-2-002-aprovacao-conversao-fila-financeira.md
 - etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-09-11; “pode”
-- teste_humano: pendente; correção do salvamento validada automaticamente após falha humana
-- verificacao_automatica: passou; QA 0.0.86 passou em setup, análise estática, build, integrações e testes; prova backend criou orçamento em rascunho, item com ordem=1 e auditoria; vocabulário visível padronizado para “orçamento”
+- teste_humano: pendente; falha relatada às 17:42 reproduzida em bundle antigo do Preview (print mostra títulos “Contexto da proposta”, anteriores à correção); logs do backend confirmam create de item com 400 às 20:42 no bundle antigo e prova completa 200/200/200 às 20:40 na versão corrigida
+- verificacao_automatica: passou; QA 0.0.86 passou em setup, análise estática, build, integrações e testes; prova backend pós-correção criou orçamento em rascunho, item com ordem=1 e auditoria de criação (logs 20:40:07); vocabulário visível padronizado para “orçamento”
 - aprendizado: pendente
-- ultima_acao: corrigida a causa do rascunho não salvar: primeiro item recebia ordem=0; agora a numeração começa em 1. Debug registrado em 06_notas/debug/debug-2026-09-11-salvamento-orcamento.md
-- proxima_acao: Fernanda testar novamente no Preview o salvamento de um orçamento com um item e confirmar se funcionou
-- atualizado_em: 2026-09-11T17:43:00-03:00
+- ultima_acao: correção da ordem dos itens validada; falha humana atribuída a cache do navegador com bundle anterior à correção
+- proxima_acao: Fernanda recarregar o Preview com cache limpo (hard refresh) e repetir o salvamento do rascunho
+- atualizado_em: 2026-09-11T17:52:00-03:00
