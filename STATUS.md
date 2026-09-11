@@ -7,23 +7,23 @@
 
 - **Fase atual:** 2 — Composição, proposta, aprovação, conversão e fila financeira · liberada para execução sequencial em homologação
 - **Objetivo desta fase:** transformar uma oportunidade com briefing em orçamento estruturado, aprovação rastreável, pedido-base e fila financeira visível.
-- **No prazo?** sim — Fase 1 encerrada com 15/15 tasks; Fase 2 com 8/10 tasks concluídas.
+- **No prazo?** sim — Fase 1 encerrada com 15/15 tasks; Fase 2 com 8/10 tasks concluídas e F2-T009 em validação humana.
 - **Limites:** integração externa, conciliação bancária automática e liberação de produção permanecem fora desta fase.
 
 ## Onde está a execução
 
-- **Task ativa:** nenhuma
-- **Etapa:** F2-T008 concluída; nenhuma nova task iniciada
-- **Progresso das tasks:** 8/10 concluídas (80%)
-- **Próxima ação:** selecionar e analisar uma única task liberada, sem iniciar implementação automaticamente
+- **Task ativa:** F2-T009 — aguardando teste humano
+- **Etapa:** implementação automatizada concluída; validação humana pendente
+- **Progresso das tasks:** 8/10 concluídas (80%); F2-T009 não entra na contagem até aprovação humana
+- **Próxima ação:** Fernanda executar o roteiro de teste da F2-T009 no Preview
 
 ## Progresso da fase
 
-- **Tasks:** 8/10 concluídas (80%)
+- **Tasks:** 8/10 concluídas; F2-T009 em validação; F2-T010 planejada
 - **Tasks concluídas:** F2-T001, F2-T002, F2-T003, F2-T004, F2-T005, F2-T006, F2-T007, F2-T008
-- **Task ativa:** nenhuma
-- **Leva atual:** 2 — construção
-- **Última entrega:** comprovantes versionados, fila financeira, divergência com pendência atribuída, RLS por papel e status visual “Pago” após decisão do Financeiro; QA 0.0.99 aprovado, produção publicada e teste humano aprovado.
+- **Task em validação:** F2-T009
+- **Leva atual:** 3 — prova e handoff
+- **Última entrega:** regressão de proposta, política e versões com QA 0.0.102; RLS de propostas/políticas/auditoria restringido pela migration 0036.
 
 ## Travas ativas
 
@@ -61,4 +61,5 @@
 - `05_entregas/F2-T006-recibo-montador-propostas.md` — recibo validado do montador F2-T006
 - `05_entregas/F2-T007-recibo-conversao-idempotente.md` — recibo validado de estados, resposta e conversão idempotente
 - `05_entregas/F2-T008-recibo-comprovantes-fila-financeira.md` — recibo validado da fila financeira e comprovantes
+- `05_entregas/F2-T009-recibo-regressao-propostas-versoes.md` — recibo da regressão, política e versões
 - `06_notas/melhorias-futuras.md` — melhorias identificadas na Fase 1
