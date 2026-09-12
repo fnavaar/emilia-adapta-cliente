@@ -1,8 +1,8 @@
 # Recibo F2-T010 — Regressão comercial, financeira e limites
 
-**Status:** implementação realizada; aguardando teste humano
+**Status:** concluída
 **Data:** 2026-09-12
-**Versão Preview:** 0.0.112
+**Versão Preview:** 0.0.113
 **Task:** F2-T010
 **SPEC:** SPEC-2-002 — Aprovação, conversão e fila financeira controlada
 
@@ -16,12 +16,12 @@
   - formato inválido sem mutação do pagamento;
   - bloqueio de novo comprovante após pagamento confirmado.
 - Harness usa somente fixtures internas; comprovante é PNG fictício e o valor de R$ 0,01 é de homologação.
-- Dashboard ganhou acesso direto ao harness de regressão.
+- Acesso ao harness em dois pontos primários: menu lateral do Administrador e botão destacado no cabeçalho do dashboard.
 - Nenhuma integração externa, cobrança real ou liberação de produção foi ativada.
 
 ## Evidências automatizadas
 
-QA `0.0.112`:
+QA `0.0.113`:
 
 - setup: passou
 - análise estática: passou
@@ -29,7 +29,7 @@ QA `0.0.112`:
 - integrações: passaram
 - testes: passaram
 
-Suíte backend executada:
+Suíte backend executada na revalidação de fechamento:
 
 - autenticação dos perfis Administrador, Atendimento, Financeiro e Produção: passou;
 - conversão repetida: HTTP 200, mesmo `pedido_id`, auditoria incrementada;
@@ -40,6 +40,15 @@ Suíte backend executada:
 - RLS: Atendimento/Financeiro com acesso previsto; Produção sem propostas, pedidos ou pagamentos;
 - nenhum endpoint externo ou produção acionado.
 
+## Teste humano
+
+Aprovado por Fernanda em 2026-09-12 com evidência visual das quatro provas:
+
+- Conversão repetida: `PASSOU: pedido ub46hkz64xd6we6 reutilizado e auditoria incrementada.`
+- Divergência financeira: `PASSOU: pagamento k3udy7vxi48g6cy divergente; pendência criada para Atendimento.`
+- Formato de comprovante: `PASSOU: formato inválido rejeitado sem alterar o pagamento.`
+- Pagamento confirmado imutável: `PASSOU: pagamento confirmado recusou novo comprovante.`
+
 ## Critérios
 
 - **CA-2-101:** PASSOU — aprovação válida permanece vinculada a exatamente um pedido.
@@ -49,23 +58,13 @@ Suíte backend executada:
 - **CA-2-105:** PASSOU — RLS separa Atendimento, Financeiro, Administrador e Produção.
 - **CA-2-106:** PASSOU — não houve escrita externa nem liberação de produção.
 
-## Teste humano pendente
+## Aprendizado registrado
 
-No Preview `https://nexus-emilia-49529--preview.goskip.app/`:
+- `06_notas/aprendizado-continuo/AP-2026-09-12-1859-superficie-harness.md`: harnesses administrativos precisam de rota protegida e ponto de acesso primário e evidente na navegação.
+- `06_notas/debug/debug-2026-09-12-f2-t010-acesso-harness.md`: debug da visibilidade do acesso.
 
-1. Entre com `fernanda@emiliabemcasados.local`.
-2. No painel, clique em **Regressão F2-T010**.
-3. Clique em **Conversão repetida e auditoria** e confirme o resultado `PASSOU`.
-4. Clique em **Divergência e pendência** e confirme o resultado `PASSOU`.
-5. Clique em **Formato inválido sem mutação** e confirme o resultado `PASSOU`.
-6. Clique em **Bloqueio após pagamento confirmado** e confirme o resultado `PASSOU`.
-7. Confirme que a tela informa que usa fixture de R$ 0,01, PNG fictício e não chama produção/integração externa.
+## Limites preservados
 
-Teste opcional de perfil:
-
-- entrar como Financeiro e confirmar acesso à Fila Financeira e decisão de pagamento;
-- entrar como Produção e confirmar ausência de acesso a dados financeiros.
-
-**Resultado esperado:** as quatro provas exibem `PASSOU`; nenhuma prova informa cobrança real, integração externa ou liberação de produção.
-
-A task permanece aberta até a aprovação humana.
+- B1-INT-01 permanece: nenhuma integração externa ativada.
+- Nenhuma liberação de produção.
+- Nenhuma cobrança real: fixtures de R$ 0,01 e PNG fictício.
