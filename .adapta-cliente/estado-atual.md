@@ -3,11 +3,11 @@
 - task_id: F2-T010
 - champion: Fernanda (CEO)
 - spec: 04_fase-atual/specs/spec-2-002-aprovacao-conversao-fila-financeira.md
-- etapa: aguardando_teste_humano
+- etapa: em_correcao
 - autorizacao_implementacao: confirmada em 2026-09-12 18:44; “pode implementar”
 - teste_humano: pendente
-- verificacao_automatica: passou; QA 0.0.112 em setup, análise estática, build, integrações e testes; suíte backend comercial/financeira passou; RLS e limites conferidos
+- verificacao_automatica: passou antes do relato; debug da visibilidade do acesso iniciado
 - aprendizado: pendente
-- ultima_acao: F2-T010 implementada; idempotência corrigida e harness protegido criado em `/regressao/f2-t010`
-- proxima_acao: Fernanda executar o teste humano das quatro provas no Preview
-- atualizado_em: 2026-09-12T18:55:00-03:00
+- ultima_acao: Fernanda informou que o login funcionou, mas não encontrou a opção Regressão F2-T010 no painel
+- proxima_acao: reproduzir a ausência do atalho e corrigir somente a superfície de acesso ao harness
+- atualizado_em: 2026-09-12T18:58:00-03:00
