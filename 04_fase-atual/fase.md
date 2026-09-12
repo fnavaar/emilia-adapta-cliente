@@ -22,7 +22,7 @@
 | F2-T007 | Configurar estados, resposta e conversão idempotente | Administrador | 2-002 | Aprovação cria um pedido; alteração/recusa/expiração não convertem | F2-T003/F2-T006 | Não liberar produção | concluída (2026-09-11) | 2 |
 | F2-T008 | Construir comprovante e fila financeira | Financeiro + Administrador | 2-002 | Comprovante não confirma; divergência cria pendência atribuída | F2-T004/F2-T007 | Sem política, não receber dado real | concluída (2026-09-11) | 2 |
 | F2-T009 | Executar regressão de proposta, política e versões | Técnico + Atendimento | 2-001 | Snapshots resistem a mudança; exceção sem alçada bloqueia | F2-T005/F2-T006 | Falha retorna a debug | concluída (2026-09-12) | 3 |
-| F2-T010 | Executar regressão comercial/financeira e provar limites | Técnico + Financeiro | 2-002 | Idempotência/RLS passam; sem ação externa ou produção | F2-T007/F2-T008 | B1-INT-01 permanece | planejada | 3 |
+| F2-T010 | Executar regressão comercial/financeira e provar limites | Técnico + Financeiro | 2-002 | Idempotência/RLS passam; sem ação externa ou produção | F2-T007/F2-T008 | B1-INT-01 permanece | concluída (2026-09-12) | 3 |
 
 ## Handoff
 
