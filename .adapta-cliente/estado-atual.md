@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: F2-T009
+- task_id: nenhuma
 - champion: Fernanda (CEO)
-- spec: 04_fase-atual/specs/spec-2-001-composicao-politicas-proposta.md
-- etapa: aguardando_teste_humano
-- autorizacao_implementacao: confirmada em 2026-09-11 18:46; “ok pode verificar e corrigir”
-- teste_humano: pendente
-- verificacao_automatica: passou; QA 0.0.105 em setup, análise estática, build, integrações e testes; migrations de RLS/regressão aplicadas; regras efetivas conferidas nas coleções de políticas, propostas, itens e auditoria
-- aprendizado: pendente
-- ultima_acao: F2-T009 implementada e validada automaticamente; corrigidas reordenação, validação de política, versionamento auditável na devolução, contrato da nova versão na tela e RLS por perfil
-- proxima_acao: Fernanda executar o roteiro de teste humano no Preview
-- atualizado_em: 2026-09-11T19:03:00-03:00
+- spec: nenhuma
+- etapa: sem_task
+- autorizacao_implementacao: F2-T009 confirmada em 2026-09-11 18:46; “ok pode verificar e corrigir”
+- teste_humano: F2-T009 aprovado em 2026-09-12 18:31; “sim, aprovo, pode fechar a f2-t009 e vamos para a próxima”
+- verificacao_automatica: F2-T009 passou; QA 0.0.105 em setup, análise estática, build, integrações e testes; migrations de RLS/regressão aplicadas; regras efetivas conferidas nas coleções de políticas, propostas, itens e auditoria
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-12-entidade-operacional-consulta-visivel.md
+- ultima_acao: F2-T009 concluída após aprovação humana; fase atualizada para 9/10 tasks concluídas
+- proxima_acao: analisar F2-T010 em uma nova sessão, sem iniciar implementação automaticamente
+- atualizado_em: 2026-09-12T18:35:00-03:00
