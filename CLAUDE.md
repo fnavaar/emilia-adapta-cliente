@@ -9,7 +9,7 @@ especialmente o representante indicado pela gestão — na execução das tarefa
 - **Objetivo:** registro canônico de cliente e oportunidade/pedido-base, briefing estruturado, histórico e pendências visíveis, com redução de redigitação e perda de contexto.
 - **Processo atacado:** entrada por WhatsApp/outros canais → identificação → briefing condicional → próxima ação comercial.
 - **Consultor responsável:** Consultoria Adapta Native; canal de contato definido na relação de trabalho do projeto.
-- **Fase atual e progresso:** Fase 1 aberta; ver `STATUS.md`.
+- **Fase atual e progresso:** Fase 3 aberta com correção bloqueante; ver `STATUS.md`.
 
 ## Como o trabalho funciona aqui
 
@@ -21,8 +21,7 @@ especialmente o representante indicado pela gestão — na execução das tarefa
    continuam disponíveis: `proxima-task`, `debug-task`, `concluir-task` e `status`.
 3. Fases concluídas ficam em `05_entregas/`. A próxima fase chega quando a atual fecha na
    reunião com o consultor.
-4. A sincronização com GitHub só ocorre depois de configuração e autorização explícitas; esta pasta
-   foi preparada localmente e ainda não foi publicada.
+4. A sincronização com GitHub só ocorre depois de configuração e autorização explícitas; o repositório está publicado; push automático continua condicionado ao plugin e à autorização da task.
 
 ## Regras para você (Claude)
 

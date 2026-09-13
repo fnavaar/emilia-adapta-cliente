@@ -1,3 +1,4 @@
+- 2026-09-13 · Consultoria Adapta Native · Fase 3 preparada com SPEC-3-001 corretiva bloqueante, três SPECs funcionais e F3-T001 como única task elegível; produção não autorizada.
 # Changelog — Projeto Mara Cristina Amaral Santos - ME
 
 ## Registro
