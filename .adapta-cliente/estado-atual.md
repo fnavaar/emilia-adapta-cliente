@@ -1,7 +1,8 @@
-# Estado atual do assistente do cliente
+# Estado atual — Fase 3
 
-## Fase 3 — preparada
+- fase: 3
+- progresso: 0/9 tasks
+- task_elegivel: F3-T001
+- spec: 04_fase-atual/specs/spec-3-001-estabilizacao-recertificacao-f1-f2.md
 
-- Fase 3 ativa; Fase 2 arquivada em 05_entregas/fase-2.
-- Tasks F3-T001..F3-T009; única elegível: F3-T001.
-- SPECs: SPEC-3-001..004 em 04_fase-atual/specs.
+Fase 2 arquivada em 05_entregas/fase-2. Nenhuma task executada nesta fase.
