@@ -1,47 +1,422 @@
 {
   "schemaVersion": "adapta-cliente-handoff/v1",
-  "phase": 1,
+  "phase": 3,
   "versions": {
-    "package": "0.1.0",
-    "adapta": "0.7.0",
-    "adaptaCliente": "0.2.0"
+    "package": "0.3.0",
+    "adapta": "1.0.0",
+    "adaptaCliente": "1.0.0"
   },
-  "generatedAt": "2026-08-25T13:49:38.958Z",
+  "generatedAt": "2026-09-13T12:14:00-03:00",
   "files": [
     {
+      "path": ".adapta-cliente/estado-atual.md",
+      "sha256": "2d8da0e0e66d4e8daa4eb7e6298719a5da2a1c6bc3f38b9ec708d7eb6216f991",
+      "classification": "template-publico"
+    },
+    {
+      "path": ".claude/settings.json",
+      "sha256": "a13bfbd696d8201b50de49bcb48d768207f557a9b5b3764d9fae0e51170a81dc",
+      "classification": "template-publico"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9fd954a0f9c522ab1c95dbc43f4a322e97e14b3e879125bb1e4795c66942b644",
+      "classification": "template-publico"
+    },
+    {
+      "path": "01_projeto/README.md",
+      "sha256": "d4e589cbb253c0e393a0c54d170d23d46714e627996ab8cf5ed50ae9411c605e",
+      "classification": "template-publico"
+    },
+    {
+      "path": "01_projeto/constituicao.md",
+      "sha256": "5f64203da57a4d1ed1a23a822566aa12729e19504003dd36be3d1dc22f8b6e07",
+      "classification": "template-publico"
+    },
+    {
+      "path": "01_projeto/visao-do-projeto.md",
+      "sha256": "9a2427c5f6d3dc654063fb7ee408d491b2abbe6bc4042f96dc6fef78c8a36e1a",
+      "classification": "template-publico"
+    },
+    {
+      "path": "02_reunioes/README.md",
+      "sha256": "1d679855edb02ed243172b8b49cd69890352074e82090a274dea7a99cedda896",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/README.md",
+      "sha256": "f86880b71d4ac9944ff185d6153adcef1f2a846568a879f778844f2b32b136df",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/correcoes/README.md",
+      "sha256": "e352c60161db96eb3dc116bc4d00fe71fa481651145314f57b4fee61559963fd",
+      "classification": "template-publico"
+    },
+    {
+      "path": "03_documentos/correcoes/emenda-cancelamento-fase-2.md",
+      "sha256": "055a03db229f0ee8e9292206a62e3af305a0002667f578d3799d9ed2d16610ef",
+      "classification": "template-publico"
+    },
+    {
+      "path": "04_fase-atual/00-Tasks_Gerais.md",
+      "sha256": "84617d04959a8c52aa9f50cd952b33b4d54ceaa4f28e5a01b9aa4b321dea5961",
+      "classification": "template-publico"
+    },
+    {
       "path": "04_fase-atual/README.md",
-      "sha256": "57843f15414253dfbcc46b12fc0860f4aa0481fefdd8440eca68b80a3663f4cc",
+      "sha256": "e7265ba90b5e446e5b7074a15a7b4e9948c1bc26b92497a2ba44a99c6144696f",
       "classification": "template-publico"
     },
     {
       "path": "04_fase-atual/fase.md",
-      "sha256": "0007e373c21b85a9d91f1cd46c83a0a8ae518981540812da0587748e24f88a76",
+      "sha256": "f98d680f1ab4f2e697a25d54c301dc1ecfc38ba334eff497ad80a146f4447a54",
       "classification": "fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/spec-1-001-registro-canonico.md",
-      "sha256": "36b803a2c46813f04c7cee2e200204c0a81aef406e040295b76075a2155c3abb",
+      "path": "04_fase-atual/specs/00-INDICE.md",
+      "sha256": "b95851dbe9bf609fe30c1329158fbfcdf018e0db20da04bc388a576868ba32c7",
       "classification": "spec-fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/spec-1-002-briefing-condicional.md",
-      "sha256": "84f3e22c91bb3ac5ca9aa74bd0d54a567a188d534248f1ca81ef170a7e062140",
+      "path": "04_fase-atual/specs/spec-3-001-estabilizacao-recertificacao-f1-f2.md",
+      "sha256": "fd8e8b4ad4565f42bd4a8239ad62789de628d1b606ceadb0bee48f0023edb057",
       "classification": "spec-fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/spec-1-003-catalogo-versionado.md",
-      "sha256": "8a411974f6c210fc952f64db6b87ea4f29c451529ff519b814fd9a2432996ebe",
+      "path": "04_fase-atual/specs/spec-3-002-jornadas-especiais.md",
+      "sha256": "9959d2a204e5772f428bbe31526bf80d8364325cc1b407edf102172a19cdbf9a",
       "classification": "spec-fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/spec-1-004-permissoes-auditoria.md",
-      "sha256": "81db7f807a57200a91d30b526cf783a67fb7d79168a517dbdbe11c4f99711767",
+      "path": "04_fase-atual/specs/spec-3-003-producao-liberacao-controlada.md",
+      "sha256": "2aefd5977a8ec14c23b0a4e324c63c32a657a8fd1525973466321699583ddf35",
       "classification": "spec-fase-atual"
     },
     {
-      "path": "04_fase-atual/specs/spec-1-005-webhook-fallback.md",
-      "sha256": "683ed113a727b714100cbdc8e430a84d70c2146b47ff39299fa023c924ca0ab0",
+      "path": "04_fase-atual/specs/spec-3-004-expedicao-entrega-ocorrencia.md",
+      "sha256": "489e776815826177aca31e3c94b82580920f2e549f84340f6b1dbaa8309479e0",
       "classification": "spec-fase-atual"
+    },
+    {
+      "path": "05_entregas/F1-T001-recibo-homologacao.md",
+      "sha256": "0943d74a9a21f7f92915053f006e7236becf685ca3cc9dcf4a09ab7d8de096ec",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F1-T002-recibo-modelo-revisado.md",
+      "sha256": "d580f99d112128d6d4e03d7818b5815c58abfd911493a858efe6350d98f9d97f",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T001-recibo-tabela-precos.md",
+      "sha256": "c0929b106c162b4518326821100f19ce84052310fddbe80750d2c5da7eb8c8ac",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T002-recibo-frete-descontos-adicionais.md",
+      "sha256": "86fccbbe78c56377841966d2f33ab38637f0834db7708c532c6c3fba118bc9e",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T002-recibo-validade-pagamentos-alcadas.md",
+      "sha256": "aec32317f2916d8779002856816dad81df1d01b99e024276648a9e51f97b7def",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T003-recibo-aceite-estados-degustacoes.md",
+      "sha256": "3adfa6d6ed3a618ef34e4b830bb6c049b4cef0cf879fb2e6fc79599d0ec7fbf0",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T004-recibo-comprovantes-permissoes.md",
+      "sha256": "1b2516631bfee5a8567650215aa0891081b113beac9709b515383847a1450944",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T005-recibo-modelo-propostas-politicas.md",
+      "sha256": "f850ff0891e2ecaa34ff4a8f8bb038522fb2edb0a5b5b5071b3fe153312926db",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T006-recibo-montador-propostas.md",
+      "sha256": "fd8a678da91455d882cc77ef7a4351ddc0dea811ff7345fe63f10640cb866425",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T007-recibo-conversao-idempotente.md",
+      "sha256": "8721c563befdb2f8b0dbe4894f545c04c7733be50e43913bb8836180cd93deb1",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T008-recibo-comprovantes-fila-financeira.md",
+      "sha256": "e413eb744f4cfaed3b3fa4673f5bad84d4faa89f96f17d291a4a8a69c775cc5c",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T009-recibo-regressao-propostas-versoes.md",
+      "sha256": "d01b9bd55013c3707768b16639dbfd7dbf2c721c30793660710d66bb061219de",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/F2-T010-recibo-regressao-comercial-financeira.md",
+      "sha256": "6797e6704c2ee06982e574d6df120b0bdc6dabbda31d6c358050e4847a6bd496",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/Fase-1-encerramento.md",
+      "sha256": "bfa50c9b23bdff363315ee4ab8943cb820f1ba34305f6fc4cb2cdc721be35ffd",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/README.md",
+      "sha256": "77016a4cc86f9116c2d2292159ff7a7b84b8a4c0277d6334d5a6940333c35959",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-2/fase.md",
+      "sha256": "7818d3a9a0be55c8ebfbfec15a5a37c5d4ce7f5d06356215e796360d251350b4",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-2/specs/spec-2-001-composicao-politicas-proposta.md",
+      "sha256": "7201f5bf1e50d3e2b0a3c48e9a0bcb1c87290e8c864ff60d5c0899932d2c77dd",
+      "classification": "template-publico"
+    },
+    {
+      "path": "05_entregas/fase-2/specs/spec-2-002-aprovacao-conversao-fila-financeira.md",
+      "sha256": "176172fa62c573db66221fcaafdc78f5da3da9cb4d810b5a5b43751b4dff62cc",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/README.md",
+      "sha256": "afac27ba08eda344da6dd0271ae30f95b2e43d1987a7f0e60ee3502ff03f090f",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-08-27-selects-backend.md",
+      "sha256": "3ae068df4f04891d0c61755f0b77b25cd2f51d1f0d5acda840db2dba1961a801",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-08-27-source-ref-duplicidade.md",
+      "sha256": "c5afc7fd4bfaf007b6734dd0447929007d85cd04a2fc9f5dd8da840db2dba1961a801",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-08-28-1858-fontes-fornecedores.md",
+      "sha256": "9c601e01c64b6c0f49899d8ea72f767d4ab277089916abb1b0c50181c0b78a7d",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-08-28-combobox-adicionar-no-dropdown.md",
+      "sha256": "eac41d66e9f97b5d05973ccbd6abed5872b3d9e79d5f10f33b296d3cc445960a",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-08-31-1247-regras-skip.md",
+      "sha256": "1a79bf5f4e5780e03b8346b86219be991bdfd4517567c908cd367dad3276222f",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-08-31-1335-campos-condicionais.md",
+      "sha256": "967499ecf664debe865155d48933561639add90279606151da486b961b72ed9a",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-08-31-1400-edicoes-blocos.md",
+      "sha256": "1b31a70c9e9ddb6914df2b5adc558418af6ed151f15181b7b4e9948c1bc26b92497a2ba44a99c6144696f",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-08-31-f1-t011-superficie-de-permissoes.md",
+      "sha256": "5f45d5f9ecd07ce1091745e2ccd068e226aa5e62df877f4dbac76ca7c8730893",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-01-1805-segmento-interno.md",
+      "sha256": "ab0406019f3f7836c1a32937481015884b6be623cee0e89c40f5d4597bc20274",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-01-f1-t012-regressao-seguranca.md",
+      "sha256": "d454e647f2c6aeffe6499d4d31a79387a0724adaa73b006503ca215528c6a570",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-01-f1-t013-contrato-sem-ativacao.md",
+      "sha256": "8e683f1d46955459bf32c24015f61df31632ab585cd1eb202dec45b6fd11109a",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-02-1315-reexecucao-append-only-fallback.md",
+      "sha256": "7b189d01e7ed9fadcc1c427bcab8904ab0ed2f7fd66d24ddbe3ceb2ee5af5b8b",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-02-f1-t014-harness-admin.md",
+      "sha256": "1a91cc0c8f5fe7aa3bf7fee23b6e1bb515c807943b43e96b2baae519ad7ce3db",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-10-aceite-financeiro-producao.md",
+      "sha256": "e555b27221ff3bd1a5ff90102e6e7bc356a1745ce73e0d0466299b95101259b5",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-10-comprovantes-permissoes.md",
+      "sha256": "b848414966180610e2ef988a6fb5285335a2b2395bb42b5f53f88d4a7fe62a02",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-10-f2-t002-lacunas-comerciais.md",
+      "sha256": "c0cbddc67783760dcdb7fc99f465b3715cf032b43e4be1c55b6f272926b195a3",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-11-1757-ordem-itens-orcamento.md",
+      "sha256": "f529822f673fc6713c3c76f4c64ec01e8f839e96cb676f472e4ab5f2b43b0655",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-11-alternativas-montador.md",
+      "sha256": "c45397b23b1774987f3b7faf17cfb2314f71c0e65c33b25b9bcc1aada794e6b7",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-11-publicacao-preview-producao.md",
+      "sha256": "eafa80064525f529acab7b3bd81fd28384d46bc74a442bf601be8b6f1d01444b",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-11-relacao-autorreferente-pocketbase.md",
+      "sha256": "e85d75bca77e72544dabdb74b6669068010ef96621d458ad18669fc2c763afa7",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-12-1859-superficie-harness.md",
+      "sha256": "b9c786d03071f07abc0ed284042efb0ac14e4666b79fc15686b394f4cb6f3d62",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/AP-2026-09-12-entidade-operacional-consulta-visivel.md",
+      "sha256": "09d043eae74684ef2777eb39c85cbd4fa032803460935ee4e742d5f8b1d74d08",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/aprendizado-continuo/controle.md",
+      "sha256": "b14fa9dc19e3cd5328a4d8f89c8f49d21340d24f1b3be579e7304793c0f9ae88",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-08-25-campos-condicionais.md",
+      "sha256": "93c8b5dad9575d73817a6c86b09883c97f0b2e3d18dae2472d12d27fb1555719",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-08-25-cerimonialista-telefone.md",
+      "sha256": "81631f328c39dad73a2aac25e8c38e133e4b79bd28a312c22d02abcb3c478ca5",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-08-25-consolidado.md",
+      "sha256": "18938044ed60c691aff4dc11128ff5d6d2816b0771969640624a30020bb234a6",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-08-25-erro-salvar.md",
+      "sha256": "f0418d8907d3819463ec666adfa80756c8f795146c9473e935c35de1841e9c68",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-08-25-login-preview.md",
+      "sha256": "93f9db495751629bf244dfcbf0488a9d392a1119e00faee5ff3e2e3513762525",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-08-31-briefing-pendencias.md",
+      "sha256": "9f4ca72f0a2b0dc016795b257cf56ec0129105248d24cf3646fcacc64eaa8376",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-08-31-catalogo-ausente.md",
+      "sha256": "b911ccd4bbd0891a7ce294e96259296eda4d9ff146cec932be57735856c2785e",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-08-31-f1-t011.md",
+      "sha256": "b869a5287fde7b8363077e9796f8d7789eeef885ee6153950494fb600e6dea23",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-08-31-f1-t012.md",
+      "sha256": "5ff0b5f764171d5d1d7ed794472e665bea0638e9a79e7ca80a5ac33d16ef64ec",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-09-11-salvamento-orcamento.md",
+      "sha256": "8d358e125de8f67ec095c4a1ab53c4466b47457f007e19316a54b1bc9a493a7b",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-09-11-status-pago-fila.md",
+      "sha256": "7c988fe5da96b64839138eb086a9cc30fad776cb35fa2fef819e188a1441cc98",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/debug/debug-2026-09-12-f2-t010-acesso-harness.md",
+      "sha256": "38e06efa78b9acdc8cd20fb30c97ed10662ee4bc4918f14ec2b1ef35e4a367cb",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/decisao-b1-cat-01.md",
+      "sha256": "da6228f3692309b6b5036e534ce7d7921863ed39f984c5fe98c1c3f57e94415f",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/inventario-fontes-catalogo-f1-t007.md",
+      "sha256": "6ffec8bdd64eb3342696069e028ff2c1bbcee77fa5c6fde943c7a018ebd32d63",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/matriz-permissoes-f1-t010.md",
+      "sha256": "5e9295c05a83b667fe76e49b7977a29cc84423d39e679e29a45bfbe9dee60761",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/melhorias-futuras.md",
+      "sha256": "b758541d2e903f55be73b41f560fc0d27a96ecadb1bfb2bd696eddf16564",
+      "classification": "template-publico"
+    },
+    {
+      "path": "06_notas/revisao-escopo-clientes-intermediados.md",
+      "sha256": "64505406c8c81ed625bafe177c34d0940e7fa54fb61d13433a1b54a6702cf2cd",
+      "classification": "template-publico"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "37f6ce979fd37066205be8a4d21ebdd717be47089600877fa9a124fe704b7c58",
+      "classification": "template-publico"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "c601a909706b6f9b733e3d435d983ed928061e7a6e65d8790bc191dafb9b1692",
+      "classification": "template-publico"
+    },
+    {
+      "path": "README.md",
+      "sha256": "072616e0d754370351fc18a1f02b8bd65f70967cf56edfebfabcd23c584a5cc4",
+      "classification": "template-publico"
+    },
+    {
+      "path": "STATUS.md",
+      "sha256": "f78b6694d876209c8468d70ad5ac793c5ba2edc770504bcece27751a421dedb4",
+      "classification": "template-publico"
+    },
+    {
+      "path": "changelog.md",
+      "sha256": "6f179a065b65509d426311ab69584293ff97c234905c5e26ad70b007969a5a79",
+      "classification": "template-publico"
     }
   ]
 }
