@@ -1,6 +1,6 @@
 # Recibo — F3-T002: Aplicar migrations e provar segurança na instância autorizada
 
-**Task:** F3-T002 · **SPEC:** SPEC-3-001 · **Data:** 2026-09-14 · **Status:** implementada, aguardando teste humano
+**Task:** F3-T002 · **SPEC:** SPEC-3-001 · **Data:** 2026-09-14 · **Status:** CONCLUÍDA (teste humano aprovado pela Champion em 14/09)
 
 ## O que foi feito
 
@@ -13,6 +13,7 @@ Working tree do projeto Skip 52694 (Nexus Emilia) sincronizado byte-idêntico co
 - `0038_migrations_unicas_cancelamento` — consolida estado 0036 + campos de cancelamento em pedidos
 - `0039_rls_users_fail_closed` — users sem self-update
 - `0040_credenciais_por_secrets` — 5 contas rotacionadas via secrets
+- `0040_correcao_prova_p7` — correção pós-prova P7 (restaurou estado canônico, removeu artefato, auditou)
 - **Nota:** ordinais da instância estão deslocados vs repo (a colisão da F2 foi aplicada em 11/09 como `0036_rls_propostas_politicas` + `0037_regressao_propostas_politicas_rls`, com nomes diferentes dos arquivos). Registro órfão inofensivo, documentado.
 
 ## CA-3-001 — RLS exportado e conferido
@@ -31,7 +32,7 @@ Working tree do projeto Skip 52694 (Nexus Emilia) sincronizado byte-idêntico co
 | P3 — token revogado com sessão viva | PASS (acesso vazio) |
 | P9-parcial — cancelamento fail-closed | PASS (400 sem dados confiáveis) |
 | P6 — conversão idempotente | PASS (200, mesmo pedido `ub46hkz64xd6we6`) |
-| P7 — recusa/devolução em proposta aprovada | **FALHOU → corrigido** (ver abaixo) |
+| P7 — recusa/devolução em proposta aprovada | **FALHOU → corrigido → revalidado PASS** |
 | P11 — topologia | backend único compartilhado; nada publicado |
 
 ## DEBUG P7 (CA-3-005)
@@ -42,11 +43,15 @@ O hook `proposta_resposta` aceitava recusa e devolução em proposta já aprovad
 3. QA 0.0.116–0.0.118 falhas corrigidas (referência obrigatória, campos obrigatórios); **QA 0.0.119 PASS**
 4. Revalidação: recusa 400 ✓, devolução 400 ✓, re-aprovação idempotente 200 ✓, estado final `aprovada` v1 ✓
 
+## Teste humano
+
+Aprovado pela Champion Fernanda em 2026-09-14: login com senha nova OK, senha antiga recusada, painel sem regressão.
+
 ## Pendências para F3-T003
 
 P8 (comprovantes), P10 (suíte no ambiente Skip), P12 (handoff/manifesto) e a regressão dos 11 CAs da F2 — todas no escopo da F3-T003.
 
-## Limitações
+## Limitações registradas
 
 - Provas P4/P8/P10/P12 pertencem à F3-T003 conforme recorte da SPEC
 - Senha única fraca (12345678) definida pela Champion para homologação — registrar para rotação futura
