@@ -115,7 +115,7 @@
     },
     {
       "path": "05_entregas/F2-T002-recibo-frete-descontos-adicionais.md",
-      "sha256": "86fccbbe78c56377841966d2f33ab38637f0834db7708c532c6c3fba118bc9e",
+      "sha256": "86fccbbe78c56377841966d2f33ab38637f0834db7708c532c6c3fba118bcf9e",
       "classification": "template-publico"
     },
     {
@@ -200,7 +200,7 @@
     },
     {
       "path": "06_notas/aprendizado-continuo/AP-2026-08-27-source-ref-duplicidade.md",
-      "sha256": "c5afc7fd4bfaf007b6734dd0447929007d85cd04a2fc9f5dd8da840db2dba1961a801",
+      "sha256": "c5afc7fd4bfaf007b6734dd0447929007d85cd04a2fc9f5dd8da61d257220b2c",
       "classification": "template-publico"
     },
     {
@@ -225,7 +225,7 @@
     },
     {
       "path": "06_notas/aprendizado-continuo/AP-2026-08-31-1400-edicoes-blocos.md",
-      "sha256": "1b31a70c9e9ddb6914df2b5adc558418af6ed151f15181b7b4e9948c1bc26b92497a2ba44a99c6144696f",
+      "sha256": "1b31a70c9e9ddb6914df2b5adc558418af6ed151f15181b8d5c2c93241f0e14c",
       "classification": "template-publico"
     },
     {
@@ -385,7 +385,7 @@
     },
     {
       "path": "06_notas/melhorias-futuras.md",
-      "sha256": "b758541d2e903f55be73b41f560fc0d27a96ecadb1bfb2bd696eddf16564",
+      "sha256": "b758541d2e903f55be73b41f560fc0d27a96ecadb1bfb2bd696eddf05fd16564",
       "classification": "template-publico"
     },
     {
