@@ -5,15 +5,15 @@
 ## Onde estamos
 
 - **Fase atual:** 3 — jornadas especiais, produção, expedição e entrega.
-- **Modo de abertura:** correção bloqueante da base F1–F2 antes das entregas funcionais.
-- **Progresso:** 2/9 tasks concluídas (F3-T001, F3-T002).
-- **Task elegível:** F3-T003 — regressão F2 e aceite humano da recertificação.
-- **Tasks bloqueadas:** F3-T004–T009 (aguardam recertificação concluída).
+- **Modo de abertura:** correção bloqueante da base F1–F2 antes das entregas funcionais — **concluída**.
+- **Progresso:** 3/9 tasks concluídas (F3-T001, F3-T002, F3-T003).
+- **Task elegível:** F3-T004 — configurar variantes e mínimos das quatro jornadas (SPEC-3-002).
+- **Tasks bloqueadas:** F3-T005–T009 (dependem das tasks anteriores da fase).
 - **Produção:** não autorizada nesta abertura (backend compartilhado já recebeu as migrations, conforme aceite B3-ENV-01 da Champion).
 
 ## Gate atual
 
-F3-T002 concluída com teste humano aprovado pela Champion (14/09): login com senha nova OK, senha antiga recusada, painel sem regressão. F3-T003 executa P8–P10/P12 + regressão dos 11 CAs da F2 e fecha o aceite humano da recertificação — sem ela, F3-T004–T009 permanecem bloqueadas.
+**Recertificação F1–F2 FECHADA (14/09).** F3-T003 executou P8 (comprovantes: formato inválido, limite de 3 arquivos, pagamento conferido imutável, escrita direta fail-closed, Produção bloqueada, Financeiro lê), P10 (QA 0.0.119, stage test PASS) e P12 (manifesto de handoff fase 3, 82 arquivos; 4 divergências de hash = arquivos vivos, ressalva documentada). Regressão da Fase 2: 11/11 CAs PASS na instância real. Aceite humano da Champion registrado em 14/09. Relatório: `05_entregas/F3-T003-relatorio-recertificacao.md`. F3-T004–T009 destravadas na ordem da fase.
 
 ## Decisões incorporadas
 
@@ -28,4 +28,5 @@ F3-T002 concluída com teste humano aprovado pela Champion (14/09): login com se
 - `04_fase-atual/specs/00-INDICE.md`
 - `05_entregas/F3-T001-recibo-estabilizacao-repo-tecnico.md`
 - `05_entregas/F3-T002-recibo-migrations-seguranca.md`
+- `05_entregas/F3-T003-relatorio-recertificacao.md`
 - sistema técnico: `https://github.com/ebc06162-ship-it/nexus-emilia-o0ismc251` (branch `corretiva/f3-t001-estabilizacao`) · Skip 52694, QA 0.0.119
