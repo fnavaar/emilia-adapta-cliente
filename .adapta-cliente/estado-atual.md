@@ -3,11 +3,11 @@
 - task_id: F3-T002
 - champion: Fernanda (CEO)
 - spec: 04_fase-atual/specs/spec-3-001-estabilizacao-recertificacao-f1-f2.md
-- etapa: aguardando_teste_humano
+- etapa: concluida
 - autorizacao_implementacao: confirmada em 2026-09-14 14:39; "Pode implementar a F3-T002"
-- teste_humano: pendente
-- verificacao_automatica: passou; QA 0.0.119 (setup, estática, build, integrações, testes OK); migrations 0038_migrations_unicas_cancelamento, 0039_rls_users_fail_closed e 0040_credenciais_por_secrets aplicadas no backend (ledger 40/40, ordinais deslocados documentados); CA-3-001 RLS exportado e conferido (users fail-closed, politicas canônica, pedidos com campos de cancelamento); provas: P2 PASS (senha antiga 400 x5, nova 200 x5), P1 PASS (self-update 404, list users vazio), P5 PASS (pedidos só próprios, financeiro vazio p/ produção), P3 PASS (revogado com token vivo = lista vazia), P9-parcial PASS (cancelamento fail-closed 400), P6 PASS (re-aprovação idempotente 200, mesmo pedido), P7 corrigido (guard faltava no hook proposta_resposta; recusa/devolução em aprovada agora 400; artefato do teste removido pela migration 0040_correcao_prova_p7); P11 documentada (backend único compartilhado, aceite registrado)
-- aprendizado: pendente
-- ultima_acao: implementação concluída; working tree Skip sincronizado byte-idêntico com a branch corretiva; hook proposta_resposta corrigido (CA-3-005); aguardando teste humano
-- proxima_acao: aguardar teste humano da Fê antes de concluir a task
-- atualizado_em: 2026-09-14T15:05:00-03:00
+- teste_humano: aprovado em 2026-09-14 15:12; login novo OK, senha antiga recusada, painel sem regressão ("1. ok / 2. ok / 3. ok, foi recusado / 4. ok")
+- verificacao_automatica: passou; QA 0.0.119; migrations 0038/0039/0040 aplicadas (ledger 40/40); CA-3-001 conferido na instância; provas P1/P2/P3/P5/P6/P9-parcial/P11 PASS; P7 falhou e foi corrigida (guard no hook proposta_resposta + migration 0040_correcao_prova_p7) e revalidada
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-14-f3-t002-guard-estados-terminais.md
+- ultima_acao: F3-T002 concluída; fase.md, STATUS.md, changelog.md, recibo e aprendizado atualizados
+- proxima_acao: aguardar pedido da Champion para analisar a F3-T003 (regressão F2 + aceite humano da recertificação; P8-P10/P12 + 11 CAs F2)
+- atualizado_em: 2026-09-14T15:16:00-03:00
