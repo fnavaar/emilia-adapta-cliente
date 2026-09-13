@@ -1,5 +1,6 @@
 # Controle de aprendizado contínuo
 
+- 2026-09-13T14:25:00-03:00 · task F3-T001 (debug) · sinal registrado em `06_notas/aprendizado-continuo/AP-2026-09-13-f3-t001-lockfile-overrides.md` · regra confirmada: alterar package.json (overrides, ranges) exige regenerar o pnpm-lock.yaml no mesmo commit — o QA roda frozen-lockfile e falha com ERR_PNPM_LOCKFILE_CONFIG_MISMATCH; overrides com range aberto (>=) podem saltar de major (react-router 8) e quebrar o app; validar ranges novos contra o npm antes de commitar.
 - 2026-08-25T15:02:00-03:00 · task F1-T001 · sem sinal reutilizável · a implementação confirmou o fluxo básico e a restrição de não publicar produção, mas não houve falha ou padrão novo suficientemente específico para registrar como orientação reutilizável sem ampliar o escopo da task.
 - 2026-08-25T15:18:00-03:00 · task F1-T001 · sinal registrado em `06_notas/revisao-escopo-clientes-intermediados.md` · regra confirmada: cliente intermediado exige entidade de cerimonialista/empresa, múltiplos contatos e vínculo do contato à oportunidade.
 - 2026-08-27T18:20:00-03:00 · task F1-T002 · sinal registrado em `06_notas/aprendizado-continuo/AP-2026-08-27-selects-backend.md` · regra confirmada: selects devem enviar values codificados aceitos pelo schema, nunca labels de apresentação.
