@@ -140,7 +140,7 @@
     },
     {
       "path": "05_entregas/F2-T006-recibo-montador-propostas.md",
-      "sha256": "fd8a678da91455d882cc77ef7a4351ddc0dea811ff7345fe6350d98f9d97f",
+      "sha256": "fd8a678da91455d882cc77ef7a4351ddc0dea811ff7345fe63f10640cb866425",
       "classification": "template-publico"
     },
     {
@@ -205,7 +205,7 @@
     },
     {
       "path": "06_notas/aprendizado-continuo/AP-2026-08-28-1858-fontes-fornecedores.md",
-      "sha256": "9c601e01c64b6c49899d8ea72f767d4ab277089916abb1b0c50181c0b78a7d",
+      "sha256": "9c601e01c64b6c0f49899d8ea72f767d4ab277089916abb1b0c50181c0b78a7d",
       "classification": "template-publico"
     },
     {
