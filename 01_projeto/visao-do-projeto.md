@@ -1,22 +1,25 @@
 # Visão do projeto — Mara Cristina Amaral Santos - ME
 
-> O mapa completo do programa: por que ele existe e o arco das 5 fases até a validação integral.
+> O mapa completo do programa: por que ele existe e o arco das 5 fases. O detalhe de cada fase
+> chega em `04_fase-atual/` quando ela abre — uma por vez, por estratégia de implementação.
+> Mantido pela consultoria.
 
-## Objetivo de negócio
+## Por quê
 
-Substituir o controle manual de composição, proposta, aprovação, conversão e fila financeira do Emília Bem Casados por um sistema determinístico, com recertificação da base F1–F2 como correção bloqueante da Fase 3.
+- **Objetivo de negócio:** conduzir a entrada de pedidos personalizados até um registro canônico de cliente e oportunidade/pedido-base, com briefing estruturado, histórico e pendências visíveis, reduzindo redigitação e perda de contexto.
+- **Processo crítico atacado:** atendimento por WhatsApp e outros canais → identificação do cliente → briefing condicional → continuidade comercial e operacional.
+- **Métrica de sucesso:** completude do registro/briefing, volume de redigitação e tempo entre entrada e próxima ação; baseline será coletado na Fase 1 e comparado nas fases seguintes.
 
-## Arco das fases
+## O arco das 5 fases
 
-1. **Fase 1** — Registro canônico, briefing condicional, catálogo versionado, permissões/auditoria e webhook/fallback (arquivada).
-2. **Fase 2** — Composição versionada, proposta comercial, aprovação/conversão e fila financeira (arquivada em 05_entregas/fase-2).
-3. **Fase 3** — Jornadas especiais, produção com liberação controlada, expedição/entrega/ocorrência. Aberta com correção bloqueante (SPEC-3-001).
-4. **Fase 4** — Loops/agentes operando os sistemas das fases 1–3.
-5. **Fase 5** — Validação integral do conjunto.
+| Fase | Entrega (em uma linha) | Status |
+|---|---|---|
+| 1 | Registro canônico, entrada e briefing estruturado | Concluída |
+| 2 | Composição, proposta, aprovação, conversão e fila financeira | Concluída com recertificação na abertura da F3 |
+| 3 | Jornadas especiais, produção, expedição, entrega e ocorrência | Aberta — correção bloqueante |
+| 4 | Orquestração, retry, reconciliação, notificações e loops assistidos | Planejada |
+| 5 | Gestão, qualidade, reconciliação e validação ponta a ponta | Planejada |
 
-## Princípios
-
-- Uma task por vez, com teste humano entre tasks.
-- Nenhuma publicação em produção sem autorização explícita registrada.
-- Nenhum dado real antes da política e da allowlist aprovadas.
-- O champion decide; o sistema executa e registra.
+O detalhe de cada fase (specs, tasks, critérios) é preparado pela consultoria **durante a fase
+anterior**, incorporando o que o projeto aprendeu no caminho — por isso só a fase aberta tem
+specs neste repositório.
