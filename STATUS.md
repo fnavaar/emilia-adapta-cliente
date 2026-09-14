@@ -5,15 +5,14 @@
 ## Onde estamos
 
 - **Fase atual:** 3 — jornadas especiais, produção, expedição e entrega.
-- **Modo de abertura:** correção bloqueante da base F1–F2 antes das entregas funcionais — **concluída**.
-- **Progresso:** 3/9 tasks concluídas (F3-T001, F3-T002, F3-T003).
-- **Task elegível:** F3-T004 — configurar variantes e mínimos das quatro jornadas (SPEC-3-002).
-- **Tasks bloqueadas:** F3-T005–T009 (dependem das tasks anteriores da fase).
+- **Progresso:** 4/9 tasks concluídas (F3-T001 a F3-T004).
+- **Task elegível:** F3-T005 — provar bordas e aceitar jornadas especiais (SPEC-3-002, Champion).
+- **Tasks bloqueadas:** F3-T006–T009 (dependem das tasks anteriores da fase).
 - **Produção:** não autorizada nesta abertura (backend compartilhado já recebeu as migrations, conforme aceite B3-ENV-01 da Champion).
 
 ## Gate atual
 
-**Recertificação F1–F2 FECHADA (14/09).** F3-T003 executou P8 (comprovantes: formato inválido, limite de 3 arquivos, pagamento conferido imutável, escrita direta fail-closed, Produção bloqueada, Financeiro lê), P10 (QA 0.0.119, stage test PASS) e P12 (manifesto de handoff fase 3, 82 arquivos; 4 divergências de hash = arquivos vivos, ressalva documentada). Regressão da Fase 2: 11/11 CAs PASS na instância real. Aceite humano da Champion registrado em 14/09. Relatório: `05_entregas/F3-T003-relatorio-recertificacao.md`. F3-T004–T009 destravadas na ordem da fase.
+**F3-T004 concluída e aceita (14/09).** Jornadas especiais configuradas como variantes do registro canônico: coleção `config_jornadas` (só Administrador/Gestão altera, negação auditada), hook de validação de mínimos no avanço (pendência nomeada + histórico, nunca silencioso, nunca libera produção), UI condicional por jornada. Ajustes do teste humano: degustação virou marcador `solicitou_degustacao` (não é tipo de evento), pendências listadas no painel, modalidade da degustação como seletor (Presencial padrão, Entrega, Retirada). QA Skip 0.0.125; suíte 24/24; branch `feat/f3-t004-jornadas-especiais`. Recibo: `05_entregas/F3-T004-recibo-jornadas-especiais.md`.
 
 ## Decisões incorporadas
 
@@ -21,6 +20,8 @@
 - Cancelamento até 100 unidades: reembolso integral quando faltarem pelo menos 7 dias; depois, somente Administrador com retenção de 20%.
 - Sem data, quantidade ou total confiável: bloquear e criar pendência; não inferir.
 - B3-ENV-01: Preview e produção compartilham backend único (nexus-emilia-49529.shrd00); aceite explícito da Champion registrado em 14/09.
+- Degustação não é tipo de evento: marcador `solicitou_degustacao` vale para qualquer evento (decisão da Champion em 14/09).
+- Parâmetros das jornadas aprovados em 14/09: cortesia presencial/retirada, frete no envio, adicional cobrado na própria degustação, sem limite semanal; revendedor com preço pela data do pedido; bem-nascido com SLA manual + pendência; equipe de vendas acompanha o cliente ponta a ponta.
 
 ## Referências
 
@@ -29,4 +30,5 @@
 - `05_entregas/F3-T001-recibo-estabilizacao-repo-tecnico.md`
 - `05_entregas/F3-T002-recibo-migrations-seguranca.md`
 - `05_entregas/F3-T003-relatorio-recertificacao.md`
-- sistema técnico: `https://github.com/ebc06162-ship-it/nexus-emilia-o0ismc251` (branch `corretiva/f3-t001-estabilizacao`) · Skip 52694, QA 0.0.119
+- `05_entregas/F3-T004-recibo-jornadas-especiais.md`
+- sistema técnico: `https://github.com/ebc06162-ship-it/nexus-emilia-o0ismc251` (branch `feat/f3-t004-jornadas-especiais`) · Skip 52694, QA 0.0.125
