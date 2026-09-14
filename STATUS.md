@@ -5,14 +5,14 @@
 ## Onde estamos
 
 - **Fase atual:** 3 — jornadas especiais, produção, expedição e entrega.
-- **Progresso:** 4/9 tasks concluídas (F3-T001 a F3-T004).
-- **Task elegível:** F3-T005 — provar bordas e aceitar jornadas especiais (SPEC-3-002, Champion).
-- **Tasks bloqueadas:** F3-T006–T009 (dependem das tasks anteriores da fase).
+- **Progresso:** 5/9 tasks concluídas (F3-T001 a F3-T005).
+- **Task elegível:** F3-T006 — construir fila, gates, RLS e instrução de produção (SPEC-3-003).
+- **Tasks bloqueadas:** F3-T007–T009 (dependem das tasks anteriores da fase).
 - **Produção:** não autorizada nesta abertura (backend compartilhado já recebeu as migrations, conforme aceite B3-ENV-01 da Champion).
 
 ## Gate atual
 
-**F3-T004 concluída e aceita (14/09).** Jornadas especiais configuradas como variantes do registro canônico: coleção `config_jornadas` (só Administrador/Gestão altera, negação auditada), hook de validação de mínimos no avanço (pendência nomeada + histórico, nunca silencioso, nunca libera produção), UI condicional por jornada. Ajustes do teste humano: degustação virou marcador `solicitou_degustacao` (não é tipo de evento), pendências listadas no painel, modalidade da degustação como seletor (Presencial padrão, Entrega, Retirada). QA Skip 0.0.125; suíte 24/24; branch `feat/f3-t004-jornadas-especiais`. Recibo: `05_entregas/F3-T004-recibo-jornadas-especiais.md`.
+**SPEC-3-002 (jornadas especiais) FECHADA com aceite da Champion (14/09).** F3-T005 provou as três bordas: troca de tipo no meio do caminho preserva valores e registra no histórico (hook novo); data duplicada do revendedor bloqueada com pendência; bem-nascido urgente gera pendências nomeadas e nunca libera produção. Roteiro de aceite: `05_entregas/F3-T005-roteiro-aceite-jornadas.md`. Próxima: F3-T006 (SPEC-3-003), condicionada ao gate G3-OPS-01 (parâmetros operacionais de produção).
 
 ## Decisões incorporadas
 
@@ -22,6 +22,7 @@
 - B3-ENV-01: Preview e produção compartilham backend único (nexus-emilia-49529.shrd00); aceite explícito da Champion registrado em 14/09.
 - Degustação não é tipo de evento: marcador `solicitou_degustacao` vale para qualquer evento (decisão da Champion em 14/09).
 - Parâmetros das jornadas aprovados em 14/09: cortesia presencial/retirada, frete no envio, adicional cobrado na própria degustação, sem limite semanal; revendedor com preço pela data do pedido; bem-nascido com SLA manual + pendência; equipe de vendas acompanha o cliente ponta a ponta.
+- Modalidade da degustação: seletor com Presencial (showroom) como padrão, Entrega (envio) e Retirada.
 
 ## Referências
 
@@ -31,4 +32,5 @@
 - `05_entregas/F3-T002-recibo-migrations-seguranca.md`
 - `05_entregas/F3-T003-relatorio-recertificacao.md`
 - `05_entregas/F3-T004-recibo-jornadas-especiais.md`
-- sistema técnico: `https://github.com/ebc06162-ship-it/nexus-emilia-o0ismc251` (branch `feat/f3-t004-jornadas-especiais`) · Skip 52694, QA 0.0.125
+- `05_entregas/F3-T005-roteiro-aceite-jornadas.md`
+- sistema técnico: `https://github.com/ebc06162-ship-it/nexus-emilia-o0ismc251` (branch `feat/f3-t004-jornadas-especiais`) · Skip 52694, QA 0.0.126
