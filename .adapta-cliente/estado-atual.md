@@ -3,11 +3,11 @@
 - task_id: F3-T006
 - champion: Fernanda (CEO)
 - spec: 04_fase-atual/specs/spec-3-003-producao-liberacao-controlada.md
-- etapa: aguardando_teste_humano
+- etapa: concluida
 - autorizacao_implementacao: confirmada em 2026-09-14 18:57; "Pode implementar a F3-T006"
-- teste_humano: pendente
-- verificacao_automatica: passou; suíte 32/32 invariantes (8 novas: CA-3-015/016/017/018/019/020, RN-3-205, RN-3-202); tsc/lint/format/build limpos; QA Skip 0.0.127-0.0.129 PASS; provas na instância: RLS de liberação (403 auditado), gates bloqueando sem sinal/prazo, fluxo completo proposta→pedido→liberar→produção→concluir, idempotência RN-3-205, ocorrência de falta de material com dono e próxima ação (nunca concluído), financeiro intacto, líderes semeados (Fernanda/Mara hierarquia maior)
-- aprendizado: pendente (registrar no fechamento: select values via push no array não pega na instância — substituir lista explicitamente; conversão precisa copiar data_evento para gates posteriores; createRule null em pagamentos exige hook próprio)
-- ultima_acao: implementação concluída e provada na instância; branch atualizada no GitHub; recibo em 05_entregas/F3-T006-recibo-fila-producao.md
-- proxima_acao: aguardar teste humano da Fê para concluir a task
-- atualizado_em: 2026-09-14T19:20:00-03:00
+- teste_humano: aprovado em 2026-09-14 19:17; "Tudo certo nos testes e pode concluir" (com print da visão imprimível da fila)
+- verificacao_automatica: passou; revalidação do zero no fechamento: suíte 32/32 invariantes (CA-3-015/016/017/018/019/020, RN-3-205, RN-3-202), tsc/lint/format/build limpos, QA Skip 0.0.129 PASS, fixtures íntegras na instância (pronto_expedicao e ocorrência), sem segredos no diff
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-14-f3-t006-select-values-e-cadeia-de-dados.md
+- ultima_acao: task concluída — fase.md 6/9, STATUS.md, changelog, recibo e aprendizado atualizados
+- proxima_acao: aguardar novo pedido da Champion para selecionar a F3-T007 (piloto híbrido)
+- atualizado_em: 2026-09-14T19:25:00-03:00
