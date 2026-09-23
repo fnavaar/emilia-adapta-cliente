@@ -5,9 +5,9 @@
 - spec: recorte aprovado pela Champion em 22/09 19:36 (duas listas; R2 completo com freezer, R3 por etapa e R10 ficam para depois)
 - etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada 2026-09-22 19:36 — "Pode implementar as duas listas"
-- teste_humano: pendente (1º teste apontou tela branca na aba Produção semanal — debugado e corrigido em 23/09; novo teste necessário)
-- verificacao_automatica: passou — QA Skip 0.0.138 PASS integral (correção da data PocketBase + migration 0048 aplicada e verificada na instância); suíte de invariantes F3-T011a–e
+- teste_humano: pendente (2 debugs já corrigidos: tela branca 23/09 e semana presa em 21/09 23/09; novo teste necessário)
+- verificacao_automatica: passou — QA Skip 0.0.138/0.0.139/0.0.140 PASS; migration 0048 aplicada e verificada; suíte F3-T011a–e
 - aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-23-f3-t011-data-pocketbase-e-migrations-pendentes.md
-- ultima_acao: debug da tela branca — causa raiz era data PocketBase inválida no cálculo das entregas por dia; corrigido com slice(0,10) + guard isNaN; migration 0048 reaplicada (coleção planejamento_producao confirmada na instância)
-- proxima_acao: novo teste humano pela Champion (aba Produção semanal + lista de embrulho)
-- atualizado_em: 2026-09-23T17:20:00-03:00
+- ultima_acao: debug 2 — seletor de semana agora fixa na segunda-feira da data escolhida (mudarSemana + chaveSemana) e exibe o intervalo "21/09 a 27/09"; entregas não somem mais ao navegar a semana
+- proxima_acao: novo teste humano pela Champion (navegar entre semanas, sabores por campo, salvar/imprimir)
+- atualizado_em: 2026-09-23T17:45:00-03:00
