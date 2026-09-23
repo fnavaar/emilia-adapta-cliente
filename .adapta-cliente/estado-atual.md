@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: F3-T011 (lista de embrulho por papel + planejamento semanal de produção)
+- task_id: F3-T010 + F3-T011 (relatórios operacionais + importação de OPs + listas de embrulho/planejamento)
 - champion: Fernanda (CEO)
-- spec: recorte aprovado pela Champion em 22/09 19:36 (duas listas; R2 completo com freezer, R3 por etapa e R10 ficam para depois)
+- spec: recortes aprovados pela Champion em 22/09 (T010 + T011) e 23/09 (lote 2 das OPs — "quero adicionar mais pedidos, segue em anexo")
 - etapa: aguardando_teste_humano
-- autorizacao_implementacao: confirmada 2026-09-22 19:36 — "Pode implementar as duas listas"
-- teste_humano: pendente (2 debugs já corrigidos: tela branca 23/09 e semana presa em 21/09 23/09; novo teste necessário)
-- verificacao_automatica: passou — QA Skip 0.0.138/0.0.139/0.0.140 PASS; migration 0048 aplicada e verificada; suíte F3-T011a–e
+- autorizacao_implementacao: confirmada 2026-09-23 — envio das 66 OPs adicionais como autorização do lote 2
+- teste_humano: pendente (T010/T011 parcialmente testadas; 2 debugs corrigidos; lote 2 novo)
+- verificacao_automatica: passou — QA Skip 0.0.142 PASS integral; migration 0049 aplicada e verificada no ledger (96 OPs no total)
 - aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-23-f3-t011-data-pocketbase-e-migrations-pendentes.md
-- ultima_acao: debug 2 — seletor de semana agora fixa na segunda-feira da data escolhida (mudarSemana + chaveSemana) e exibe o intervalo "21/09 a 27/09"; entregas não somem mais ao navegar a semana
-- proxima_acao: novo teste humano pela Champion (navegar entre semanas, sabores por campo, salvar/imprimir)
-- atualizado_em: 2026-09-23T17:45:00-03:00
+- ultima_acao: importadas as 66 OPs do lote 2 (25–26/09, 11.970 un; 2 previsões fora do total); base consolidada 96 OPs / 15.140 un (23–26/09)
+- proxima_acao: teste humano pela Champion (relatórios com 4 datas no seletor: 23, 24, 25 e 26/09)
+- atualizado_em: 2026-09-23T21:05:00-03:00
