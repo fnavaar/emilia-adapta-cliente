@@ -1,6 +1,6 @@
 # Recibo F3-T010 — Relatórios operacionais + importação das 30 OPs reais
 
-**Data:** 22/09/2026 · **Champion:** Fernanda · **Estado:** aguardando teste humano
+**Data:** 22/09/2026 · **Champion:** Fernanda · **Estado:** CONCLUÍDA em 2026-10-06 — teste humano aprovado pela Champion ("tudo testado e funcionando"); QA 0.0.165 PASS; migration 0058 (lote 5) applied.
 
 ## Escopo autorizado
 "Pode implementar o plano completo" (22/09, 19:01): 4 relatórios operacionais + importação das 30 OPs do GestãoClick + regra de previsões fora do total.
@@ -29,6 +29,12 @@
 ## Verificação automática
 - QA Skip **0.0.131 → 0.0.134**: 0.0.131–0.133 revelaram 3 erros reais de seed (valores de select desatualizados: `outros` em tipo_cliente, `fechado` em status, `ordem` iniciando em 0) — corrigidos consultando o estado real da instância; **0.0.134 PASS integral** (setup, static, build, integrations/migrations, test).
 - Aprendizado capturado: `06_notas/aprendizado-continuo/AP-2026-09-22-f3-t010-select-values-dependem-da-instancia.md`.
+
+## Iterações pós-recibo (27/09–01/10, autorizadas pela Champion)
+- UX aprovada em mockup: KPIs por aba, seletor de data único com contexto, busca cliente/OP, ordenação (padrão/nº OP/situação/cliente), previsões por último, obs em etiqueta, impressões com logo (QA 0.0.159–0.0.162).
+- FIX tela branca ao ordenar por cliente: função usada antes de declarar (TDZ) — movida ao escopo do módulo (QA 0.0.162).
+- Agrupamento por situação (tela + impressão), coluna Situação em todas as impressões, seletor de período semanal redesenhado (QA 0.0.163).
+- Sincronizações lote 4 (migration 0055/0057) e lote 5 (migration 0058, 01/10): 46 OPs novas + 11 atualizadas, 2.128 un — confere exato com o resumo da Champion; divergências PDF×resumo resolvidas a favor do resumo com registro no histórico.
 
 ## Teste humano (roteiro)
 No **preview**, logada como Fernanda:

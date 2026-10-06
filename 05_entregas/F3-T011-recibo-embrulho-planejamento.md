@@ -1,6 +1,6 @@
 # Recibo F3-T011 — Lista de embrulho por papel + planejamento semanal de produção
 
-**Data:** 22/09/2026 · **Champion:** Fernanda · **Estado:** aguardando teste humano
+**Data:** 22/09/2026 · **Champion:** Fernanda · **Estado:** CONCLUÍDA em 2026-10-06 — teste humano aprovado pela Champion ("tudo testado e funcionando"); QA 0.0.165 PASS; agrupamento por situação e seletor de período validados no preview.
 
 ## Escopo autorizado
 "Pode implementar as duas listas" (22/09, 19:36) — lista de embrulho por cor de papel + planejamento semanal de produção (modelo da planilha enviada pela Champion).
@@ -27,6 +27,13 @@
 ## Verificação automática
 - QA Skip 0.0.136: staticAnalysis/build revelaram marcador de conflito órfão no TSX (erro de patch) — corrigido; **0.0.137 PASS integral**.
 - Suíte de invariantes estendida (F3-T011a–e): migration 0048 existe; RLS admin/gestão; entregas calculadas (nunca digitadas) e previsões fora; "a definir" na lista de embrulho; linha do real produzido.
+
+## Iterações pós-recibo (27/09–01/10, autorizadas pela Champion)
+- Redesign em 3 blocos (Resumo automático por sabor / Detalhamento por situação fechado / Distribuição manual admin) + KPIs, barras de participação e dia de hoje destacado (QA 0.0.159).
+- Sabor **Ovos** (baba de moça) confirmado pela Champion como oficial — 8 sabores no planejamento (QA 0.0.160); catálogo 2026.1 ainda não lista Ovos (pendência de catálogo).
+- 8 itens aprovados + 2 extras nas outras abas; FIX TDZ (tela branca ao ordenar por cliente, QA 0.0.162).
+- Seletor de período semanal redesenhado: setas ‹ ›, rótulo grande com semana atual/passada/que vem, "Esta semana" e personalizado compacto (QA 0.0.163).
+- Semana 28/09–04/10 validada pela Champion com dados reais (lote 5): 518/209/386/1.259/3.147/2.106 un e totais por sabor conferidos (8.298 un com previsões).
 
 ## Teste humano (roteiro)
 No preview, logada como Fernanda:
