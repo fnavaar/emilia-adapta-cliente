@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: nenhuma (F3-T010 e F3-T011 concluídas em 06/10)
+- task_id: F3-T007 (executar piloto híbrido e aceitar operação)
 - champion: Fernanda (CEO)
-- spec: recibos em 05_entregas/F3-T010-recibo-relatorios-operacionais.md e F3-T011-recibo-embrulho-planejamento.md
-- etapa: concluida
-- autorizacao_implementacao: confirmada — "Pode implementar o plano completo" (22/09) e "Pode implementar as duas listas" (22/09); ajustes iterativos autorizados pela Champion em 27/09
-- teste_humano: aprovado — "tudo testado e funcionando" (06/10, 18:58); aprovação anterior "está tudo certo, pode atualizar no skip" (27/09, 18:39)
-- verificacao_automatica: passou — QA Skip 0.0.165 PASS; migrations 0001–0058 applied; lote 5 (46 OPs novas, 2.128 un) confere exato com o resumo da Champion; agrupamento por situação e seletor de período validados no preview
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-10-06-lote5-migration-path-e-fonte-da-verdade.md
-- ultima_acao: fechamento F3-T010/T011 (fase.md, STATUS.md, changelog.md, estado e aprendizado atualizados; push no GitHub)
-- proxima_acao: F3-T007 (piloto híbrido) é a elegível — AGUARDA novo pedido da Champion; não abrir automaticamente
-- atualizado_em: 2026-10-06T19:10:00-03:00
+- spec: 04_fase-atual/specs/spec-3-003-producao-liberacao-controlada.md (CA-3-017 a CA-3-021)
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente — pedido "vamos para a f3 t003" (06/10 19:47) abriu a análise; NÃO autoriza implementação
+- teste_humano: pendente — será o turno piloto com o time de produção (CA-3-021)
+- verificacao_automatica: pendente — baseline da fila de produção (FilaProducao.tsx, hooks liberar_pedido/andamento_producao, migration 0043/0044) a rodar antes do piloto
+- aprendizado: pendente
+- ultima_acao: análise da F3-T007 entregue; aguardando autorização da Champion
+- proxima_acao: aguardar autorização para implementar (preparação do piloto: contas, dados e roteiro)
+- atualizado_em: 2026-10-06T19:55:00-03:00
