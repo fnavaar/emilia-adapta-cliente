@@ -1,18 +1,18 @@
 # STATUS — Projeto Mara Cristina Amaral Santos - ME
 
-> **Atualizado em:** 2026-09-14 · **Por:** ETHOS (Bia)
+> **Atualizado em:** 2026-10-06 · **Por:** ETHOS (Bia)
 
 ## Onde estamos
 
 - **Fase atual:** 3 — jornadas especiais, produção, expedição e entrega.
-- **Progresso:** 6/9 tasks concluídas (F3-T001 a F3-T006).
+- **Progresso:** 8/11 tasks concluídas (F3-T001 a F3-T006, F3-T010 e F3-T011).
 - **Task elegível:** F3-T007 — executar piloto híbrido e aceitar operação (SPEC-3-003).
-- **Tasks bloqueadas:** F3-T008–T009 (dependem das tasks anteriores da fase).
+- **Tasks bloqueadas:** F3-T008–T009 (dependem do piloto F3-T007).
 - **Produção:** não autorizada nesta abertura (backend compartilhado já recebeu as migrations, conforme aceite B3-ENV-01 da Champion).
 
 ## Gate atual
 
-**F3-T006 (fila de produção) CONCLUÍDA com teste humano aprovado pela Champion (14/09).** Fila por data de entrega com selo URGENTE ≤7 dias, gates de liberação (sinal conferido + sem pendência de definição + data do evento), liberação restrita a líderes nominais (Fernanda/Mara com hierarquia maior) com negação auditada, andamento de produção sem tocar preço/pagamento, ocorrências de falta de material/impossibilidade com dono e próxima ação (nunca concluído), visão imprimível com ID e versão. Suíte 32/32; QA Skip 0.0.129. Recibo: `05_entregas/F3-T006-recibo-fila-producao.md`. Próxima: F3-T007 (piloto híbrido com o time de produção, turno real + aceite).
+**F3-T010 (relatórios operacionais + importação de OPs) e F3-T011 (embrulho por papel + planejamento semanal) CONCLUÍDAS — teste humano aprovado pela Champion em 06/10 ("tudo testado e funcionando").** Evidências: QA Skip 0.0.165 PASS; migration 0058 (lote 5: 46 OPs novas + 11 atualizadas, 2.128 un — confere exato com o resumo da Champion) aplicada; agrupamento por situação (tela + impressão), coluna Situação nas impressões e seletor de período semanal validados no preview. Recibos: `05_entregas/F3-T010-recibo-relatorios-operacionais.md` e `05_entregas/F3-T011-recibo-embrulho-planejamento.md`. Próxima: F3-T007 (piloto híbrido com o time de produção, turno real + aceite).
 
 ## Decisões incorporadas
 
@@ -24,6 +24,8 @@
 - Parâmetros das jornadas aprovados em 14/09: cortesia presencial/retirada, frete no envio, adicional cobrado na própria degustação, sem limite semanal; revendedor com preço pela data do pedido; bem-nascido com SLA manual + pendência; equipe de vendas acompanha o cliente ponta a ponta.
 - Modalidade da degustação: seletor com Presencial (showroom) como padrão, Entrega (envio) e Retirada.
 - Parâmetros G3-OPS-01 (produção, 14/09): fila natural = data de entrega; urgência = pedido novo com entrega em até 7 dias; falta de material = ocorrência (RN-3-204); verificação automática de estoque fora do escopo (melhoria futura); sinal/entrada basta para liberar, total pago até a entrega; revendedores/CNPJ com política de recebimento individual.
+- Relatórios impressos são para uso operacional: funcional > bonito (Champion, 27/09).
+- Sincronização de OPs: em divergência PDF × resumo, o resumo da Champion é a fonte da verdade e a divergência fica registrada no histórico do pedido (lote 5, 01/10).
 
 ## Referências
 
@@ -35,4 +37,6 @@
 - `05_entregas/F3-T004-recibo-jornadas-especiais.md`
 - `05_entregas/F3-T005-roteiro-aceite-jornadas.md`
 - `05_entregas/F3-T006-recibo-fila-producao.md`
-- sistema técnico: `https://github.com/ebc06162-ship-it/nexus-emilia-o0ismc251` (branch `feat/f3-t004-jornadas-especiais`) · Skip 52694, QA 0.0.129
+- `05_entregas/F3-T010-recibo-relatorios-operacionais.md`
+- `05_entregas/F3-T011-recibo-embrulho-planejamento.md`
+- sistema técnico: Skip 52694 (preview nexus-emilia-49529--preview.goskip.app), QA 0.0.165
